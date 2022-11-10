@@ -1,0 +1,3 @@
+# wget `https://search.rcsb.org/query-editor.html?json={"query":{"type":"terminal","service":"chemical","parameters":{"value":"Cc1ccc(cc1Nc2nc(cs2)c3cccnc3)NC(=O)c4ccc(cc4)CN5CCN(CC5)C","type":"descriptor","descriptor_type":"SMILES","match_type":"graph-strict"}},"return_type":"entry"}`
+
+wget "https://search.rcsb.org/rcsbsearch/v2/query?json=%7B%22query%22%3A%7B%22type%22%3A%22terminal%22%2C%22service%22%3A%22chemical%22%2C%22parameters%22%3A%7B%22value%22%3A%22InChI%3D1S%2FC8H9NO2%2Fc1-6(10)9-7-2-4-8(11)5-3-7%2Fh2-5%2C11H%2C1H3%2C(H%2C9%2C10)%22%2C%22type%22%3A%22descriptor%22%2C%22descriptor_type%22%3A%22InChI%22%2C%22match_type%22%3A%22graph-strict%22%7D%7D%2C%22return_type%22%3A%22mol_definition%22%7D" -O testfiles

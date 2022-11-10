@@ -1,0 +1,714 @@
+68948 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)CC2C[C@H]([C@@H](C)O)OC(=O)C[C@H](O)C[C@@H]3CCC[C@H](C[C@@H]4CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O4)O3 | Protein kinase C alpha
+69054 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)CC2C[C@H]([C@@H](C)O)OC(=O)C[C@@H](O)C[C@@H]3CCC[C@H](C[C@@H]4CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O4)O3 | Protein kinase C alpha
+69134 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)CC2C[C@H]([C@@H](C)O)OC(=O)C[C@H](O)CCO[C@H](C(C)(C)C)C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O3 | Protein kinase C alpha
+83387 CN(C)C[C@@H]1CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCO1.CS(=O)(=O)O | Protein kinase C alpha
+115876 C[C@H](c1ccc2ccccc2c1)[C@H]1NC(=O)[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(C)(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC1=O | Tyrosine-protein kinase SRC
+114982 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+115222 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc3ccccc3c2)NC(=O)[C@@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+115223 CC1(C)SSC[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+115416 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc3ccccc3c2)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+115540 CC[C@H](C)[C@H]1NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(=O)O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+115557 CC(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H]1C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+115628 CC1(C)SSC[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+115681 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1N | Tyrosine-protein kinase SRC
+115716 CC(=O)N[C@@H]1C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+115833 C[C@H]1NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(C)(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Tyrosine-protein kinase SRC
+115844 CC(=O)N[C@H]1C(=O)N[C@H](Cc2ccc3ccccc3c2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+115843 C[C@@H](c1ccc2ccccc2c1)[C@H]1NC(=O)[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(C)(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC1=O | Tyrosine-protein kinase SRC
+115845 CC(=O)N[C@H]1C(=O)N[C@@H](Cc2ccc3ccccc3c2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+115874 C[C@@H](c1ccc2ccccc2c1)[C@@H]1NC(=O)[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(C)(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC1=O | Tyrosine-protein kinase SRC
+115875 C[C@H](c1ccc2ccccc2c1)[C@@H]1NC(=O)[C@H](NC(=O)[C@@H](N)Cc2ccc(O)cc2)C(C)(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC1=O | Tyrosine-protein kinase SRC
+116098 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+116135 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+116299 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1NC(=O)[C@@H](N)Cc1ccc(O)cc1 | Tyrosine-protein kinase SRC
+116300 CC1(C)SSC[C@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CO)NC(=O)CNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H]1N | Tyrosine-protein kinase SRC
+116367 CC(=O)N[C@@H]1C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCN=C(N)N)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+116448 CC(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@@H]1C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)NCC(=O)N[C@@H](CO)C(=O)N[C@H](Cc2ccccc2)C(=O)N[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](CCCCN)C(N)=O)CSSC1(C)C | Tyrosine-protein kinase SRC
+129602 O=C1CC2O[C@H](O)C(O)C(O)C2OC(=O)c2cc(O)c(O)c(O)c2-c2c(O)c(O)c3oc(=O)c4c(c(O)c(O)c5oc(=O)c2c3c54)-c2c1cc(O)c(O)c2O | Protein kinase C (PKC)
+130279 O=C1OC2C3OC(=O)c4cc(O)c(O)c(O)c4-c4c(O)c(O)c5oc(=O)c6c(c(O)c(O)c7oc(=O)c4c5c76)-c4c(cc(O)c(O)c4O)C(=O)CC3O[C@H](O)C2OC(=O)c2cc(O)c(O)c(O)c2-c2c1cc(O)c(O)c2O | Protein kinase C (PKC)
+144848 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCO[C@H](CNCc1ccccc1)CCn1cc2c2ccccc21 | Protein kinase C alpha
+144921 CN1CCN(C[C@@H]2CCn3cc(c4ccccc43)C3=C(C(=O)NC3=O)c3cn(c4ccccc34)CCO2)CC1 | Protein kinase C alpha
+144959 CN(C)C[C@@H]1CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCO1 | Protein kinase C gamma
+145186 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCO[C@H](CN1CCCC1)CCn1cc2c2ccccc21 | Protein kinase C alpha
+145391 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCO[C@H](CNS(=O)(=O)c1ccccc1)CCn1cc2c2ccccc21 | Protein kinase C alpha
+145394 NC[C@@H]1CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCO1 | Protein kinase C alpha
+145429 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCO[C@H](CN1CCOCC1)CCn1cc2c2ccccc21 | Protein kinase C alpha
+145610 CNC[C@@H]1CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCO1 | Protein kinase C alpha
+169151 CN1CCOCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCOCC1 | Protein kinase C alpha
+169152 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCN(CCO)CCOCCn1cc2c2ccccc21 | Protein kinase C alpha
+169223 CN1CCN(C)CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCN(C)CC1 | Protein kinase C alpha
+169857 CN1CCOCCOCCN(C)CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CC1 | Protein kinase C alpha
+169917 CN1CCOCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCN(C)CC1 | Protein kinase C alpha
+169920 CN1CCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCOCCOCC1 | Protein kinase C alpha
+169961 CN1CCN(C)CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CC1 | Protein kinase C alpha
+169981 CCN1CCOCCN(CC)CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCOCC1 | Protein kinase C alpha
+169987 CC(C)N1CCOCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCOCC1 | Protein kinase C alpha
+169993 CCN1CCOCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCOCC1 | Protein kinase C alpha
+170112 CN1CCOCCN(C)CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CC1 | Protein kinase C alpha
+170144 CCN1CCOCCOCCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CC1 | Protein kinase C alpha
+204512 [Br-].[Br-].c1cc2cc(c1)CNc1cc[n+](cc1)Cc1cccc(c1)C[n+]1ccc(cc1)NC2 | Choline kinase alpha
+204544 [Br-].[Br-].c1cc2cc(c1)CNc1cc[n+](cc1)Cc1ccc(cc1)C[n+]1ccc(cc1)NC2 | Choline kinase alpha
+204568 [Br-].[Br-].c1cc2cc(c1)C[n+]1ccc(cc1)NCc1ccc(cc1)CNc1cc[n+](cc1)C2 | Choline kinase alpha
+204571 [Br-].[Br-].c1cc2ccc1CNc1cc[n+](cc1)Cc1ccc(cc1)C[n+]1ccc(cc1)NC2 | Choline kinase alpha
+214708 CN1C(=O)C2=C(C1=O)c1cn(c3ccccc13)CCOCCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+214719 O=C1NC(=O)C2=C1c1cn(c3ncccc13)CCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+214751 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+214753 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+214795 O=C1NC(=O)C2=C1c1cn(c3ncccc13)CCOCCOCCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+214822 O=C1NC(=O)C2=C1c1cn(c3ncccc13)CCOCCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+214863 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCOCCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+214952 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+214965 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+214994 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCOCCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+215035 O=C1NC(=O)C2=C1c1cn(c3ncccc13)CCOCCOCCOCCOCCOCCn1cc2c2cccnc21 | Protein kinase C gamma
+215150 CN1C(=O)C2=C(C1=O)c1cn(c3ncccc13)CCOCCOCCn1cc2c2ccccc21 | Protein kinase C gamma
+227523 NCCCC[C@@H]1NC(=O)c2cc([N+](=O)[O-])ccc2NCc2ccc(C(N)=O)cc2NC(=O)[C@H](CO)NC1=O | Neurotrophic tyrosine kinase receptor type 3
+243884 CC(C)C[C@H]1NC(=O)[C@@H](CCCCN)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+243885 CC(C)C[C@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CC(N)=O)NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+243883 CC(C)C[C@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](CC(N)=O)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+243911 CC(C)C[C@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+244223 CCCC[C@@H]1NC(=O)[C@@H](CC(N)=O)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC(=O)[C@@H](CC(C)C)NC1=O | Urokinase plasminogen activator surface receptor
+244338 CC(C)C[C@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@@H](CCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+244339 CC(C)C[C@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@@H](CC(N)=O)NC(=O)[C@H](N)CSSC[C@H](C(=O)N[C@@H](CC(N)=O)C(=O)O)NC(=O)[C@H]2CCCN2C(=O)[C@H](C(C)C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Urokinase plasminogen activator surface receptor
+305612 CC(=O)N[C@@H]1CSC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H](CC(C)C)NC(=O)[C@H](CO)NC(=O)[C@@H](CO)NC1=O | Receptor-histidine kinase AgrC
+305628 CC[C@H](C)[C@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H](C)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)CCCOc2ccc(C(=O)c3ccccc3)cc2)[C@@H](C)O)CSC(=O)[C@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+305629 CC(C)C[C@H]1NC(=O)[C@H](CO)NC(=O)[C@@H](CO)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)Cc2ccc(O)cc2)[C@@H](C)O)CSC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+305703 CC[C@H](C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)Cc2ccc(O)cc2)[C@@H](C)O)CSC(=O)[C@@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+305704 CC[C@H](C)[C@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@@H](CC(=O)O)NC(=O)[C@H](NC(C)=O)CSC(=O)[C@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+305751 CC[C@H](C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](C)NC(=O)[C@@H](NC(C)=O)CSC(=O)[C@@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+305769 CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)Cc2ccc(O)cc2)[C@@H](C)O)CSC(=O)[C@@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+305770 CC[C@H](C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)Cc2ccc(O)cc2)[C@@H](C)O)CSC(=O)[C@@H](C)NC1=O | Receptor-histidine kinase AgrC
+309084 CN(C)CC1CCn2cc(c3ccccc32)C2=C(C(=O)NC2=O)c2cn(c3ccccc23)CCO1 | Inhibitor of nuclear factor kappa B kinase epsilon subunit
+331880 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCCCCn1cc2c2ccccc21 | Serine/threonine-protein kinase PIM1
+331881 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCCCCCn1cc2c2ccccc21 | Serine/threonine-protein kinase PIM1
+331884 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCCCn1cc2c2ccccc21 | Serine/threonine-protein kinase PIM1
+331919 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCCCCCCn1cc2c2ccccc21 | Serine/threonine-protein kinase PIM1
+331931 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCCCCCCCn1cc2c2ccccc21 | Serine/threonine-protein kinase PIM1
+333609 CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)OC([C@H](C)C[C@@H]2CC[C@@H](OC(=O)N(C)OC)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C | Serine/threonine-protein kinase mTOR
+333742 CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@H](n3ncnn3)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C | Serine/threonine-protein kinase mTOR
+333801 CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@H](n3cnnn3)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C | Serine/threonine-protein kinase mTOR
+348435 CC[C@H](C)[C@H](NC(=O)[C@H](CS)NC(C)=O)C(=O)N[C@H]1Cc2ccc(cc2)NC(=O)CCC(=O)NCCCC[C@@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC1=O | Tyrosine-protein kinase SRC
+348464 CC[C@H](C)[C@H](NC(=O)[C@@H](CS)NC(C)=O)C(=O)N[C@H]1Cc2ccc(cc2)NC(=O)CCCCCCC(=O)NCCCC[C@@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC1=O | Tyrosine-protein kinase SRC
+348630 CC[C@H](C)[C@@H]1NC(=O)[C@H](CS)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+348725 CC[C@H](C)[C@@H]1NC(=O)[C@H](CS)NC(=O)CCC(=O)Nc2ccc(cc2)C[C@@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+348986 CC[C@H](C)[C@H](NC(=O)[C@H](CS)NC(C)=O)C(=O)N[C@H]1Cc2ccc(cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCCN)NC1=O | Tyrosine-protein kinase SRC
+358894 O=c1c2cccc3c2sn1CCNCCOc1cccc2nc(O)c-3nc12 | Cyclin-dependent kinase 4
+359099 O=c1c2cccc3c2sn1CCCCOc1cccc2nc(O)c-3nc12 | Cyclin-dependent kinase 4
+359144 O=c1c2cccc3c2sn1CCCCCOc1cccc2nc(O)c-3nc12 | Cyclin-dependent kinase 4
+359175 O=c1c2cccc3c2sn1CCCCCCOc1cccc2nc(O)c-3nc12 | Cyclin-dependent kinase 4
+359177 Oc1nc2cccc3c2nc1-c1cccc2c(O)n(nc12)CCN1CC[C@@H](C1)O3 | Cyclin-dependent kinase 4
+359178 C[C@@H]1C[C@H]2CN1CCn1nc3c(cccc3c1O)-c1nc3c(cccc3nc1O)O2 | Cyclin-dependent kinase 4
+370800 N#Cc1ncc2nc1OCCCCCOc1cc(OCc3ccccn3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370799 N#Cc1ncc2nc1OCCCCCOc1cc(OCc3cccnc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370817 CNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370807 N#Cc1ncc2nc1OCCCCCOc1cc(OCCn3ccnc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370808 N#Cc1ncc2nc1OCCCCCOc1cc(N)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370818 CCNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370828 N#Cc1ncc2nc1OCCCCCOc1cc(NCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370827 CCCCNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370847 CC(C)Nc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370848 CC(C)CNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370869 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3cccnc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370870 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3ccncc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370875 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3ccccc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370876 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3c[nH]cn3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370884 O=C1Nc2cncc(n2)OCCCCCOc2ccc(Cl)cc2N1 | Serine/threonine-protein kinase Chk1
+370885 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3cncs3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370886 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3cnco3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370893 N#Cc1ncc2nc1OCCCCOc1ccc(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370892 N#Cc1ncc2nc1OCCCCCOc1ccc(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370894 N#Cc1ncc2nc1OCCCCCOc1cc(NCc3ccsc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370895 Cn1cncc1CNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370907 N#Cc1ncc2nc1OCCCCCCOc1ccc(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370908 N#Cc1ncc2nc1OCCCCCOc1cc(O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370909 CC(=O)Nc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370910 CN(C)CC(=O)Nc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370916 N#Cc1ncc2nc1OCCCCCOc1cc(OCCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370917 N#Cc1ncc2nc1OCCCCCOc1cc(OCCCN)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370918 N#Cc1ncc2nc1OCCCCCOc1cc(NC(=O)CCNC3CCCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370919 CS(=O)(=O)Nc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370922 N#Cc1ncc2nc1OCCCCCOc1cc(OCC(O)CO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370923 N#Cc1ncc2nc1OCCCCCOc1cc(OCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370924 CN(C)c1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370925 CCN(CC)c1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370928 COCCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370929 COCCOCCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370930 N#Cc1ncc2nc1OCCCCCOc1cc(N(CCO)CCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370931 N#Cc1ncc2nc1OCCCCCOc1cc(N3CCCCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370935 CN(C)CCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370936 CC(C)CCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370937 N#Cc1ncc2nc1OCCCCCOc1cc(C#CCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370938 CC(O)C#Cc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370944 CC(C)CCCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370945 CCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370946 CC(C)(O)C#Cc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370947 CCN(CC)CC#Cc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370956 N#Cc1ncc2nc1OCCCCCOc1cc(CC(O)CO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+370953 CC(C)Oc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+370954 N#Cc1ncc2nc1OCCCCCOc1cc(OCc3ccncc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+400999 CC(C)(C)[Si](Oc1ccc2c(c1)NC(=O)Nc1cnc(C#N)c(n1)OCC/C=C\CO2)(c1ccccc1)c1ccccc1 | Serine/threonine-protein kinase Chk1
+401010 N#Cc1ncc2nc1OCC/C=C\COc1ccc(OCCCCN3CCOCC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401096 N#Cc1ncc2nc1OCCCCCOc1ccc(OCCCCN3CCOCC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401106 CC(=O)Nc1ccc2c(c1)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+401112 Cc1ccc2c(c1)NC(=O)Nc1cnc(C#N)c(n1)OCCCCCO2 | Serine/threonine-protein kinase Chk1
+401134 N#Cc1ncc2nc1OC/C=C\COc1ccc(OCCCN3CCOCC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401139 N#Cc1ncc2nc1OC/C=C\COc1ccc(OCCCCCN3CCCOC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401143 N#Cc1ncc2nc1OCCCCOc1ccc(OCCCN3CCOCC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401144 N#Cc1ncc2nc1OCCCCOc1ccc(OCCCCN3CCOCC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+401145 N#Cc1ncc2nc1OCCCCOc1ccc(OCCCCCN3CCCOC3)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+408297 CN(C)c1cc2cc(n1)CCCn1cc(c3ccccc31)C1=C(C(=O)NC1=O)c1cn(c3ccccc13)CCC2 | Glycogen synthase kinase-3 beta
+408299 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCc1cc(nc(N3CCCC3)c1)CCCn1cc2c2ccccc21 | Glycogen synthase kinase-3 beta
+408302 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCc1ccc(c(N3CCCC3)n1)CCCn1cc2c2ccccc21 | Glycogen synthase kinase-3 beta
+408306 CN(C)c1nc2ccc1CCCn1cc(c3ccccc31)C1=C(C(=O)NC1=O)c1cn(c3ccccc13)CCC2 | Glycogen synthase kinase-3 beta
+408309 O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCCc1ccc(c(N3CCCC3)n1)CCCCn1cc2c2ccccc21 | Protein kinase C beta
+418085 N#Cc1ncc2nc1OC/C=C\COc1cc(N)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418088 CN(C)c1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OC/C=C\CO2 | Serine/threonine-protein kinase Chk1
+418091 CNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OC/C=C\CO2 | Serine/threonine-protein kinase Chk1
+418093 N#Cc1ncc2nc1OC/C=C\COc1cc(NCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418092 N#Cc1ncc2nc1OC/C=C\COc1cc(N(CCO)CCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418094 N#Cc1ncc2nc1OC/C=C\COc1cc(NCc3cncs3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418096 N#Cc1ncc2nc1OC/C=C\COc1cc(NC(=O)c3ccnc(Cl)c3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418095 N#Cc1ncc2nc1OC/C=C\COc1cc(NC(=O)c3ccncc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418099 C[C@H](N)C(=O)Nc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OC/C=C\CO2 | Serine/threonine-protein kinase Chk1
+418185 N#Cc1ncc2nc1OCCCCOc1cc(N)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418163 N#Cc1ncc2nc1OC/C=C\COc1cc(NC(=O)OCCN3CCOCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418176 N#Cc1ncc2nc1OC/C=C\COc1cc(N3CCOC3=O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418177 N#Cc1ncc2nc1OC/C=C\COc1cc(O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418179 N#Cc1ncc2nc1OC/C=C\COc1cc(OCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418181 N#Cc1ncc2nc1OC/C=C\COc1cc(OCCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418182 N#Cc1ncc2nc1OC/C=C\COc1cc(OCCN3CCOCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418183 N#Cc1ncc2nc1OC/C=C\COc1cc(OCCCN3CCOCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418184 N#Cc1ncc2nc1OC/C=C\COc1cc(OC(=O)N3CCC(N4CCCCC4)CC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418186 CN(C)c1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCO2 | Serine/threonine-protein kinase Chk1
+418188 CCN(CC)c1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCO2 | Serine/threonine-protein kinase Chk1
+418189 CCNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCO2 | Serine/threonine-protein kinase Chk1
+418187 CNc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCO2 | Serine/threonine-protein kinase Chk1
+418191 N#Cc1ncc2nc1OCCCCOc1cc(NC(=O)c3ccncc3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418192 N#Cc1ncc2nc1OCCCCOc1cc(NC(=O)c3ccnc(Cl)c3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418193 N#Cc1ncc2nc1OCCCCOc1cc(NC(=O)OCCN3CCOCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418195 N#Cc1ncc2nc1OCCCCOc1cc(O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418194 N#Cc1ncc2nc1OCCCCOc1cc(N3CCOC3=O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418196 N#Cc1ncc2nc1OCCCCOc1cc(P(=O)(O)O)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418197 N#Cc1ncc2nc1OCCCCOc1cc(OCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418198 N#Cc1ncc2nc1OCCCCOc1cc(OCCCO)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418199 COCCCOc1cc2c(cc1Cl)NC(=O)Nc1cnc(C#N)c(n1)OCCCCO2 | Serine/threonine-protein kinase Chk1
+418200 N#Cc1ncc2nc1OCCCCOc1cc(OCCCN3CCOCC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+418201 N#Cc1ncc2nc1OCCCCOc1cc(OC(=O)N3CCC(N4CCCCC4)CC3)c(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase Chk1
+420219 Oc1ccc2[nH]c3c(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@@H]7/C=C\CCCCN7[C@@H]54)C6)nccc3c2c1 | Glycogen synthase kinase-3 beta
+420221 Cc1ccc(S(=O)(=O)Oc2cccc3c2[nH]c2c(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@H]7/C=C\CCCCN7[C@@H]54)C6)nccc23)cc1 | Glycogen synthase kinase-3 beta
+420223 COc1cccc2c3ccnc(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@@H]7/C=C\CCCCN7[C@@H]54)C6)c3n(C)c12 | Glycogen synthase kinase-3 beta
+420225 CCOc1cccc2c3ccnc(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@@H]7/C=C\CCCCN7[C@@H]54)C6)c3n(CC)c12 | Glycogen synthase kinase-3 beta
+420227 CC(C)COc1cccc2c3ccnc(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@@H]7/C=C\CCCCN7[C@@H]54)C6)c3n(CC(C)C)c12 | Glycogen synthase kinase-3 beta
+420231 CC(=O)OCC(C)(C)n1c2ccccc2c2ccnc(C3=C[C@@]4(O)CC/C=C\CCCCN5CCC3[C@]3(C[C@@H]6/C=C\CCCCN6[C@@H]43)C5)c21 | Glycogen synthase kinase-3 beta
+420233 O[C@]12C=C(c3nccc4c3[nH]c3ccccc34)C3CCN(CCCC/C=C\CC1)C[C@@]31C[C@]34CC[C@H](CCCN3[C@@H]21)O4 | Glycogen synthase kinase-3 beta
+420236 Oc1cccc2c1[nH]c1c(C3=C[C@@]4(O)CCCCCCCCN5CCC3[C@]3(C[C@@H]6CCCCCCN6[C@@H]43)C5)nccc12 | Glycogen synthase kinase-3 beta
+420244 CC(=O)Nc1nc(C)c(S(=O)(=O)Oc2cccc3c2[nH]c2c(C4=C[C@@]5(O)CC/C=C\CCCCN6CCC4[C@]4(C[C@@H]7CCC(=O)CCCN7[C@@H]54)C6)nccc23)s1 | Glycogen synthase kinase-3 beta
+420245 O=C1CCCN2[C@@H](CC1)C[C@]13CN4CCCC/C=C\CC[C@](O)(C=C(c5nccc6c5[nH]c5c(OS(=O)(=O)c7ccc(Cl)cc7)cccc56)C1CC4)[C@H]23 | Glycogen synthase kinase-3 beta
+420247 O=C1CCCN2[C@@H](CC1)C[C@]13CN4CCCC/C=C\CC[C@](O)(C=C(c5nccc6c5[nH]c5c(OS(=O)(=O)c7ccc(Br)cc7)cccc56)C1CC4)[C@H]23 | Glycogen synthase kinase-3 beta
+420253 C1=C(c2nccc3c2[nH]c2ccccc23)C2CCN3CCCC/C=C\C/C=C/1[C@@H]1N4CCCC/C=C\[C@H]4C[C@]21C3 | Glycogen synthase kinase-3 beta
+420254 CC(=O)Oc1cccc2c1[nH]c1c(C3=C/C4=C/C/C=C\CCCCN5CCC3[C@]3(C[C@@H]6/C=C\CCCCN6[C@@H]43)C5)nccc12 | Glycogen synthase kinase-3 beta
+425237 O[C@]12C=C(c3nccc4c3[nH]c3ccccc34)[C@@H]3CCN(CCCC/C=C\CC1)C[C@@]31C[C@@H]3/C=C\CCCCN3[C@@H]21 | Glycogen synthase kinase-3 beta
+425238 O[C@]12C=C(c3nccc4c3[nH]c3ccccc34)[C@@H]3CCN(CCCCCCCC1)C[C@@]31C[C@@H]3CCCCCCN3[C@@H]21 | Glycogen synthase kinase-3 beta
+437674 O=C1CCCCc2cnn3c(NC4CC4)nc(nc23)Nc2cccc(c2)N1 | Casein kinase II alpha
+437714 CN1CCC(N(C)C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)CC1 | Casein kinase II alpha
+437754 CCN(CC)CCN(C)C(=O)c1cccc(Nc2nc3nc4c(cnn24)CCCCC(=O)Nc2cccc(c2)N3)c1 | Casein kinase II alpha
+437755 O=C1CCCCc2cnn3c(Nc4cccc(C(=O)N5CCNCC5)c4)nc(nc23)Nc2cccc(c2)N1 | Casein kinase II alpha
+437757 CCN(CC)C1CN(C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)C1 | Casein kinase II alpha
+437798 CN1CCC(N(C)C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)C1 | Casein kinase II alpha
+437799 CCN(CC)C1CCN(C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)C1 | Casein kinase II alpha
+437837 CN(C)CCN(C)C(=O)c1cccc(Nc2nc3nc4c(cnn24)CCCCC(=O)Nc2cccc(c2)N3)c1 | Casein kinase II alpha
+437838 CN1CC(NC(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)C1 | Casein kinase II alpha
+437878 CN(C)CCNC(=O)c1cccc(Nc2nc3nc4c(cnn24)CCCCC(=O)Nc2cccc(c2)N3)c1 | Casein kinase II alpha
+437876 O=C1CCCCc2cnn3c(Nc4cccc(C(=O)N5CC(O)C5)c4)nc(nc23)Nc2cccc(c2)N1 | Casein kinase II alpha
+437879 CN(C)C1CCN(C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)C1 | Casein kinase II alpha
+437927 CN1CCN(C(=O)c2cccc(Nc3nc4nc5c(cnn35)CCCCC(=O)Nc3cccc(c3)N4)c2)CC1 | Casein kinase II alpha
+445790 CO[C@H]1/C=C\C=C(/C)C(=O)NC2=CC(=O)C=C(C2=O)[C@H](OC)[C@@H](C)C[C@H](OC)[C@H](OC)[C@@H](C)/C=C(\C)[C@@H]1OC(N)=O | Focal adhesion kinase 1
+446227 COC(=O)/C=C1/C[C@H]2C[C@]3(O)O[C@@H](C[C@H](OC(=O)C(C)(C)C)C3(C)C)C[C@@H](O)CC(=O)O[C@@H]([C@@H](C)O)C[C@@H]3C/C(=C/C(=O)OC)C[C@@](O)(O3)C(C)(C)/C=C/[C@@H](C1)O2 | Protein kinase C alpha
+446847 C=C1Oc2cc(OC)cc(C(=O)O[C@H]3COC(=O)C[C@H](N)c4cc(O)c(c(Cl)c4)O[C@@H]4C#C/C=C/3C#CC3=CC=C[C@@]34O[C@@H]3OC(C)(C)[C@@H](N(C)C)[C@@H](O)[C@H]3O)c2NC1=O | Serine/threonine-protein kinase Chk2
+456076 COc1cc2c(c(OC)c1)C(=O)O[C@@H](C)CCC[C@@H](O)[C@@H](C)CC/C=C/2 | Serine/threonine-protein kinase PIM1
+456078 COc1cc(O)c2c(c1)/C=C/CC[C@H](C)C(=O)CCC[C@H](C)OC2=O | Serine/threonine-protein kinase PIM1
+456077 COc1cc2c(c(OC)c1)C(=O)O[C@@H](C)CCCC(=O)[C@@H](C)CC/C=C/2 | Serine/threonine-protein kinase PIM1
+456146 C[C@H]1CCCC(=O)CCC/C=C/c2cc(O)cc(O)c2C(=O)O1 | Serine/threonine-protein kinase PIM1
+456147 C[C@H]1CCCC(=O)[C@@H](C)CC/C=C/c2cc(O)cc(O)c2C(=O)O1 | Serine/threonine-protein kinase PIM1
+479169 CCC/C=C/C=C/C(=O)O[C@H]1/C(=C/C(=O)OC)C[C@H]2C[C@H]([C@@H](C)O)OC(=O)C[C@H](O)C[C@@H]3C[C@H](OC(C)=O)C(C)(C)[C@](O)(C[C@@H]4C/C(=C/C(=O)OC)C[C@H](/C=C/C(C)(C)[C@]1(O)O2)O4)O3 | Protein kinase C alpha
+479932 COc1cc(O)c2c(c1)/C=C/CC(=O)NCCCCCCCNC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+479933 COc1cc(O)c2c(c1)/C=C/CC(=O)NCCCN(C)CCCNC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+479934 COc1cc(O)c2c(c1)/C=C/CC(=O)NCCCOCCCNC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+479935 COc1cc(O)c2c(c1)/C=C/CC(=O)NCCCOCCCCOCCCNC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+480874 COc1cc(O)c2c(c1)/C=C/C[C@@H](O)[C@H](O)C(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+480944 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+480945 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+480946 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCCCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481018 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCCCCCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481019 COc1cc(O)c2c(c1)/C=C/CC(=O)OC/C=C\COC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481020 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCOCC#CCOCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481021 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCOCCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481088 COc1cc(O)c2c(c1)/C=C/CC(=O)OC/C=C(\C)CC/C=C(\C)COC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481089 COc1cc(O)c2c(c1)/C=C/CC(=O)OCc1cccc(c1)COC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481090 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCC(c1ccccc1)(C(C)O)CCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481091 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCC1(CCCCC1)CCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481092 COc1cc(O)c2c(c1)/C=C/CC(=O)OCCCC(c1ccccc1)(C(O)c1ccccc1)CCCOC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+481093 COc1cc(O)c2c(c1)/C=C/CC(=O)NCCCCNC(=O)CCC[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+482398 COC(=O)C(C)/C1=C/C=C(\C)CC[C@H]2O[C@]2(C)CC/C=C(\C)CC1 | Tyrosine-protein kinase LCK
+485188 CO[C@H]1[C@@H](O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)[C@@H](c2c[nH]c3c(C)cccc23)C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](O)[C@H](OC)C2)C[C@H](O)[C@H](C)/C=C(\C)[C@H]1O | Serine/threonine-protein kinase mTOR
+504161 COC(=O)/C=C1/C[C@H]2C[C@]3(O)O[C@@H](C[C@H](OC(=O)C(C)(C)C)C3(C)C)C[C@@H](O)CC(=O)O[C@@H]([C@@H](C)O)C[C@@H]3C/C(=C\C(=O)OC)C=C(O3)C(C)(C)/C=C/[C@@H](C1)O2 | Protein kinase C alpha
+553172 CN1CCOc2cccc3nc(O)c(nc23)-c2cccc3c(=O)n(sc23)CC1.Cl | Cyclin-dependent kinase 4
+557655 O=C1Nc2cncc(n2)OCC(O)C(O)COc2ccc(Cl)cc2N1 | Serine/threonine-protein kinase Chk1
+562981 Nc1cc2c(cc1Cl)NC(=O)Nc1cncc(n1)OCC/C=C/CO2 | Serine/threonine-protein kinase Chk1
+599617 CCCCCCCCCCCCn1c2ccccc2c2ccnc(C3=C[C@@]4(O)CC/C=C\CCCCN5CC[C@@H]3[C@]3(C[C@@H]6/C=C\CCCCN6[C@@H]43)C5)c21 | Glycogen synthase kinase-3 beta
+613716 CN(C)c1nc2ccc1CCCN1C=C(C3=C(C(=O)NC3=O)c3cn(c4ccccc34)CCC2)N2C=CC=CC12 | Glycogen synthase kinase-3 beta
+644494 CN(C)c1nc2ccc1CCCn1cc(c3ccccc31)C1=C(C(=O)NC1=O)c1cn(c3ccccc13)CC2 | Glycogen synthase kinase-3 beta
+663451 CN1CCOc2cccc3nc(O)c(nc23)-c2cccc3c(O)n(nc23)CC1 | Cyclin-dependent kinase 4
+675203 N=C1NCCC(C2NC(=O)/C(=C/NC(N)=O)NC(=O)C(CNC(=O)CC(N)CCCN)NC(=O)C(CO)NC(=O)C(N)CNC2=O)N1 | 6-phospho-1-fructokinase
+693702 CN(C)c1nc2ccc1CCCCn1cc(c3ccccc31)C1=C(C(=O)NC1=O)c1cn(c3ccccc13)CCC2 | Glycogen synthase kinase-3 beta
+700880 O=C1NC(=O)C2=C1c1cn(c3ncccc13)CCCc1ccc(s1)CCCn1cc2c2cccnc21 | Glycogen synthase kinase-3 beta
+836892 CN1CCOCCOCCN(C)C(=O)N2CCOCCOCCN(CCOCC2)C1=O | Eukaryotic translation initiation factor 2-alpha kinase 3
+1063944 COc1cc(O)c2c(c1)CCC[C@H](O)CC(=O)/C=C\C[C@H](C)OC2=O | ALK tyrosine kinase receptor
+1063945 COc1cc(O)c2c(c1)CCC[C@H](O)CC(=O)/C=C/C[C@H](C)OC2=O | ALK tyrosine kinase receptor
+1063946 COc1cc(O)c2c(c1)CCCCCC(=O)/C=C\C[C@H](C)OC2=O | ALK tyrosine kinase receptor
+1067120 COc1cc(O)c2c(c1)/C=C/CCCC(=O)/C=C/C[C@H](C)OC2=O | MAP kinase ERK1
+1067113 COc1cc(O)c2c(c1)/C=C/C[C@@H](O)[C@H](O)C(=O)/C=C\C[C@H](C)OC2=O | Tyrosine-protein kinase receptor FLT3
+1161462 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161463 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCNC(=O)NCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161464 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCNC(=O)NCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161465 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCNC(=O)NCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161466 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCCCNC(=O)NCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161467 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCNC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161635 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCNC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161636 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCNC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161637 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCCCNC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1154996 CC[C@H](C)[C@@H]1NC(=O)[C@H](CS)NC(=O)CCC(=O)NCCCC[C@@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+1154995 CC[C@H](C)[C@H](NC(=O)[C@H](CS)NC(C)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@H]1CCCCNC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+1154997 CC[C@H](C)[C@H](NC(=O)[C@H](CS)NC(C)=O)C(=O)N[C@@H](Cc1ccc(O)cc1)C(=O)N[C@H]1CCCCNC(=O)CCC(=O)Nc2ccc(cc2)C[C@@H](C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC1=O | Tyrosine-protein kinase SRC
+1155000 CC[C@@H](C)[C@@H]1NC(=O)[C@@H](CS)NC(=O)CCC(=O)Nc2ccc(cc2)[C@@H](C(=O)N[C@@H](CCCCN)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC1=O | Tyrosine-protein kinase SRC
+1155009 CC[C@H](C)[C@@H]1NC(=O)[C@H](CS)NC(=O)CCC(=O)NCCCC[C@@H](C(=O)N[C@@H](Cc2ccc([N+](=O)[O-])cc2)C(=O)N[C@@H](Cc2ccc(O)cc2)C(=O)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+1161459 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161460 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161461 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161532 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCCCC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161533 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161534 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161535 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCCC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161536 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCCCC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161633 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCCCNC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161634 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCNC(=O)NCCCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161632 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCCNC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161631 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CN(C(=O)[C@@H](N)CCCNC(=N)N)CCCNC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161765 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CNCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161767 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CNCCCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161766 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CNCCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161768 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)CNCCCCCCNC(=O)NCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161769 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161770 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1161771 CCC[C@@H]1NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)CCCCC(=O)NCCCCN(CC(N)=O)C(=O)[C@H](CCC(C)C)NC(=O)[C@H](CN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Serine/threonine-protein kinase AKT
+1270801 Cc1cnc2nc1-c1cccc(c1)OCC/C=C/CN(C)Cc1cccc(c1)N2 | 3-phosphoinositide dependent protein kinase-1
+1270802 CN1C/C=C/CCOc2cccc(c2)-c2nc(nc3[nH]cnc23)Nc2cccc(c2)C1 | 3-phosphoinositide dependent protein kinase-1
+1276066 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276067 CN1C/C=C/COCc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276068 CN1C/C=C/COCc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276069 C1=C/CN(C2CC2)Cc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/1 | Cyclin-dependent kinase 2/cyclin A
+1276240 CC(C)CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276241 C1=C/CN(CC2CC2)Cc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/1 | Cyclin-dependent kinase 2/cyclin A
+1276242 CC(C)(C)CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276417 C1=C/CN(Cc2ccccn2)Cc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/1 | Cyclin-dependent kinase 2/cyclin A
+1276418 COCCN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276419 OCCN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276420 O=C(N1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1)C(F)(F)F | Cyclin-dependent kinase 2/cyclin A
+1276422 COc1ccc2cc1CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1276423 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(Cl)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276421 CC(C)NCC(=O)N1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276424 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OC(F)(F)F)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276942 COCCOc1ccc2cc1CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1276943 CCS(=O)(=O)c1ccc2cc1CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1276944 CCS(=O)(=O)CCOc1ccc2cc1CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1276945 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCC(=O)N3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1276946 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(N3CCOCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277082 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277083 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCCN3CCOCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277081 CCN(CC)CCOc1ccc2cc1CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1277084 CN1CCN(CCOc2ccc3cc2CN(C)C/C=C/CCOc2cccc(c2)-c2ccnc(n2)N3)CC1 | Cyclin-dependent kinase 2/cyclin A
+1277085 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCCN3CCCCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277202 FC(F)(F)CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277203 N#CCN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277385 COc1cc2cc(c1OCCN1CCCC1)CN(C)C/C=C/CCOc1cccc(c1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2/cyclin A
+1277386 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cc(cc(NC(=O)C(F)(F)F)c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277387 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cc(N)cc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277534 CN1C/C=C/CCOc2cccc(c2)-c2ccnc(n2)Nc2cc(cc(NC(=O)N3CCOCC3)c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277535 Cc1cc2nc(n1)Nc1cccc(c1)CN(C)C/C=C/CCOc1cccc-2c1 | Cyclin-dependent kinase 2/cyclin A
+1277533 CCS(=O)(=O)CNc1cc2cc(c1)Nc1nccc(n1)-c1cccc(c1)OCC/C=C/CN(C)C2 | Cyclin-dependent kinase 2/cyclin A
+1277536 CN1C/C=C/CCOc2cccc(c2)-c2cc(N3CCCC3)nc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277828 CN1C/C=C/CCOc2cc(F)cc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1277829 COc1ccc2cc1OCC/C=C/CN(C)Cc1cccc(c1)Nc1nccc-2n1 | Cyclin-dependent kinase 2/cyclin A
+1277997 Clc1cnc2nc1Nc1cccc(c1)CCc1cc(ccc1N1CCOCC1)N2 | ALK tyrosine kinase receptor
+1277998 Clc1cnc2nc1Nc1cccc(c1)CCc1cc(ccc1OCCN1CCCC1)N2 | ALK tyrosine kinase receptor
+1277996 Clc1cnc2nc1Nc1cccc(c1)CCc1cccc(c1)N2 | ALK tyrosine kinase receptor
+1277999 CN1CCN(c2ccc3cc2CCc2cccc(c2)Nc2nc(ncc2Cl)N3)CC1 | ALK tyrosine kinase receptor
+1278000 COc1ccc2cc1Nc1nc(ncc1Cl)Nc1cccc(c1)CC2 | ALK tyrosine kinase receptor
+1278002 COc1ccc2cc1Nc1nc(ncc1Cl)Nc1ccc(N3CCN(C)CC3)c(c1)CC2 | ALK tyrosine kinase receptor
+1278001 COc1ccc2cc1Nc1nc(ncc1Cl)Nc1ccc(N3CCOCC3)c(c1)CC2 | ALK tyrosine kinase receptor
+1278189 CC(C)S(=O)(=O)c1ccc2cc1Nc1nc(ncc1Cl)Nc1ccc(N3CCN(C)CC3)c(c1)CC2 | ALK tyrosine kinase receptor
+1278188 CNC(=O)c1ccc2cc1Nc1nc(ncc1Cl)Nc1ccc(N3CCN(C)CC3)c(c1)CC2 | ALK tyrosine kinase receptor
+1278191 COc1cc(N2CCN(C)CC2)c2cc1Nc1ncc(Cl)c(n1)Nc1cccc(c1)CC2 | ALK tyrosine kinase receptor
+1278190 CN1CCN(c2ccc3cc2CCc2ccc(N(C)S(C)(=O)=O)c(c2)Nc2nc(ncc2Cl)N3)CC1 | ALK tyrosine kinase receptor
+1278192 COc1cc(N2CCN(C)CC2)c2cc1Nc1ncc(Cl)c(n1)Nc1cc(ccc1S(=O)(=O)C(C)C)CC2 | ALK tyrosine kinase receptor
+1278193 COc1cc(N2CCN(C)CC2)c2cc1Nc1ncc(Cl)c(n1)Nc1cc(ccc1N(C)S(C)(=O)=O)CC2 | ALK tyrosine kinase receptor
+1278390 CN1CCN(c2ccc3cc2/C=C\c2cccc(c2)Nc2nc(ncc2Cl)N3)CC1 | ALK tyrosine kinase receptor
+1278391 COc1ccc2cc1Nc1nc(ncc1Cl)Nc1ccc(N3CCN(C)CC3)c(c1)/C=C\2 | ALK tyrosine kinase receptor
+1278392 COc1cc(N2CCN(C)CC2)c2cc1Nc1ncc(Cl)c(n1)Nc1cc(ccc1N(C)S(C)(=O)=O)/C=C\2 | ALK tyrosine kinase receptor
+1278554 C1=C/CNc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/1 | Cyclin-dependent kinase 2/cyclin A
+1278553 CN1C/C=C/CNC(=O)c2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1278551 O=C1CC/C=C\COc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)N1 | Cyclin-dependent kinase 2/cyclin A
+1278552 CN1C/C=C/CC(=O)Nc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2/cyclin A
+1278555 C1=C/CNCc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/1 | Cyclin-dependent kinase 2/cyclin A
+1279012 CC(C)[C@@H]1NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC(=O)[C@H](Cc2c[nH]cn2)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@@H]2CCCN2C1=O | Serine/threonine-protein kinase Aurora-A
+1279013 C[C@@H](O)[C@@H]1NC(=O)CNC(=O)[C@H](CC(=O)O)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C1=O | Serine/threonine-protein kinase Aurora-A
+1279014 C[C@@H](O)[C@@H]1NC(=O)[C@H](CC(=O)O)NC(=O)CNC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2c[nH]cn2)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC1=O | Serine/threonine-protein kinase Aurora-A
+1279015 CC(C)[C@@H]1NC(=O)[C@H](CCC(N)=O)NC(=O)[C@@H]2CCCN2C(=O)[C@H](Cc2c[nH]cn2)NC(=O)CNC(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC(=O)[C@@H]2CCCN2C1=O | Serine/threonine-protein kinase Aurora-A
+1279016 CC(C)C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H]([C@@H](C)O)NC(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC1=O | Serine/threonine-protein kinase Aurora-A
+1279017 CC(C)C[C@@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@@H](C(=O)NCC(N)=O)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@@H]2CCCN2C1=O | Serine/threonine-protein kinase Aurora-A
+1302093 N#Cc1ncc2nc1OCC(O)C(O)COc1ccc(Cl)cc1NC(=O)N2 | Serine/threonine-protein kinase MST2
+1332553 NC(=O)[C@@H]1CCCNC(=O)[C@H](Cc2ccc([N+](=O)[O-])cc2)NC(=O)[C@H](Cc2ccco2)NC(=O)[C@H](CC2CC2)NC(=O)/C=C/C(=O)N1 | Tyrosine-protein kinase SRC
+1333441 C[C@@H]1C/C=C/[C@@H](O)[C@@H](O)CC/C=C/c2cc(O)cc(O)c2C(=O)O1 | Cyclin-dependent kinase 2/cyclin A
+1333442 O=C1OCC/C=C/[C@@H](O)[C@@H](O)CC/C=C/c2cc(O)cc(O)c21 | Cyclin-dependent kinase 2/cyclin A
+1333444 C[C@H]1C/C=C/[C@@H](O)[C@@H](O)CCC(=O)Cc2cc(O)cc(O)c2C(=O)O1 | Cyclin-dependent kinase 2/cyclin A
+1333443 C[C@H]1C/C=C/CCCC/C=C/c2cc(O)cc(O)c2C(=O)O1 | Cyclin-dependent kinase 2/cyclin A
+1333445 C[C@H]1CCC[C@@H](O)[C@@H](O)CCC(=O)Cc2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333446 C[C@H]1C/C=C/[C@@H](O)[C@@H](O)CCC(O)Cc2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333447 C[C@H]1CCC[C@@H](O)[C@@H](O)CCC(O)Cc2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333448 C[C@H]1C/C=C/[C@@H](O)[C@@H](O)CCC(=NO)Cc2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333451 C[C@H]1C/C=C/[C@H]2OC(C)(C)O[C@H]2CC/C=C/c2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333449 C[C@H]1CCC[C@@H](O)[C@@H](O)CC/C=C/c2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333450 C[C@H]1CCC[C@@H](O)[C@@H](O)CCCCc2cc(O)cc(O)c2C(=O)O1 | MAP kinase signal-integrating kinase 2
+1333452 COc1cc2c(c(OC)c1)C(=O)O[C@@H](C)C/C=C/[C@@H](O)[C@@H](O)CC/C=C/2 | MAP kinase signal-integrating kinase 2
+1333454 COc1cc(O)cc2c1C(=O)O[C@@H](C)C/C=C/[C@@H](O)[C@@H](O)CC/C=C/2 | MAP kinase signal-integrating kinase 2
+1333455 COc1cc(O)cc2c1C(=O)O[C@@H](C)CCC[C@@H](O)[C@@H](O)CC/C=C/2 | MAP kinase signal-integrating kinase 2
+1333453 COc1cc(O)c2c(c1)/C=C/CC[C@H](O)[C@H](O)/C=C/C[C@H](C)OC2=O | MAP kinase signal-integrating kinase 2
+1333579 COc1cc(O)c2c(c1)CCC[C@H](O)[C@H](O)C(=O)/C=C\C[C@H](C)OC2=O | Tyrosine-protein kinase LCK
+1344561 CN1C/C=C/COCC2CCCN(C2)c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2
+1344562 CN1C/C=C/CCn2ccc3ccc(cc32)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2
+1344563 C1=C/Cn2ccc3ccc(cc32)-c2ccnc(n2)Nc2cccc(c2)COC/1 | Cyclin-dependent kinase 2
+1344564 CN1C/C=C/CCOc2cc(ccn2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2
+1344565 CN1C/C=C/COCc2cncc(c2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2
+1344566 C1=C/COCc2cncc(c2)-c2ccnc(n2)Nc2cccc(c2)COC/1 | Cyclin-dependent kinase 2
+1344567 CN1C/C=C/COCc2ccc(o2)-c2ccnc(n2)Nc2cccc(c2)C1 | Cyclin-dependent kinase 2
+1344568 C1=C/COCc2ccc(o2)-c2ccnc(n2)Nc2cccc(c2)COC/1 | Cyclin-dependent kinase 2
+1344570 Cc1cnc2nc1-c1ccc3ccn(c3c1)C/C=C/COCc1cc(ccc1OCCN1CCCC1)N2 | Cyclin-dependent kinase 2
+1344569 C1=C/Cn2ccc3ccc(cc32)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)COC/1 | Tyrosine-protein kinase JAK1
+1344572 C1=C/COCc2cc(ccc2OCCN2CCCC2)Nc2nccc(n2)-c2ccnc(c2)OCC/1 | Cyclin-dependent kinase 2
+1344571 C1=C/COCc2cc(ccc2OCCN2CCCC2)Nc2nccc(n2)-c2cncc(c2)COC/1 | Cyclin-dependent kinase 2
+1344574 CN1C/C=C/COCc2ccc(o2)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2
+1344575 CN1C/C=C/COCc2ccc(s2)-c2ccnc(n2)Nc2ccc(OCCN3CCCC3)c(c2)C1 | Cyclin-dependent kinase 2
+1344576 COCCOc1ccc2cc1CN(C)C/C=C/COCc1ccc(o1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2
+1344703 C1=C/COCc2cc(ccc2OCCN2CCCC2)Nc2nccc(n2)-c2cc(co2)COC/1 | Cyclin-dependent kinase 2
+1344704 COCCOc1ccc2cc1CN(C)C/C=C/COCc1ccc(s1)-c1ccnc(n1)N2 | Cyclin-dependent kinase 2
+1344707 C1=C/COCc2cc(ccc2OCCN2CCCC2)Nc2nccc(n2)-c2ccc(o2)COC/1 | Tyrosine-protein kinase JAK2
+1376109 CO[C@H]1C[C@@H]2CC[C@@H](C)[C@@](O)(O2)C(=O)C(=O)N2CCCC[C@H]2C(=O)O[C@H]([C@H](C)C[C@@H]2CC[C@@H](OP(C)(C)=O)[C@H](OC)C2)CC(=O)[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C/1C | Adaptor-associated kinase
+1441904 O=C1CCN(CCOc2ccc3cc2COCC=CCOCc2cccc(c2)-c2ccnc(n2)N3)C1 | Tyrosine-protein kinase receptor FLT3
+1441905 C1=CCOCc2cccc(c2)-c2ccnc(n2)Nc2cc(cc(OCCN3CCCC3)c2)COC1 | Tyrosine-protein kinase receptor FLT3
+1441906 C1=CCOCc2cccc(c2)-c2ccnc(n2)Nc2cc(cc(OCCN3CCOCC3)c2)COC1 | Tyrosine-protein kinase receptor FLT3
+1441907 Nc1cc2cc(c1)Nc1nccc(n1)-c1cccc(c1)COCC=CCOC2 | Tyrosine-protein kinase receptor FLT3
+1441908 CCN(CC)CCC(=O)Nc1cc2cc(c1)Nc1nccc(n1)-c1cccc(c1)COCC=CCOC2 | Tyrosine-protein kinase receptor FLT3
+1441909 COc1cc2cc(c1OCCN1CCCC1)COCC=CCOCc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442135 COc1ccc2cc1-c1ccnc(n1)Nc1ccc(OCCN3CCCC3)c(c1)COCC=CCOC2 | Tyrosine-protein kinase receptor FLT3
+1442136 Fc1cc2cc(c1)-c1ccnc(n1)Nc1ccc(OCCN3CCCC3)c(c1)COCC=CCOC2 | Tyrosine-protein kinase receptor FLT3
+1442138 Fc1ccc2cc1COCC=CCOCc1cc(ccc1OCCN1CCCC1)Nc1nccc-2n1 | Tyrosine-protein kinase receptor FLT3
+1442139 C1=CCCOc2cccc(c2)-c2ccnc(n2)Nc2cccc(c2)OCC1 | Tyrosine-protein kinase receptor FLT3
+1442140 C1=CCOc2cccc(c2)Nc2nccc(n2)-c2cccc(c2)OCC1 | Tyrosine-protein kinase receptor FLT3
+1442141 COc1ccc2cc1COCC=CCCOc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442142 COc1ccc2cc1COCC=CCOc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442144 Oc1ccc2cc1COCC=CCOCc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442145 C1=CCOCc2cc(ccc2N2CCOCC2)Nc2nccc(n2)-c2cccc(c2)COC1 | Tyrosine-protein kinase receptor FLT3
+1442146 C1=CCOCc2cc(ccc2N2CCNCC2)Nc2nccc(n2)-c2cccc(c2)COC1 | Tyrosine-protein kinase receptor FLT3
+1442147 CN1CCN(c2ccc3cc2COCC=CCOCc2cccc(c2)-c2ccnc(n2)N3)CC1 | Tyrosine-protein kinase receptor FLT3
+1442148 OCCN1CCN(c2ccc3cc2COCC=CCOCc2cccc(c2)-c2ccnc(n2)N3)CC1 | Tyrosine-protein kinase receptor FLT3
+1442149 CC(=O)N1CCN(c2ccc3cc2COCC=CCOCc2cccc(c2)-c2ccnc(n2)N3)CC1 | Tyrosine-protein kinase receptor FLT3
+1442150 CCS(=O)(=O)N1CCN(c2ccc3cc2COCC=CCOCc2cccc(c2)-c2ccnc(n2)N3)CC1 | Tyrosine-protein kinase receptor FLT3
+1442151 CN(C)CCN(C)c1ccc2cc1COCC=CCOCc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442152 ClCCOc1ccc2cc1COCC=CCOCc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1442156 O=C1CCCN1CCOc1ccc2cc1COCC=CCOCc1cccc(c1)-c1ccnc(n1)N2 | Tyrosine-protein kinase receptor FLT3
+1448174 CCNc1cc(O)c2c(c1)/C=C/C[C@@H](O)[C@H](O)C(=O)/C=C\[C@H](C)[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 1
+1528245 C/C=C1\NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@@H](COS(=O)(=O)[O-])OC)C(C)C)[C@@H](C)OC(=O)[C@H]([C@H](C)CC)NC(=O)[C@H](Cc2ccccc2)N(C)C(=O)[C@H](Cc2ccccc2)N2C(=O)[C@H](CC[C@H]2O)NC1=O.[Na+] | Urokinase-type plasminogen activator
+1522801 O=C1NCCc2ccc(O)c(c2)Oc2c(Br)cc(cc2Br)CCNC(=O)/C(=N/O)Cc2cc(Br)c(O)c(c2)Oc2c(Br)cc(cc2Br)C/C1=N\O | Serine/threonine-protein kinase Aurora-A
+1546221 CC[C@@H]1NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)[C@@H](N)Cc2ccc(O)cc2)[C@@H](C)O)CSC(=O)[C@@H](CCSC)NC(=O)[C@H]([C@@H](C)CC)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+1546373 CC[C@H](C)[C@@H]1NC(=O)[C@H](CS)NC(=O)CCC(=O)Nc2ccc(cc2)C[C@@H](C(=O)O)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccc(O)cc2)NC1=O | Tyrosine-protein kinase SRC
+1560052 CC(C)C[C@@H]1NC(=O)CN(CCC(=O)NCCc2c[nH]c3ccccc23)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560053 CC(C)C[C@@H]1NC(=O)CN(CCc2ccc(O)c(O)c2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560054 CC(C)C[C@@H]1NC(=O)CN(CCc2c[nH]c3ccccc23)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560055 CC(C)CN1CC(=O)N[C@@H](Cc2c[nH]cn2)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC(=O)N(Cc2ccc(F)cc2)CC1=O | Serine/threonine-protein kinase PLK1
+1560056 CC(C)CN1CC(=O)N[C@@H](Cc2c[nH]cn2)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC(=O)N(C(C)c2ccccc2)CC1=O | Serine/threonine-protein kinase PLK1
+1560057 CC(C)C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)CSC[C@@H](C(=O)O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560058 C[C@@H](OP(=O)(O)O)[C@@H]1NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)CN(CCc2c[nH]c3ccccc23)C(=O)CSC[C@@H](C(=O)O)NC1=O | Serine/threonine-protein kinase PLK1
+1560059 C[C@@H](OP(=O)(O)O)[C@@H]1NC(=O)[C@H](CO)NC(=O)CN(CCc2c[nH]c3ccccc23)C(=O)CSC[C@@H](C(=O)O)NC1=O | Serine/threonine-protein kinase PLK1
+1560060 CC(=O)n1cc(CCNC(=O)CCN2CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc3c[nH]cn3)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC2=O)c2ccccc21 | Serine/threonine-protein kinase PLK1
+1560061 CC(=O)n1cc(CCNC(=O)CCCCCN2CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc3c[nH]cn3)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC2=O)c2ccccc21 | Serine/threonine-protein kinase PLK3
+1560165 CC(=O)n1cc(CCNC(=O)CCCCN2CC(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](Cc3c[nH]cn3)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC2=O)c2ccccc21 | Serine/threonine-protein kinase PLK1
+1560167 CC(C)C[C@@H]1NC(=O)[C@@H]2CCCN2C(=O)CSC[C@@H](C(=O)O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560168 CCCC[C@@H]1NC(=O)CSC[C@@H](C(=O)O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560169 CC(C)C[C@@H]1NC(=O)CSC[C@@H](C(=O)O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560170 CC(C)C[C@@H]1NC(=O)CN(CCCCc2ccccc2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560171 CC(C)C[C@@H]1NC(=O)CN(CCc2ccccc2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560172 CC(C)C[C@@H]1NC(=O)CN(Cc2ccccc2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560173 CC(C)C[C@@H]1NC(=O)CN(Cc2ccc(F)cc2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560174 CC(C)C[C@@H]1NC(=O)CN(CCc2ccc(Cl)cc2)C(=O)CSC[C@H](C(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2c[nH]cn2)NC1=O | Serine/threonine-protein kinase PLK1
+1560175 CC(C)CN1CC(=O)N[C@@H](Cc2c[nH]cn2)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC(=O)N(CCc2c[nH]c3ccccc23)CC1=O | Serine/threonine-protein kinase PLK1
+1560178 CC(C)C[C@@H]1NC(=O)CNC(=O)[C@H](CCC(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560176 CC(C)CN1CC(=O)N[C@@H](Cc2c[nH]cn2)C(=O)N[C@@H](CO)C(=O)N[C@@H]([C@@H](C)OP(=O)(O)O)C(=O)N[C@@H](C(N)=O)CSCC(=O)N(CCCCc2ccccc2)CC1=O | Serine/threonine-protein kinase PLK1
+1560177 CC(C)C[C@@H]1NC(=O)[C@@H]2CCCN2C(=O)[C@H](CCC(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560180 CC(C)C[C@@H]1NC(=O)CSC[C@@H](C(=O)O)NC(=O)[C@H](C)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1560179 CC(C)C[C@@H]1NC(=O)[C@H](CCC(N)=O)NC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC1=O | Serine/threonine-protein kinase PLK1
+1561426 NCCCC[C@@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CCC(=O)O)NC1=O | Tyrosine-protein kinase SRC
+1561427 N=C(N)NCCC[C@@H]1NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CCC(=O)O)NC1=O | Tyrosine-protein kinase SRC
+1561430 N=C(N)NCCC[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](Cc2c[nH]c3ccccc23)NC1=O | Tyrosine-protein kinase SRC
+1561435 NCCCC[C@@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCCN)NC(=O)[C@H](Cc2ccccc2)NC1=O | Tyrosine-protein kinase SRC
+1561436 C[C@@H]1NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](C)NC(=O)[C@H](CCCCN)NC1=O | Tyrosine-protein kinase SRC
+1561437 N=C(N)NCCC[C@@H]1NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](CCC(=O)O)NC(=O)[C@H](Cc2ccccc2)NC1=O | Tyrosine-protein kinase SRC
+1572309 COCCOc1ccc2cc1OCC(=O)N(C)CCCN(C)Cc1c[nH]c3ncnc(c13)N2 | Serine/threonine-protein kinase PLK4
+1572310 CN1CCN(Cc2cc3cc(c2)Nc2nccc(n2)-c2cccc(c2)CNC(=O)[C@@H]2CCCN2C3)CC1 | Serine/threonine-protein kinase PLK4
+1584980 CC[C@H](C)[C@@H]1NC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)CNC1=O | G-protein coupled receptor kinase 2
+1584981 CC(C)C[C@@H]1NC(=O)[C@H](CCCCN)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CC(C)C)NC1=O | G-protein coupled receptor kinase 2
+1584982 CC(C)C[C@@H]1NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CCCCN)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)CNC(=O)[C@H](CCCNC(=N)N)NC1=O | G-protein coupled receptor kinase 2
+1584984 CC(C)C[C@@H]1NC(=O)CNC(=O)[C@H](CO)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@@H](CCCNC(=N)N)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CC(C)C)NC1=O | G-protein coupled receptor kinase 2
+1595427 CC[C@H](C)[C@@H]1NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@@H](C)NC(=O)[C@H](NC(=O)[C@@H](NC(=O)[C@H](CO)NC(=O)CCCOc2ccc(Cc3ccccc3)cc2)[C@@H](C)O)CSC(=O)[C@H](CCSC)NC1=O | Receptor-histidine kinase AgrC
+1674317 COc1ccc(S(=O)(=O)N(C)C[C@H]2OCc3cn(nn3)CCCC(=O)N([C@@H](C)CO)C[C@@H]2C)cc1 | Serine/threonine-protein kinase PLK1
+1675632 Cc1noc(C)c1S(=O)(=O)N(C)C[C@@H]1OCc2cn(nn2)CCCC(=O)N([C@@H](C)CO)C[C@H]1C | Serine/threonine-protein kinase PLK1
+1675708 C[C@H]1CN([C@@H](C)CO)C(=O)CCCn2cc(nn2)CO[C@@H]1CN(C)S(=O)(=O)c1cccc(C#N)c1 | Serine/threonine-protein kinase PLK1
+1675818 COc1ccccc1S(=O)(=O)N(C)C[C@@H]1OCc2cn(nn2)CCCC(=O)N([C@H](C)CO)C[C@H]1C | Serine/threonine-protein kinase PLK1
+1677740 C[C@H]1CN([C@H](C)CO)C(=O)CCCn2cc(nn2)CO[C@@H]1CN(C)S(=O)(=O)c1cccc(F)c1 | Serine/threonine-protein kinase PLK1
+1725117 N=C(N)NCCC[C@@H]1NC(=O)CCc2cccc3c2oc2c(cccc23)CCNC(=O)[C@H](Cc2ccccc2)NC(=O)C[C@@H](c2cccc3ccccc23)NC(=O)[C@@H]2CCCN2C1=O | Receptor protein-tyrosine kinase erbB-2
+1757340 C[C@H]1Oc2cc(cnc2N)-c2c(nn(C)c2C#N)CCCOc2ccc(F)cc21 | ALK tyrosine kinase receptor
+1819125 O=C1OCCOc2cc(F)ccc2Nc2ncnc3[nH]c4c(c23)CC1CC4 | MAP kinase-interacting serine/threonine-protein kinase MNK1
+1951264 COc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@@H](O)C(=O)/C=C/C[C@H](C)OC2=O | MAP kinase ERK2
+1969205 COc1cc(O)c2c(c1)/C=C/C[C@@H]1OC(C)(C)O[C@@H]1C(=O)/C=C\C[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 7
+1969203 COC1=CC(O)C2=C(/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\C[C@H](C)OC2=O)C1(F)F | Mitogen-activated protein kinase kinase kinase 7
+1969204 COc1cc(O)c2c(c1Br)/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\C[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 7
+1969206 COc1cc(O)c2c(c1)[C@H]1O[C@@H]1C[C@H](O)[C@H](O)C(=O)/C=C/C[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 7
+1969208 COc1c(Br)c(O)c2c(c1Br)/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\C[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 7
+1969207 COc1cc2c(c(O)c1Br)C(=O)O[C@@H](C)C/C=C\C(=O)[C@@H](O)[C@@H](O)C/C=C/2 | Mitogen-activated protein kinase kinase kinase 7
+1969209 COc1cc(O)c2c(c1)[C@H]1O[C@@H]1C[C@H](O)[C@H](O)C(=O)CCC[C@H](C)OC2=O | Mitogen-activated protein kinase kinase kinase 7
+2007626 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)C[C@H]2C[C@H](CO)OC(=O)C[C@H](O)CCO[C@H](c3ccccc3)C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O3 | Protein kinase C alpha
+2007627 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)C[C@H]2C[C@H](CO)OC(=O)C[C@H](O)CCO[C@H](c3ccc(Br)cc3)C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O3 | Protein kinase C alpha
+2007628 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)C[C@H]2C[C@H](CO)OC(=O)C[C@H](O)CCO[C@H](c3ccc(-c4ccccc4)cc3)C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O3 | Protein kinase C alpha
+2007629 CCCCCCCC(=O)O[C@H]1/C(=C/C(=O)OC)C[C@H]2C[C@H](CO)OC(=O)C[C@H](O)CCO[C@H](c3ccc(CCCOCCOCC)cc3)C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]1(O)O2)O3 | Protein kinase C alpha
+2007630 CCCCCC/C=C/c1ccc([C@@H]2C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]4(O)O[C@@H](C/C(=C\C(=O)OC)[C@@H]4OC(=O)CCCCCCC)C[C@H](CO)OC(=O)C[C@H](O)CCO2)O3)cc1 | Protein kinase C alpha
+2007631 CCCCCCCCCCCC/C=C/c1ccc([C@@H]2C[C@@H]3CCO[C@H](/C=C/C(C)(C)[C@]4(O)O[C@@H](C/C(=C\C(=O)OC)[C@@H]4OC(=O)CCCCCCC)C[C@H](CO)OC(=O)C[C@H](O)CCO2)O3)cc1 | Protein kinase C alpha
+2027835 Clc1cnc2nc1NCc1cc(ccc1Br)OCCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK2
+2027836 Clc1cnc2nc1NCc1cc(ccc1-c1ccccc1)OCCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK3
+2027834 Clc1cnc2nc1NCCCc1cccc(c1)OCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK1
+2027828 Clc1cnc2nc1NCc1cccc(c1)OCCOc1cccc(c1)N2 | Tyrosine-protein kinase JAK2
+2027829 Clc1cnc2nc1NCCc1cccc(c1)OCc1cccc(c1)N2 | Tyrosine-protein kinase JAK2
+2027830 Clc1cnc2nc1NCCc1cccc(c1)OCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK1
+2027831 Clc1cnc2nc1NCCCc1cccc(c1)OCc1cccc(c1)N2 | Tyrosine-protein kinase JAK3
+2027832 C[C@@H]1Nc2nc(ncc2Cl)Nc2cccc(c2)COc2cccc1c2 | Tyrosine-protein kinase JAK2
+2027833 Clc1cnc2nc1NCCc1cccc(c1)OCCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK3
+2027823 Clc1cnc2nc1NCc1cccc(c1)OCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK2
+2027822 Clc1cnc2nc1NCc1cccc(c1)OCc1cccc(c1)N2 | Tyrosine-protein kinase JAK3
+2027824 O=S1(=O)Nc2cccc(c2)CNc2nc(ncc2Cl)Nc2cccc1c2 | Tyrosine-protein kinase JAK2
+2027826 Clc1cnc2nc1NCc1cccc(c1)OCCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK3
+2027825 O=C1Nc2cccc(c2)CNc2nc(ncc2Cl)Nc2cccc1c2 | Tyrosine-protein kinase JAK1
+2027827 C[C@H]1Nc2nc(ncc2Cl)Nc2cccc(c2)COc2cccc1c2 | Tyrosine-protein kinase JAK1
+2027838 Nc1ccc2cc1CCc1cncc(c1)Nc1ncc(Cl)c(n1)NC2 | Tyrosine-protein kinase JAK1
+2027837 Clc1cnc2nc1NCc1cc(Br)cc(c1)OCCCc1cccc(c1)N2 | Tyrosine-protein kinase JAK2
+2027840 N#Cc1ccccc1S(=O)(=O)Nc1ccc2cc1CCc1cncc(c1)Nc1ncc(Cl)c(n1)NC2 | Tyrosine-protein kinase JAK2
+2027839 O=C(Nc1ccc2cc1CCc1cncc(c1)Nc1ncc(Cl)c(n1)NC2)c1ccccc1 | Tyrosine-protein kinase JAK2
+2088134 Cc1nc2cccc3c2nc1NC/C=C/C[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088237 Cc1nc2cccc3c2nc1NC/C=C/C[C@@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088238 Cc1nc2cccc3c2nc1NC/C=C\C[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088239 Cc1nc2cccc3c2nc1NC/C=C\C[C@@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088240 Cc1nc2cccc3c2nc1NCCCC[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088243 Cc1nc2cccc3c2nc1N[C@@H](C)/C=C/C[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088241 Cc1nc2cccc3c2nc1NCCCC[C@@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088245 Cc1nc2cccc3c2nc1N[C@H](C)/C=C\C[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088242 Cc1nc2cccc3c2nc1N[C@H](C)/C=C/C[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088244 C/C1=C\C[C@H]2CNC(=O)c3cc([nH]c32)-c2cccc3nc(C)c(nc23)NC1 | Serine/threonine-protein kinase PIM1
+2088246 C/C1=C/C[C@H]2CNC(=O)c3cc([nH]c32)-c2cccc3nc(C)c(nc23)NC1 | Serine/threonine-protein kinase PIM1
+2088250 Cc1nc2cccc3c2nc1NC[C@H](C)CC[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088247 Cc1nc2cccc3c2nc1N[C@H](C)CCC[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088248 Cc1nc2cccc3c2nc1N[C@@H](C)CCC[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2088249 Cc1nc2cccc3c2nc1NC[C@@H](C)CC[C@H]1CNC(=O)c2cc-3[nH]c21 | Serine/threonine-protein kinase PIM1
+2101886 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCNC(=O)[C@@H](N)CCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2103111 CCNc1cc(O)c2c(c1)/C=C/C[C@H](OC(=O)C(F)(F)F)[C@@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2104876 CNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2107574 C[C@@H]1OC(=O)c2c(O)cc(NOC[C@H](O)CO)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2107768 OC1CCCCCCCNc2ncc3c(-c4ccccn4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2107911 CCNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@@H](O)C(=O)/C=C/[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2110349 C[C@@H]1OC(=O)c2c(O)cc(CCCn3ccnc3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2115670 OC1CCCCCCCNc2ncc3c(-c4ccc(F)cc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2119891 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCC(O)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2121652 O=C1CCCNS(=O)(=O)c2ncccc2CNc2nc(ncc2C(F)(F)F)Nc2ccc3c(c2)CCN13 | Protein tyrosine kinase 2 beta
+2122076 CNC(=O)CNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2123407 CS(=O)(=O)N1CCCC(=O)N2CCc3cc(ccc32)Nc2ncc(C(F)(F)F)c(n2)NCc2cccnc21 | Protein tyrosine kinase 2 beta
+2123713 C[C@@H]1OC(=O)c2c(O)cc(NCC(=O)N(C)C)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2124646 COc1cccc(-c2cn3c4nc(ncc24)NCCCCCCCC(O)CCCC3)c1 | Proto-oncogene tyrosine-protein kinase MER
+2124755 C[C@@H]1OC(=O)c2c(O)cc(NCC(N)=O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2125758 O=C(c1ccc(-c2cn3c4nc(ncc24)NCCCCCCCC(O)CCCC3)cc1)N1CCOCC1 | Proto-oncogene tyrosine-protein kinase MER
+2126776 O=C(CCCCCCOc1ccc2cc1COC/C=C/COCc1cccc(c1)-c1ccnc(n1)N2)NO | Tyrosine-protein kinase JAK2
+2129602 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCC(O)CCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2131590 C[C@@H]1OC(=O)c2c(O)cc(N3CCOC3=O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2133023 OC1CCCCCCCNc2ncc3c(C4CCOCC4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2134750 O=C(Nc1ccc(-c2cn3c4nc(ncc24)NCCCCCCCC(O)CCCC3)cc1)N1CCOCC1 | Proto-oncogene tyrosine-protein kinase MER
+2134766 C[C@@H]1OC(=O)c2c(O)cc(NCCOP(=O)(O)O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2141071 COCCNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2141976 OC1CCCCCCCNc2ncc3c(-c4cccnc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2143055 C[C@@H]1OC(=O)c2c(O)cc(NCCN3CCN(C)CC3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2143649 COc1ccc(-c2cn3c4nc(ncc24)NCCCCCCCC(O)CCCC3)cc1 | Proto-oncogene tyrosine-protein kinase MER
+2144473 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCNC(=O)[C@@H](N)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2145640 C[C@@H]1OC(=O)c2c(O)cc(NC3CC3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2147551 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCC(O)CCCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2148657 CS(=O)(=O)N1Cc2cccc(c2)C(=O)N2CCc3cc(ccc32)Nc2ncc(C(F)(F)F)c(n2)NCc2cccnc21 | Protein tyrosine kinase 2 beta
+2149974 CCNc1cc(O)c2c(c1)C#CC[C@H](O)[C@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2151926 O=C(CCCOc1ccc2cc1COC/C=C/COCc1cccc(c1)-c1ccnc(n1)N2)NO | Tyrosine-protein kinase JAK2
+2152614 COc1ccccc1-c1cn2c3nc(ncc13)NCCCCCCCC(O)CCCC2 | Proto-oncogene tyrosine-protein kinase MER
+2152621 C[C@@H]1OC(=O)c2c(O)cc(NOCC(=O)O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2154664 O=C(CCCCCCCOc1ccc2cc1COC/C=C/COCc1cccc(c1)-c1ccnc(n1)N2)NO | Tyrosine-protein kinase JAK2
+2156342 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCC(O)CCCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2157385 CCNc1cc(O)c2c(c1)/C=C/C[C@@H]1OC(=O)O[C@@H]1C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2157401 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCCC(O)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2159126 CS(=O)(=O)N1CCCc2cccc(c2)Nc2ncc(C(F)(F)F)c(n2)NCc2cccnc21 | Protein tyrosine kinase 2 beta
+2159828 C[C@@H]1OC(=O)c2c(O)cc(NCC(=O)O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2160467 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCC(O)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2160662 O=C(CCCCCOc1ccc2cc1COC/C=C/COCc1cccc(c1)-c1ccnc(n1)N2)NO | Tyrosine-protein kinase JAK2
+2163554 O=C(O)c1ccc(NCCOc2ccc3cc2COC/C=C/COCc2cccc(c2)-c2ccnc(n2)N3)cc1 | Tyrosine-protein kinase JAK2
+2164234 C[C@@H]1OC(=O)c2c(O)cc(NCCNCCO)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2165068 OC1CCCCCCCNc2ncc3c(-c4ccccc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2165745 C[C@@H]1OC(=O)c2c(O)cc(NCC3CCNCC3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2166065 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCC(O)CCCC4)cc2)CC1 | Tyrosine-protein kinase receptor FLT3
+2166628 CNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@@H](O)C(=O)/C=C/[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2170879 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCNC(=O)[C@@H](N)CCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2170968 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCC(O)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2171958 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCCNC(=O)[C@@H](N)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2172899 O=S(=O)(c1ccc(-c2cn3c4nc(ncc24)NCCCCCCCC(O)CCCC3)cc1)N1CCOCC1 | Proto-oncogene tyrosine-protein kinase MER
+2172933 COCCOCCOCCNCNc1cc(O)c2c(c1)/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@@H](C)[C@H](C)OC2=O | Dual specificity mitogen-activated protein kinase kinase 1
+2173496 O=C(O)CCCCCCC(=O)Nc1ccc(NCCOc2ccc3cc2COC/C=C/COCc2cccc(c2)-c2ccnc(n2)N3)cc1 | Tyrosine-protein kinase JAK2
+2173944 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCCNC(=O)[C@@H](N)CCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2176671 C[C@@H]1OC(=O)c2c(O)cc(N3CCNC3=O)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2177130 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCCC(O)CCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2178962 OC1CCCCCCCNc2ncc3c(-c4ccc(N5CCOCC5)cc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2179432 C[C@@H]1OC(=O)c2c(O)cc(NCC(O)CO)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2179725 C[C@@H]1OC(=O)c2c(O)cc(NCCNCC(O)CO)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2182615 C[C@@H]1OC(=O)c2c(O)cc(NCCN3CCCC3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2182932 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCNC(=O)[C@@H](N)CCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2183201 OC1CCCCCCCNc2ncc3c(-c4ccncc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2183482 C[C@@H]1OC(=O)c2c(O)cc(NCCN3CCOCC3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2185632 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCC(O)CCCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2189581 O=C(CCCCOc1ccc2cc1COC/C=C/COCc1cccc(c1)-c1ccnc(n1)N2)NO | Tyrosine-protein kinase JAK2
+2193685 CN1CCN(Cc2ccc(-c3cn4c5nc(ncc35)NCCCCCCCCC(O)CCCCC4)cc2)CC1 | Proto-oncogene tyrosine-protein kinase MER
+2195510 OC1CCCCCCCNc2ncc3c(-c4ccc(CN5CCOCC5)cc4)cn(c3n2)CCCC1 | Proto-oncogene tyrosine-protein kinase MER
+2196243 C[C@@H]1OC(=O)c2c(O)cc(NCCn3ccnc3)cc2/C=C/C[C@H](O)[C@H](O)C(=O)/C=C\[C@H]1C | Dual specificity mitogen-activated protein kinase kinase 1
+2200920 COc1cc(O)c2c(c1)CCC[C@H](O)[C@H](O)[C@@H](O)CCC[C@H](C)OC2=O | Serine/threonine-protein kinase receptor R3
+2211526 COc1cc(O)c2c(c1)CCC[C@H](O)[C@H](O)C(=O)NCC[C@H](C)OC2=O | Serine/threonine-protein kinase receptor R3
+2212312 COc1cc(O)c2c(c1)CCC[C@H](O)[C@H](O)[C@H](O)CCC[C@H](C)OC2=O | Serine/threonine-protein kinase receptor R3
+2222803 C=C1CCC[C@H](C)OC(=O)c2c(O)cc(OC)cc2CCC[C@H](O)[C@@H]1O | Serine/threonine-protein kinase receptor R3
+2232152 C1=C2CN3CCCC/C=C\CC[C@@H]4CN(CCCC/C=C\CC[C@H]1C3)CC[C@@H]24 | Cyclin-dependent kinase 5/CDK5 activator 1
+2239248 COc1cc(O)c2c(c1)CCC[C@H](O)[C@H](O)C(=O)CCC[C@H](C)OC2=O | Serine/threonine-protein kinase receptor R3
+2262160 CCCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2262349 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC1=O | Receptor-histidine kinase AgrC
+2262543 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2c[nH]c3ccccc23)NC1=O | Receptor-histidine kinase AgrC
+2263556 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC1=O | Receptor-histidine kinase AgrC
+2264673 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](Cc2ccccc2)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2265432 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2265717 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2265838 CCCCCCC(=O)N[C@H]1CCCNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2266134 CCCCCCC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2266975 CC(=O)NCC(=O)NCC(=O)NCC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2267211 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CCc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2268487 CC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2269169 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2270413 CCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2272341 CCCCCCCCCC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2272343 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2272595 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CCC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2272989 CCCCCCC(=O)N[C@H]1CNC(=O)[C@H](Cc2ccccc2)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC1=O | Receptor-histidine kinase AgrC
+2273160 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2cccc3ccccc23)NC1=O | Receptor-histidine kinase AgrC
+2273778 CCCCCCC(=O)N[C@H]1CCCCNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2274158 CCCCCCCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2274838 COCCOCCOCC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2276432 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2277874 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CCC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2278751 CCCCCCC(=O)N[C@H]1CCNC(=O)[C@H](CC(C)C)NC(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2279795 CCCCCCC(=O)N[C@@H]1CNC(=O)[C@@H](CC(C)C)NC(=O)CNC(=O)[C@@H](CC(C)C)NC(=O)[C@@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2280184 CCCCCCC(=O)N[C@H]1CNC(=O)[C@H](CC(C)C)NC(=O)[C@@H](C)NC(=O)[C@@H](CC(C)C)NC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2302404 CO[C@H]1/C=C\C=C(/C)C(=O)NC2=CC(=O)C(NCC#CCC[C@@H]3C[C@H]4[C@@H]5CCc6cc(O)ccc6[C@H]5CC[C@]4(C)[C@H]3O)=C(C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\C)[C@@H]1OC(N)=O)C2=O | Receptor protein-tyrosine kinase erbB-2
+2307651 O=C1C2=C(C(=O)N1O)c1cn(c3ccccc13)CCCCCCn1cc2c2ccccc21 | Cyclin-dependent kinase 5/CDK5 activator 1
+2311296 CO[C@H]1/C=C\C=C(/C)C(=O)NC2=CC(=O)C(NC/C=C/CCC[C@@H]3C[C@H]4[C@@H]5CCc6cc(O)ccc6[C@H]5CC[C@]4(C)[C@H]3O)=C(C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\C)[C@@H]1OC(N)=O)C2=O | Receptor protein-tyrosine kinase erbB-2
+2315111 CO[C@H]1/C=C\C=C(/C)C(=O)NC2=CC(=O)C(NCCCCNC3=C4C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\C)[C@H](OC(N)=O)[C@@H](OC)/C=C\C=C(/C)C(=O)NC(=CC3=O)C4=O)=C(C[C@@H](C)C[C@H](OC)[C@H](O)[C@@H](C)/C=C(\C)[C@@H]1OC(N)=O)C2=O | Receptor protein-tyrosine kinase erbB-2
+2317651 CC(=O)N1CCC[C@H]1C(=O)N[C@@H](CC(C)C)C(=O)N[C@H]1Cc2c[n+](cn2CCCCCCCCc2ccccc2)CCCCCCNC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC1=O | Serine/threonine-protein kinase PLK2
+2321107 CC(=O)N1CCC[C@H]1C(=O)N[C@@H](CC(C)C)C(=O)N[C@H]1Cc2c[n+](cn2CCCCCCCCc2ccccc2)CCCCCNC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC1=O | Serine/threonine-protein kinase PLK2
+2327005 CC(=O)N[C@H]1Cc2c[n+](cn2CCCCCCCCc2ccccc2)CCCCCNC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC1=O | Serine/threonine-protein kinase PLK2
+2329941 N[C@H]1CCCCNc2nc(ncc2C(=O)NCc2ccc(F)cc2)NCCCCCCNC1=O | Tyrosine-protein kinase receptor FLT3
+2331743 CC(=O)N1CCC[C@H]1C(=O)N[C@@H](CC(C)C)C(=O)N[C@H]1Cc2c[n+](cn2CCCCCCCCc2ccccc2)CCCCNC(=O)[C@H]([C@@H](C)OP(=O)(O)O)NC(=O)[C@H](CO)NC1=O | Serine/threonine-protein kinase PLK2
+2342589 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccc([N+](=O)[O-])cc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2343415 C[C@H]1Oc2cc(cnc2N)Cc2c(nn(C)c2C#N)CN(C)C(=O)c2ccc(F)cc21 | ALK tyrosine kinase receptor
+2348641 CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](N)CSSC[C@@H](C(=O)O)NC(=O)CNC1=O | Urokinase-type plasminogen activator
+2349125 C[C@@H]1CCn2cnnc2-c2cccc(n2)NC(=O)c2ccccc2OC1 | Mitogen-activated protein kinase kinase kinase 5
+2349205 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(C)=O)[C@H]14)O2 | Protein kinase C (PKC)
+2349865 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(=O)/C=C/c3ccccc3)[C@H]14)O2 | Protein kinase C (PKC)
+2350195 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(=O)/C(C)=C/C)[C@H]14)O2 | Protein kinase C (PKC)
+2350199 CC(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2351775 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)C(=O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2354738 O=C1Nc2cccc(n2)-c2nncn2CCCCCOc2ccccc21 | Mitogen-activated protein kinase kinase kinase 5
+2362423 Cc1ccc2c(c1)C(=O)Nc1cccc(n1)-c1nncn1CCCCO2 | Mitogen-activated protein kinase kinase kinase 5
+2363731 CN(C)CCn1cc(-c2ccc3c(c2)C(=O)Nc2cccc(n2)-c2nncn2CCCCO3)cn1 | Mitogen-activated protein kinase kinase kinase 5
+2364412 O=C1Nc2cccc(n2)-c2nncn2C/C=C/COc2c(Br)cccc21 | Mitogen-activated protein kinase kinase kinase 5
+2367910 C=C(C)[C@]12C[C@@H](CO)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](O)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2369239 C[C@@H]1CCOc2ccccc2C(=O)Nc2cccc(n2)-c2nncn2C1 | Mitogen-activated protein kinase kinase kinase 5
+2372856 O=C1/C=C\C(=O)N[C@@H](CC2CCCCC2)C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@@H](CCCNC(=O)c2cnccn2)C(=O)NCC[C@@H](C(=O)O)N1 | Tyrosine-protein kinase SRC
+2372985 CO[C@@H]1C[C@H](C[C@@H](C)[C@@H]2CC[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)C(N3CCS3(=O)=O)C[C@@H]3CC[C@@H](C)[C@@](O)(O3)C(=O)C(=O)N3CCCC[C@H]3C(=O)O2)CC[C@@H]1n1cnnn1 | Serine/threonine-protein kinase mTOR
+2376422 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2ccc(F)cc21 | Mitogen-activated protein kinase kinase kinase 5
+2377294 O=C1Nc2cccc(n2)-c2nncn2CCCOc2ccccc21 | Mitogen-activated protein kinase kinase kinase 5
+2380373 CS(=O)(=O)c1ccc2c(c1)C(=O)Nc1cccc(n1)-c1nncn1CCCCO2 | Mitogen-activated protein kinase kinase kinase 5
+2382202 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(=O)c3ccc([N+](=O)[O-])cc3)[C@H]14)O2 | Protein kinase C (PKC)
+2382673 Cn1cc(-c2ccc3c(c2)C(=O)Nc2cccc(n2)-c2nncn2CCCCO3)cn1 | Mitogen-activated protein kinase kinase kinase 5
+2390202 CC(C)C[C@@H]1NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](NC(=O)CN)C(C)C)COC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2398926 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccc6ccccc6c3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2400202 CO[C@@H]1C[C@H](C[C@@H](C)[C@@H]2CC[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)C(N3CCS3(=O)=O)C[C@@H]3CC[C@@H](C)[C@@](O)(O3)C(=O)C(=O)N3CCCC[C@H]3C(=O)O2)CC[C@H]1O | Serine/threonine-protein kinase mTOR
+2402121 Clc1cc2cc(c1)-c1cnn3ccc(nc13)NCCOCCO2 | Serine/threonine-protein kinase GAK
+2404164 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)/C=C/c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2406482 Cc1ncn(-c2ccc3c(c2)C(=O)Nc2cccc(n2)-c2nncn2CCCCO3)c1C | Mitogen-activated protein kinase kinase kinase 5
+2407896 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(COC(C)=O)[C@@H](OC(C)=O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(C)=O)[C@H]14)O2 | Protein kinase C (PKC)
+2408187 C[C@@H]1CCCOc2ccccc2C(=O)Nc2cccc(n2)-c2nncn21 | Mitogen-activated protein kinase kinase kinase 5
+2412871 C[C@@H]1CCOc2cc(F)ccc2C(=O)Nc2cccc(n2)-c2nncn2C1 | Mitogen-activated protein kinase kinase kinase 5
+2415362 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2ccc(N3CC4(COC4)C3)cc21 | Mitogen-activated protein kinase kinase kinase 5
+2418920 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2ccc(N3CCOCC3)cc21 | Mitogen-activated protein kinase kinase kinase 5
+2421096 CC[C@H](C)[C@@H]1NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](CCCNC(=N)N)NC(=O)[C@H](CO)NC(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](C)NC(=O)[C@@H]2CCCN2C(=O)[C@@H](NC(C)=O)CSSC[C@@H](C(N)=O)NC(=O)CNC1=O | Urokinase-type plasminogen activator
+2424944 CC(C)C[C@@H]1NC(=O)[C@H](CO)NC(=O)[C@H](CO)NC(=O)[C@@H](NC(=O)[C@H](C)NC(=O)[C@H](CC(N)=O)NC(=O)[C@@H](NC(=O)CN)C(C)C)CNC(=O)[C@H](Cc2ccccc2)NC1=O | Receptor-histidine kinase AgrC
+2428432 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](O)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2432090 CC[C@@H]1/C=C/C=C/C[C@H](C)[C@@H](O)[C@](C)(O)C(=O)[C@H](C)[C@@H](O)[C@H](C)C(=O)[C@H](C)[C@@H](O)[C@H](C)/C=C/C(=O)O[C@H]2[C@@H](C)[C@@H](CC1)O[C@@]1(CC[C@@H](C)[C@@H](C[C@@H](C)O)O1)[C@@H]2C | AMP-activated protein kinase, AMPK
+2432196 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2ccccc21 | Mitogen-activated protein kinase kinase kinase 5
+2432697 C[C@H]1CCCOc2cc(F)ccc2C(=O)Nc2cccc(n2)-c2nncn21 | Mitogen-activated protein kinase kinase kinase 5
+2433826 CO[C@@H]1C[C@H](C[C@@H](C)[C@@H]2CC[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)C(N3CCN(CCO)C3=O)C[C@@H]3CC[C@@H](C)[C@@](O)(O3)C(=O)C(=O)N3CCCC[C@H]3C(=O)O2)CC[C@H]1O | Serine/threonine-protein kinase mTOR
+2436043 C[C@H]1CCCn2cnnc2-c2cccc(n2)NC(=O)c2ccccc2O1 | Mitogen-activated protein kinase kinase kinase 5
+2439819 Cc1cn(-c2ccc3c(c2)C(=O)Nc2cccc(n2)-c2nncn2CCCCO3)cn1 | Mitogen-activated protein kinase kinase kinase 5
+2443724 Cc1nn(C)c2c1Cc1cnc(N)c(c1)O[C@H](C)c1cc(F)ccc1C(=O)N(C)C2 | ALK tyrosine kinase receptor
+2445487 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCCC5=O)[C@H]14)O2 | Protein kinase C (PKC)
+2448457 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(=O)c3ccccc3)[C@H]14)O2 | Protein kinase C (PKC)
+2450987 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5OC(=O)c3ccc5ccccc5c3)[C@H]14)O2 | Protein kinase C (PKC)
+2451169 CO[C@@H]1C[C@H](C[C@@H](C)[C@@H]2CC[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)C(N3CCCS3(=O)=O)C[C@@H]3CC[C@@H](C)[C@@](O)(O3)C(=O)C(=O)N3CCCC[C@H]3C(=O)O2)CC[C@H]1OP(C)(C)=O | Serine/threonine-protein kinase mTOR
+2456984 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(COC(=O)C(C)(C)CC(=O)O)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccccc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2457902 C=C(C)[C@]12C[C@@H](COC(=O)c3ccccc3)[C@@]34OC5(O[C@@H]1[C@@H]3[C@@H]1O[C@]1(CO)[C@@H](O)[C@]1(O)[C@@H](OC(=O)c3ccncc3)[C@@H](C)[C@H]([C@H](C)CCCCCC[C@H]5O)[C@H]14)O2 | Protein kinase C (PKC)
+2460721 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2cc(F)ccc21 | Mitogen-activated protein kinase kinase kinase 5
+2461190 O=C1Nc2cccc(n2)-c2nncn2CCCCOc2ccc(Br)cc21 | Mitogen-activated protein kinase kinase kinase 5
+2461495 CO[C@@H]1C[C@H](C[C@@H](C)[C@@H]2CC[C@H](C)/C=C(\C)[C@@H](O)[C@@H](OC)C(=O)[C@H](C)C[C@H](C)/C=C/C=C/C=C(\C)[C@H](N3CCCS3(=O)=O)C[C@@H]3CC[C@@H](C)[C@@](O)(O3)C(=O)C(=O)N3CCCC[C@H]3C(=O)O2)CC[C@H]1O | Serine/threonine-protein kinase mTOR
+2462079 C[C@@H]1CCOc2cc(F)c(-c3cnn(CCN(C)C)c3)cc2C(=O)Nc2cccc(n2)-c2nncn2C1 | Mitogen-activated protein kinase kinase kinase 5
+2468998 COc1ncc2cc1S(=O)(=O)NCCCCN(C)Cc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2469081 COc1ncc2cc1S(=O)(=O)NCCCN(C)C(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2470024 COc1ncc2cc1S(=O)(=O)NCCN(C)C(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2470032 COc1ncc2cc1NS(=O)(=O)CCCNCc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2473484 COc1ncc2cc1NS(=O)(=O)CCCNC(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2473691 COc1ncc2cc1S(=O)(=O)NCCCNCc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2474145 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COCC(=O)NCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2475029 COc1ncc2cc1NS(=O)(=O)CCN(C)Cc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2476603 COc1ncc2cc1NS(=O)(=O)CCCCN(C)Cc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2476705 COc1ncc2cc1S(=O)(=O)NCCCN(C)Cc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2477564 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COCC(=O)NCCCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2478313 COc1ncc2cc1S(=O)(=O)NCCCCN(C)C(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2479943 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COCCCCOCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2480450 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COC/C=C\COCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2481661 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COC/C=C/COCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2481809 N#C[C@]1(C2CC2)C(=O)N2C[C@H]1COCC(=O)NCCc1cccc(n1)Nc1cc2ccn1 | Tyrosine-protein kinase TYK2
+2483510 COc1ncc2cc1S(=O)(=O)NCCCNC(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2483781 COc1ncc2cc1S(=O)(=O)NCCCCNCc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2484429 COc1ncc2cc1S(=O)(=O)NCCCCNC(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2484943 C=CC(=O)Nc1ccc(C(=O)Nc2cc3cc(c2)Nc2nccc(n2)-c2cccc(c2)OCC/C=C/CN(C)C3)cc1 | Cyclin-dependent kinase 7
+2485808 COc1ncc2cc1NS(=O)(=O)CCN(C)C(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2486231 COc1ncc2cc1S(=O)(=O)NCCN(C)Cc1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit
+2486350 COc1ncc2cc1NS(=O)(=O)CCCCN(C)C(=O)c1ccc3c(c1)N2CCO3 | PI3-kinase p110-delta subunit

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RCSB PDB Search API Query Editor</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.6.0/ace.js"
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <!--  Needed to avoid conflict with jsoneditor that also uses ace.js  -->
+    <script>
+        window['aceOrig'] = window['ace'];
+        delete window['ace'];
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.9.0/jsoneditor.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.9.0/jsoneditor.js"></script>
+
+    <!-- Split.js - https://github.com/nathancahill/split/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+
+    <script src="docs/assets/helpers.js"></script>
+    <script src="editor/editor.js"></script>
+    <script src="editor/schema.js"></script>
+    <link href="editor/editor.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="menu-wrapper">
+    <div class="left-wrapper">
+        <div id="editor-title">RCSB PDB: Search API Query Editor</div>
+        <div class="icon" onclick="format()" title="Format JSON data, with proper indentation">
+            <img src="editor/icons/format.svg" alt="">
+        </div>
+        <div class="icon" onclick="compact()" title="Compact JSON data, remove all whitespaces">
+            <img src="editor/icons/compact.svg" alt="">
+        </div>
+        <div class="icon" onclick="reset(default_query)" title="Reset editor">
+            <img src="editor/icons/reset.svg" alt="">
+        </div>
+        <div class="icon" onclick="copy()" title="Copy query">
+            <img src="editor/icons/copy.svg" alt="">
+        </div>
+        <div class="icon" onclick="execute()" title="Execute query">
+            <img src="editor/icons/execute.svg" alt="">
+        </div>
+    </div>
+    <div class="right-wrapper">
+        <a class="icon" href="/" target="_blank" title="Open Search API documentation">
+            <img src="editor/icons/help.svg" alt="">
+        </a>
+        <div class="icon" onclick="expand()" title="Expand results">
+            <img src="editor/icons/expand.svg" alt="">
+        </div>
+        <div class="icon" onclick="collapse()" title="Collapse results">
+            <img src="editor/icons/collapse.svg" alt="">
+        </div>
+    </div>
+</div>
+<div class="editor-wrapper">
+    <div id="editor-panel-1">
+        <section id="query-editor"></section>
+    </div>
+    <div id="editor-panel-2">
+        <section id="results-window"></section>
+    </div>
+</div>
+<div id="spinner" class="loading"></div>
+<script>
+    const url_prefix = base_endpoint()+"query";
+    const schemas = [
+        [query_schema_base, query_schema_urls]
+    ];
+    const default_query = {
+        "query": {
+            "type": "terminal",
+            "service": "text",
+            "parameters": {
+                "attribute": "exptl.method",
+                "operator": "exact_match",
+                "value": "ELECTRON MICROSCOPY"
+            }
+        },
+        "request_options": {
+            "paginate": {
+                "start": 0,
+                "rows": 25
+            }
+        },
+        "return_type": "entry"
+    };
+    render_wrapper(['#editor-panel-1', '#editor-panel-2']);
+    render_editor('query-editor', schemas, default_query);
+    render_viewer('results-window');
+
+</script>
+</body>

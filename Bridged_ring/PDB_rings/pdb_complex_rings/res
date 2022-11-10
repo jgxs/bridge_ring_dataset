@@ -1,0 +1,15 @@
+{
+  "query_id" : "5b8a173c-f718-481e-ac14-1cc7a5551f0e",
+  "result_type" : "entry",
+  "total_count" : 3,
+  "result_set" : [ {
+    "identifier" : "7JU7",
+    "score" : 1.0
+  }, {
+    "identifier" : "5MQL",
+    "score" : 1.0
+  }, {
+    "identifier" : "7TVX",
+    "score" : 1.0
+  } ]
+}

@@ -1,0 +1,368 @@
+   35352 1381250.00 |cAMP-dependent protein kinase alpha-catalytic subunit| Protein kinase C (PKC) IC50
+   52028 5.00 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 9 IC50
+   52029 5.00 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 9 IC50
+   52141 72.00 |Mitogen-activated protein kinase kinase kinase 9| Mitogen-activated protein kinase kinase kinase 9 IC50
+   52140 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   52172 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   52325 5.00 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 9 IC50
+   52326 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   52327 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   52974 5.00 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 9 IC50
+   52976 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   52975 6.67 |Protein kinase C (PKC)| Mitogen-activated protein kinase kinase kinase 10 IC50
+   55962 7692.31 |Mitogen-activated protein kinase kinase kinase 11| Interferon-induced, double-stranded RNA-activated protein kinase IC50
+   57513 35.71 |Protein kinase C (PKC)| Receptor protein-tyrosine kinase erbB-2 IC50
+   96627 6666.67 |Serine/threonine-protein kinase Chk1| Cyclin-dependent kinase 1 IC50
+  112237 11000.00 |Protein kinase C beta| Protein kinase C zeta IC50
+  112238 846.15 |Protein kinase C beta| Protein kinase C zeta IC50
+  112359 846.15 |Protein kinase C beta| Protein kinase C zeta IC50
+  112360 846.15 |Protein kinase C beta| Protein kinase C zeta IC50
+  112897 846.15 |Protein kinase C beta| Protein kinase C zeta IC50
+  122111 600.00 |Protein kinase C beta| Protein kinase C zeta IC50
+  122112 600.00 |Protein kinase C beta| Protein kinase C zeta IC50
+  122837 600.00 |Protein kinase C beta| Protein kinase C zeta IC50
+  122838 600.00 |Protein kinase C beta| Protein kinase C zeta IC50
+  150961 25.00 |MAP kinase p38| MAP kinase p38 IC50
+  151534 25.00 |MAP kinase p38| MAP kinase p38 IC50
+  151685 25.00 |MAP kinase p38| MAP kinase p38 IC50
+  151760 25.00 |MAP kinase p38| MAP kinase p38 IC50
+  151822 25.00 |MAP kinase p38| MAP kinase p38 IC50
+  215380 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  215403 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  215431 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  215528 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  215776 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  215778 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  216308 48.00 |Protein kinase C (PKC)| cAMP-dependent protein kinase (PKA) IC50
+  234747 143.00 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 4/cyclin D IC50
+  334404 93.08 |MAP kinase p38 alpha| MAP kinase p38 alpha IC50
+  334408 93.08 |MAP kinase p38 alpha| MAP kinase p38 alpha IC50
+  334414 93.08 |MAP kinase p38 alpha| MAP kinase p38 alpha IC50
+  354862 60.67 |Tyrosine-protein kinase SRC| Tyrosine-protein kinase LCK IC50
+  354947 60.67 |Tyrosine-protein kinase SRC| Tyrosine-protein kinase LCK IC50
+  355327 60.67 |Tyrosine-protein kinase SRC| Tyrosine-protein kinase LCK IC50
+  373381 32154340.84 |CaM kinase II delta| Protein kinase C (PKC) IC50
+  412441 80.00 |MAP kinase-activated protein kinase 2| MAP kinase-activated protein kinase 3 IC50
+  412439 80.00 |MAP kinase-activated protein kinase 2| MAP kinase-interacting serine/threonine-protein kinase MNK1 IC50
+  428018 32.76 |Serine/threonine-protein kinase AKT| Serine/threonine-protein kinase AKT3 IC50
+  440561 523.56 |PI3-kinase p110-alpha subunit| Pyruvate dehydrogenase kinase isoform 1 IC50
+  441056 18181.82 |PI3-kinase p110-delta subunit| Pyruvate dehydrogenase kinase isoform 1 IC50
+  453785 1.51 |Cyclin-dependent kinase 2| Serine/threonine-protein kinase B-raf IC50
+  453943 1.68 |Cyclin-dependent kinase 2| Tyrosine-protein kinase TIE-2 IC50
+  475975 227.27 |Protein kinase C-like 1| Serine/threonine-protein kinase Aurora-B IC50
+  507943 6.83 |Cyclin-dependent kinase 4/cyclin D1| Cyclin-dependent kinase 2 IC50
+  550544 1929.82 |Protein kinase C alpha| cAMP-dependent protein kinase (PKA) IC50
+  565264 4.17 |Serine/threonine-protein kinase Aurora-B| Casein kinase II alpha IC50
+  568337 12142.86 |Serine/threonine-protein kinase Chk1| cAMP-dependent protein kinase (PKA) IC50
+  571374 8195.45 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-alpha subunit IC50
+  571375 45454.55 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-delta subunit IC50
+  571400 4663.64 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-alpha subunit IC50
+  571491 8195.45 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-alpha subunit IC50
+  583307 16666.67 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  608601 9090.91 |Tyrosine-protein kinase receptor FLT3| Serine/threonine-protein kinase Aurora-A IC50
+  612604 156250.00 |Serine/threonine-protein kinase B-raf| Inhibitor of nuclear factor kappa B kinase beta subunit IC50
+  620795 50000.00 |Serine/threonine-protein kinase mTOR| Tyrosine-protein kinase SRC IC50
+  621330 899.00 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-alpha subunit IC50
+  704793 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  704794 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  704795 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  704796 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  706719 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  706843 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  706844 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  706960 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707073 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707190 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707305 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707418 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707527 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707528 38.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-delta subunit IC50
+  707646 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707647 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707756 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+  707757 25.50 |Serine/threonine-protein kinase mTOR| PI3-kinase p110-gamma subunit IC50
+ 1052655 83.33 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1166692 27.50 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1166884 46.67 |Ketohexokinase| Ketohexokinase IC50
+ 1265817 41.67 |Tyrosine-protein kinase SRC| Protein kinase N1 IC50
+ 1265818 41.67 |Tyrosine-protein kinase SRC| Protein kinase N1 IC50
+ 1289806 487.50 |Protein kinase C theta| Focal adhesion kinase 1 IC50
+ 1302286 3.98 |Neurotrophic tyrosine kinase receptor type 2| Serine/threonine-protein kinase receptor R3 IC50
+ 1333456 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333457 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333462 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333463 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333461 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333464 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333465 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333466 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333467 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333468 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333469 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333470 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333471 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333472 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333473 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1333474 526.32 |Cyclin-dependent kinase 1| Serine/threonine-protein kinase Aurora-A IC50
+ 1345161 45.94 |Serine/threonine-protein kinase PIM1| Serine/threonine-protein kinase PIM2 IC50
+ 1345162 3227705.88 |Serine/threonine-protein kinase PIM1| Serine/threonine-protein kinase PIM1 IC50
+ 1349264 15.00 |ALK tyrosine kinase receptor| ALK tyrosine kinase receptor IC50
+ 1353585 7.33 |PI3-kinase p110-alpha subunit| Dual specificity mitogen-activated protein kinase kinase 1 IC50
+ 1441666 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441665 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441667 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441669 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441670 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441680 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441679 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441683 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441684 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441685 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441686 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441687 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441688 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1441689 7.69 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1567644 393.70 |Serine/threonine-protein kinase B-raf| Serine/threonine-protein kinase B-raf IC50
+ 1618653 6.84 |Cyclin-dependent kinase 4/cyclin D1| Cyclin-dependent kinase 2/cyclin E1 IC50
+ 1789129 31.98 |Serine/threonine-protein kinase Chk1| Serine/threonine-protein kinase Aurora-A IC50
+ 1789227 31.98 |Serine/threonine-protein kinase Chk1| Serine/threonine-protein kinase Aurora-A IC50
+ 1827259 152.86 |Serine/threonine-protein kinase MST2| Leucine-rich repeat serine/threonine-protein kinase 2 IC50
+ 1827260 152.86 |Serine/threonine-protein kinase MST2| Leucine-rich repeat serine/threonine-protein kinase 2 IC50
+ 1827261 33333.33 |Serine/threonine-protein kinase Aurora-A| Tyrosine-protein kinase TIE-2 IC50
+ 1827275 5.00 |Serine/threonine-protein kinase Aurora-A| Serine/threonine-protein kinase Aurora-B IC50
+ 1827305 88.33 |Serine/threonine-protein kinase Aurora-A| Serine/threonine-protein kinase Aurora-C IC50
+ 1841533 151.72 |Dual specificity protein kinase TTK| Aurora kinase B/Inner centromere protein IC50
+ 1841531 151.72 |Dual specificity protein kinase TTK| Aurora kinase B/Inner centromere protein IC50
+ 1841532 965.52 |Dual specificity protein kinase TTK| Tyrosine-protein kinase receptor RET IC50
+ 1950468 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950469 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950470 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950471 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950472 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950520 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950521 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950523 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950519 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950525 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950524 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950526 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950527 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1950528 391.28 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1956761 1356.52 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase TYK2 IC50
+ 1959794 50.56 |PI3-kinase p110-alpha subunit| PI3-kinase p110-beta subunit IC50
+ 1960381 1250.00 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1960388 1250.00 |PI3-kinase p110-alpha subunit| PI3-kinase p110-gamma subunit IC50
+ 1960541 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960537 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960536 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960538 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960539 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960540 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960613 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960612 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1960611 1000.00 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 1983960 1.94 |Cyclin-dependent kinase 1| Cyclin-dependent kinase 5 IC50
+ 1987947 149.25 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 1991737 149.25 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 1992930 129.55 |Serine/threonine-protein kinase pim-3| Serine/threonine-protein kinase PIM2 IC50
+ 1996672 3.67 |Aurora kinase B/Inner centromere protein| Serine/threonine-protein kinase Aurora-A IC50
+ 2007020 2307.69 |Glycogen synthase kinase-3 alpha| Casein kinase I epsilon IC50
+ 2007022 138.46 |Glycogen synthase kinase-3 alpha| Cyclin-dependent kinase 5 IC50
+ 2018372 13157.89 |Serine/threonine-protein kinase Aurora-B| Ribosomal protein S6 kinase 1 IC50
+ 2024794 882.35 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 1 IC50
+ 2024795 882.35 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 1 IC50
+ 2024837 882.35 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 1 IC50
+ 2024874 882.35 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 1 IC50
+ 2024898 1.00 |Cyclin-dependent kinase 1| Cyclin-dependent kinase 4 IC50
+ 2024899 1.00 |Cyclin-dependent kinase 4| Cyclin-dependent kinase 1 IC50
+ 2041003 22.32 |Tyrosine-protein kinase receptor UFO| Mitogen-activated protein kinase kinase kinase 11 IC50
+ 2041016 77.52 |Mitogen-activated protein kinase kinase kinase 12| Mitogen-activated protein kinase kinase kinase 11 IC50
+ 2077594 1111.11 |Rho-associated protein kinase 2| MAP kinase-activated protein kinase 5 IC50
+ 2079169 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079170 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079171 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079198 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079199 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079200 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079201 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079203 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079202 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079204 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079205 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079206 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079207 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079208 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079217 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079209 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079210 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079211 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079212 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079213 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079214 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079215 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079216 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079219 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2079218 142.86 |Cyclin-dependent kinase 5/CDK5 activator 1| Dual-specificity tyrosine-phosphorylation regulated kinase 1A IC50
+ 2100310 384.39 |Serine/threonine-protein kinase mTOR| PI3-kinase p85-alpha subunit IC50
+ 2102853 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2104104 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2106386 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2106762 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2108364 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2108759 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2108958 6.09 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2109534 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2110810 10.00 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2111355 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2111802 6.09 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2113443 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2113904 149.25 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 2114232 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2116729 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2116828 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2117109 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2117718 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2118264 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2118573 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2118972 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2119381 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2121397 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2121976 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2122799 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2123223 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2123695 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2125459 384.39 |Serine/threonine-protein kinase mTOR| PI3-kinase p85-alpha subunit IC50
+ 2125790 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2126444 51.29 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2128301 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2128983 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2129226 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2131040 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2133726 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2134435 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2136137 6.09 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2136801 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2137516 74.62 |Protein kinase C alpha| Glycogen synthase kinase-3 beta IC50
+ 2138126 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2138227 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2139303 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2140161 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2140433 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2141040 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2141565 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2142665 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2143333 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2145750 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2146175 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2146488 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2148324 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2149375 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2150639 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2151210 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2151693 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2152372 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2153064 5.22 |Serine/threonine-protein kinase Aurora-B| Tyrosine-protein kinase JAK1 IC50
+ 2153246 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2153731 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2154083 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2154246 5.22 |Serine/threonine-protein kinase Aurora-B| Tyrosine-protein kinase JAK1 IC50
+ 2154249 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2154494 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2155399 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2158149 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2159768 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2160427 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2161128 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2161505 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2165357 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2165694 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2166814 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2167934 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2168767 13173.91 |PI3-kinase p110-alpha subunit| PI3-kinase p110-delta subunit IC50
+ 2171861 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2177397 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2177902 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2178505 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2180641 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2182760 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2183205 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2185005 52631.58 |Ribosomal protein S6 kinase alpha 1| Tyrosine-protein kinase JAK1 IC50
+ 2185958 6.09 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2187089 51.29 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2188136 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2189518 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2190748 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2193342 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2194511 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2195218 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2201705 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2203929 26.88 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2208449 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2210328 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2211373 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2215141 26.88 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2218883 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2220817 25.00 |Cell division cycle 2-like protein kinase 6| Rho-associated protein kinase 1 IC50
+ 2221909 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2232169 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2234645 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2236898 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2237504 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2240291 19.95 |PI3-kinase p110-delta subunit| PI3-kinase p110-gamma subunit IC50
+ 2245290 2.76 |Serine/threonine-protein kinase PIM2| Serine/threonine-protein kinase PIM3 IC50
+ 2246349 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2246387 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2249909 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2249942 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2250204 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2250634 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2252222 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2253692 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2254282 118.49 |Serine/threonine-protein kinase mTOR| DNA-dependent protein kinase IC50
+ 2262079 154.67 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2268396 154.67 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2270020 154.67 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2270224 1250.00 |Cell division cycle 2-like protein kinase 6| Serine/threonine-protein kinase Nek1 IC50
+ 2271644 8000.00 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 2272252 8000.00 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 2277910 154.67 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2278685 154.67 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase JAK3 IC50
+ 2278839 8000.00 |Tyrosine-protein kinase JAK1| Tyrosine-protein kinase TYK2 IC50
+ 2285670 11.43 |Serine/threonine-protein kinase A-Raf| Serine/threonine-protein kinase B-raf IC50
+ 2297441 15.87 |G protein-coupled receptor kinase 5| Rhodopsin kinase IC50
+ 2298136 15.87 |G protein-coupled receptor kinase 5| Rhodopsin kinase IC50
+ 2301537 15.87 |G protein-coupled receptor kinase 5| Rhodopsin kinase IC50
+ 2307169 70.00 |Tyrosine-protein kinase BTK| Tyrosine-protein kinase BTK IC50
+ 2326149 1794.15 |Proto-oncogene tyrosine-protein kinase MER| Tyrosine-protein kinase receptor UFO IC50
+ 2328465 62.50 |Serine/threonine-protein kinase Aurora-A| Serine/threonine-protein kinase Aurora-B IC50
+ 2329155 769.23 |Protein kinase C theta| Protein kinase C zeta IC50
+ 2335615 14285.71 |CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)| Cyclin-dependent kinase 2/cyclin E1 IC50
+ 2343658 14285.71 |CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)| Cyclin-dependent kinase 2/cyclin E1 IC50
+ 2353111 5.00 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK2 IC50
+ 2360615 6.00 |Tyrosine-protein kinase LCK| Serine/threonine-protein kinase RIPK2 IC50
+ 2369907 14285.71 |CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)| Cyclin-dependent kinase 2/cyclin E1 IC50
+ 2398255 6.00 |Tyrosine-protein kinase LCK| Serine/threonine-protein kinase RIPK2 IC50
+ 2421994 6.00 |Tyrosine-protein kinase LCK| Serine/threonine-protein kinase RIPK2 IC50
+ 2432850 6.00 |Tyrosine-protein kinase LCK| Serine/threonine-protein kinase RIPK2 IC50
+ 2442649 14285.71 |CDC7/DBF4 (Cell division cycle 7-related protein kinase/Activator of S phase kinase)| Cyclin-dependent kinase 2/cyclin E1 IC50
+ 2453742 6.00 |Tyrosine-protein kinase LCK| Serine/threonine-protein kinase RIPK2 IC50
+ 2470849 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2470993 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2471663 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2471892 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2472778 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2473748 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2474764 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2475464 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2476872 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2477539 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2479612 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2480689 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2481129 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2481590 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2482164 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2483666 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2483774 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2485163 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
+ 2485182 312.50 |Tyrosine-protein kinase TYK2| Tyrosine-protein kinase JAK3 IC50
+ 2485371 19.23 |Tyrosine-protein kinase JAK3| Tyrosine-protein kinase JAK1 IC50
