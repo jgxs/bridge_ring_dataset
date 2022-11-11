@@ -49,23 +49,14 @@ def phe2bch_with_smiles(smi):
 
     # 读入分子
     mol = Chem.MolFromSmiles(smi)
-    # 识别间位取代部分，
-    # * 匹配任意原子；
-    # '!:' 非芳香键； 
-    # *!:ccc(!:*)ccc 含间位取代的苯环
+    # 识别间位取代部分，* 匹配任意原子；'!:' 非芳香键； *!:ccc(!:*)ccc 含间位取代的苯环
     patt = Chem.MolFromSmarts("*!:ccc(!:*)ccc")
     match = mol.GetSubstructMatches(patt)
-    # 识别需要被替换苯环原子
-    ri = mol.GetRingInfo()
-    for r in ri.AtomRings():
-        count = 0
-        for item in match[0]:
-            if item in set(r):
-                count+=1
-        if count == len(match[0])-2:
-            phenyl_num = set(r)
-    # 识别两个间位取代基与苯环的连接原子
-    connect_atoms = list(set(match[0])-phenyl_num)
+    
+    # 识别两个间位取代基与苯环的连接原子,识别需要被替换苯环原子
+    connect_atoms = get_connect_atom_in_sidechain(mol,match[0])
+    core = set(match[0])-set(connect_atoms)
+
     # 记录第一部分的原子数目
     mol1_Atom_num = mol.GetNumAtoms()
     # 引入螺旋桨烷，并将其与原分子置于一处，使得其编号从·mol1_Atom_num+0·开始
@@ -78,7 +69,7 @@ def phe2bch_with_smiles(smi):
     mid_edited.AddBond(connect_atoms[1],mol1_Atom_num+4,order=Chem.rdchem.BondType.SINGLE)
     # 删除原来的苯环
     # 每删除一个原子后原子序号都会发生改变，所以需要倒序删除。
-    phenyl_atoms = list(phenyl_num)
+    phenyl_atoms = list(core)
     phenyl_atoms.sort(reverse=True)
     for i in phenyl_atoms:
         mid_edited.RemoveAtom(i)
@@ -86,38 +77,31 @@ def phe2bch_with_smiles(smi):
     return BCHep_mol  
 
 def getpdb(refmol,inpmol,pdbfile):
-    mcs = rdFMCS.FindMCS([refmol, inpmol],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
+    
     bonded_conf = refmol.GetConformer()
     conf_res = inpmol.GetConformer()
     inpmol_prop = Chem.rdForceFieldHelpers.MMFFGetMoleculeProperties(inpmol)
     ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol,inpmol_prop)
 
-    core = Chem.MolFromSmarts("*!:ccc(!:*)ccc")
-    res, unmatched = rdRGD.RGroupDecompose([core],[refmol])
-    mcs1 = rdFMCS.FindMCS([refmol, res[0]['R1']],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
-    mcs2 = rdFMCS.FindMCS([refmol, res[0]['R2']],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
-    mcs3 = rdFMCS.FindMCS([inpmol, res[0]['R1']],timeout=3,)
-    mcs4 = rdFMCS.FindMCS([inpmol, res[0]['R2']],timeout=3,)
-    for i, j in zip(refmol.GetSubstructMatch(mcs1.queryMol), inpmol.GetSubstructMatch(mcs3.queryMol)):
-        ff_mcs.AddFixedPoint(j)
-        conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
-    for i, j in zip(refmol.GetSubstructMatch(mcs2.queryMol), inpmol.GetSubstructMatch(mcs4.queryMol)):
-        ff_mcs.AddFixedPoint(j)
-        conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
+    core = Chem.MolFromSmiles("C12CCCC(C2)C1")
+    res, unmatched = rdRGD.RGroupDecompose([core],[inpmol])
+    for R in ['R1','R2']:
+        mcs1 = rdFMCS.FindMCS([refmol, res[0][R]],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrder)
+        mcs3 = rdFMCS.FindMCS([inpmol, res[0][R]],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
+        sidechain_ref = refmol.GetSubstructMatch(mcs1.queryMol)
+        sidechain_gen = inpmol.GetSubstructMatch(mcs3.queryMol)
+        for i, j in zip(sidechain_ref,sidechain_gen):
+            ff_mcs.AddFixedPoint(j)
+            conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
+        atom_connect_sidechain_core_ref = get_connect_atom_in_core(refmol, sidechain_ref)[0]
+        atom_connect_sidechain_core_gen = get_connect_atom_in_core(inpmol, sidechain_gen)[0]
+        ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
+        conf_res.SetAtomPosition(atom_connect_sidechain_core_gen,bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref))
     for i in range(6):
         try:
             ff_mcs.Minimize()
         except:
             pass
-
-#    for i, j in zip(refmol.GetSubstructMatch(mcs.queryMol), inpmol.GetSubstructMatch(mcs.queryMol)):
-#        ff_mcs.AddFixedPoint(j)
-#        conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
-#    for i in range(10):
-#        try:
-#            ff_mcs.Minimize()
-#        except:
-#            pass
     Chem.MolToPDBFile(inpmol, pdbfile)
     return inpmol
 
