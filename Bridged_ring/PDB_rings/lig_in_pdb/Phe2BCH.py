@@ -22,7 +22,7 @@ def pdb_2_lig_block(pdb_path,lig_id):
 
 def get_connect_atom_in_core(orimol,sidechain_atom_idxes):
     # mol is the whole molecule, the sidechain_atom_idx is the a tuple of the atom idx of a sidechain;
-    # this function will get the atom connected with the .
+    # this function will get the atom connected with the sidechain in the core of the orimol.
     connect_atoms_in_core = []
     for idx in sidechain_atom_idxes:
         for atom in orimol.GetAtomWithIdx(idx).GetNeighbors():
@@ -31,6 +31,8 @@ def get_connect_atom_in_core(orimol,sidechain_atom_idxes):
     return connect_atoms_in_core
 
 def get_connect_atom_in_sidechain(orimol,core):
+    # the core is the a tuple of the atom idx of the core;
+    # this function will get the atom connected with the core in the sidechain of the orimol.
     rings = orimol.GetRingInfo()
     for r in rings.AtomRings():
         count = 0
@@ -84,19 +86,29 @@ def getpdb(refmol,inpmol,pdbfile):
     ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol,inpmol_prop)
 
     core = Chem.MolFromSmiles("C12CCCC(C2)C1")
-    res, unmatched = rdRGD.RGroupDecompose([core],[inpmol])
+    side_chains, unmatched = rdRGD.RGroupDecompose([core],[inpmol])
     for R in ['R1','R2']:
-        mcs1 = rdFMCS.FindMCS([refmol, res[0][R]],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrder)
-        mcs3 = rdFMCS.FindMCS([inpmol, res[0][R]],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
+        sidechain = side_chains[0][R]
+        sidechain_conf = sidechain.GetConformer()
+
+        mcs_ref2mid = rdFMCS.FindMCS([refmol, sidechain],timeout=3,bondCompare=rdFMCS.BondCompare.CompareAny)
+        for i, j in zip(refmol.GetSubstructMatch(mcs_ref2mid.queryMol),sidechain.GetSubstructMatch(mcs_ref2mid.queryMol)):
+            sidechain_conf.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
+        
+        mcs_mid2inp = rdFMCS.FindMCS([inpmol, sidechain],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
+        for i, j in zip(sidechain.GetSubstructMatch(mcs_mid2inp.queryMol),inpmol.GetSubstructMatch(mcs_mid2inp.queryMol)):
+            ff_mcs.AddFixedPoint(j)
+            conf_res.SetAtomPosition(j, sidechain_conf.GetAtomPosition(i))
+        
+        mcs1 = rdFMCS.FindMCS([refmol, sidechain],timeout=3,bondCompare=rdFMCS.BondCompare.CompareAny)
+        mcs3 = rdFMCS.FindMCS([inpmol, sidechain],timeout=3,bondCompare=rdFMCS.BondCompare.CompareOrderExact)
         sidechain_ref = refmol.GetSubstructMatch(mcs1.queryMol)
         sidechain_gen = inpmol.GetSubstructMatch(mcs3.queryMol)
-        for i, j in zip(sidechain_ref,sidechain_gen):
-            ff_mcs.AddFixedPoint(j)
-            conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
         atom_connect_sidechain_core_ref = get_connect_atom_in_core(refmol, sidechain_ref)[0]
         atom_connect_sidechain_core_gen = get_connect_atom_in_core(inpmol, sidechain_gen)[0]
         ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
         conf_res.SetAtomPosition(atom_connect_sidechain_core_gen,bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref))
+     
     for i in range(6):
         try:
             ff_mcs.Minimize()
@@ -137,21 +149,6 @@ if __name__ == "__main__":
         try:
             for pdbid in ligands_smi[key][1]:
                 print(pdbid)
-                """
-                lig_lines = []                
-                with open(f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdbid}.ent") as pdbfile:
-                    for line in pdbfile:
-                        if line[0:6] == "HETATM" and line[17:20] == key:
-                            lig_lines.append(line)
-                ligand_num = len(lig_lines)
-                for i in range(1,len(lig_lines)):
-                    if lig_lines[i][17:26] != lig_lines[i-1][17:26]:
-                        ligand_num = i
-                        break
-                    else:
-                        pass
-                lig_Block = "".join(lig_lines[0:ligand_num])
-                """
                 pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdbid}.ent"
                 lig_Block = pdb_2_lig_block(pdb_file_path,key)
                 with open(f"{key}_{pdbid}_phe.pdb",'w') as phe:
