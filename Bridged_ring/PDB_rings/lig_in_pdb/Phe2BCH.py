@@ -1,26 +1,40 @@
-from tqdm import tqdm
 from rdkit import Chem, RDLogger
 from rdkit.Chem import AllChem, rdFMCS
 from rdkit.Chem import rdRGroupDecomposition as rdRGD
+from tqdm import tqdm
 
 # take off warnings
 RDLogger.DisableLog('rdApp.*')
 
-def pdb_2_lig_block(pdb_path,lig_id):
+def pdb_2_lig_block(pdb_path,lig_id,smiles):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
+    num = Chem.MolFromSmiles(smiles).GetNumAtoms()
     ligand_lines = []
     with open(pdb_path) as ent:
         for line in ent:
             if line[0:6] == "HETATM" and line[17:20] == lig_id:
                 ligand_lines.append(line)
-    ligand_num = len(ligand_lines)
+    # print("".join(ligand_lines))
+    ligand_start = 0
+    ligand_end = len(ligand_lines)
     for i in range(1,len(ligand_lines)):
         if ligand_lines[i][17:26] != ligand_lines[i-1][17:26]:
-            ligand_num = i
-            break
+            # print(ligand_lines[i][17:26])
+            ligand_end = i
+            if ligand_end - ligand_start >= num:
+                break
+            else:
+                ligand_start = i
+                ligand_end = len(ligand_lines)
         else:
             pass
-    lig_Block="".join(ligand_lines[0:ligand_num])
+    # print(ligand_end)
+    # print(ligand_start)
+    if ligand_end - ligand_start < 2*num:
+        lig_Block="".join(ligand_lines[ligand_start:ligand_end])
+    else:
+        lig_Block="".join(ligand_lines[ligand_start:ligand_start+num])
+
     return lig_Block
 
 def get_connect_atom_in_core(orimol,sidechain_atom_idxes):
@@ -55,7 +69,7 @@ def phe2bch_with_smiles(smi):
     # 读入分子
     mol = Chem.MolFromSmiles(smi)
     # 识别间位取代部分，* 匹配任意原子；'!:' 非芳香键； *!:ccc(!:*)ccc 含间位取代的苯环
-    patt = Chem.MolFromSmarts("*!:ccc(!:*)ccc")
+    patt = Chem.MolFromSmarts("*!:c1cc(!:*)ccc1")
     match = mol.GetSubstructMatches(patt)
     
     # 识别两个间位取代基与苯环的连接原子,识别需要被替换苯环原子
@@ -86,7 +100,10 @@ def getpdb(refmol,inpmol,pdbfile):
     bonded_conf = refmol.GetConformer()
     conf_res = inpmol.GetConformer()
     inpmol_prop = Chem.rdForceFieldHelpers.MMFFGetMoleculeProperties(inpmol)
-    ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol,inpmol_prop)
+    if inpmol_prop:
+        ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol,inpmol_prop)
+    else:
+        ff_mcs = Chem.rdForceFieldHelpers.UFFGetMoleculeForceField(inpmol)
 
     core = Chem.MolFromSmiles("C12CCCC(C2)C1")
     side_chains, unmatched = rdRGD.RGroupDecompose([core],[inpmol])
@@ -131,12 +148,15 @@ def phe2bch_topdb(smi0,refpdb,name):
     structure_from_pdb = Chem.MolFromPDBBlock(refpdb)
     structure_from_pdb = Chem.RemoveAllHs(structure_from_pdb)
     mol_tem = Chem.MolFromSmiles(smi0)
-    structure_refine = AllChem.AssignBondOrdersFromTemplate(mol_tem,structure_from_pdb)
+    try:
+        structure_refine = AllChem.AssignBondOrdersFromTemplate(mol_tem,structure_from_pdb)
+    except:
+        structure_refine = structure_from_pdb
     getpdb(structure_refine,mol,f"{name}")
 
 if __name__ == "__main__":
     ligands_smi = {}
-    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_menu/AaaaA_only2.csv") as AaaaA:
+    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_menu/AaaaA_only4.csv") as AaaaA:
         for line in AaaaA:
             info = line.split()
             ligands_smi[info[1]] = [info[0]]
@@ -147,16 +167,25 @@ if __name__ == "__main__":
             if info[0] in ligands_smi.keys():
                 ligands_smi[info[0]].append(info[1:])
     # print(2)
+
+    with open("phe2bch.log","w") as log:
+        log.write("Work starting \n")
     for key in tqdm(ligands_smi):
         # print(key)
         try:
             for pdbid in ligands_smi[key][1]:
-                # print(pdbid)
                 pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdbid}.ent"
-                lig_Block = pdb_2_lig_block(pdb_file_path,key)
+                lig_Block = pdb_2_lig_block(pdb_file_path,key,ligands_smi[key][0])
                 with open(f"{key}_{pdbid}_phe.pdb",'w') as phe:
                     for item in lig_Block:
                         phe.write(item)
-                phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
+                try:
+                    phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
+                except ValueError:
+                    with open("phe2bch.log","a") as log:
+                        log.write(f"ValueError of {key}_{pdbid}"+"\n")
+                except:
+                    with open("phe2bch.log","a") as log:
+                        log.write(f"Other Error of {key}_{pdbid}"+"\n")
         except:
             pass
