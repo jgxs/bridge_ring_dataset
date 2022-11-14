@@ -1,7 +1,10 @@
-from rdkit import Chem
-from rdkit.Chem import AllChem
-from rdkit.Chem import rdFMCS
+from tqdm import tqdm
+from rdkit import Chem, RDLogger
+from rdkit.Chem import AllChem, rdFMCS
 from rdkit.Chem import rdRGroupDecomposition as rdRGD
+
+# take off warnings
+RDLogger.DisableLog('rdApp.*')
 
 def pdb_2_lig_block(pdb_path,lig_id):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
@@ -133,22 +136,22 @@ def phe2bch_topdb(smi0,refpdb,name):
 
 if __name__ == "__main__":
     ligands_smi = {}
-    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_AaaaA_test3.csv") as AaaaA:
+    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_menu/AaaaA_only2.csv") as AaaaA:
         for line in AaaaA:
             info = line.split()
             ligands_smi[info[1]] = [info[0]]
-    print(1)
+    # print(1)
     with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/cc-to-pdb.tdd") as ligs:
         for line in ligs:
             info = line.split()
             if info[0] in ligands_smi.keys():
                 ligands_smi[info[0]].append(info[1:])
-    print(2)
-    for key in ligands_smi:
-        print(key)
+    # print(2)
+    for key in tqdm(ligands_smi):
+        # print(key)
         try:
             for pdbid in ligands_smi[key][1]:
-                print(pdbid)
+                # print(pdbid)
                 pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdbid}.ent"
                 lig_Block = pdb_2_lig_block(pdb_file_path,key)
                 with open(f"{key}_{pdbid}_phe.pdb",'w') as phe:
