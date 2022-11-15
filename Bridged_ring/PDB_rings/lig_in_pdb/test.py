@@ -6,18 +6,15 @@ with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/l
     for line in AaaaA:
         info = line.split()
         ligands_smi[info[1]] = [info[0]]
-key='1D9'
-pdb_id='4ibj'
+key='5N0'
+pdb_id='7ril'
 lig_smi=ligands_smi[key][0]
 # print(lig_smi)
 pdb_path = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdb_id}.ent"
 lig_Block = pdb_2_lig_block(pdb_path,key,lig_smi)
-print(lig_Block)
 # print(lig_Block)
-try:
-    test = phe2bch_topdb(lig_smi,lig_Block,f"{key}_{pdb_id}.pdb")
-except ValueError:
-    print("value error")
-except AttributeError:
-    print("ff error")
+# print(lig_Block)
+test = phe2bch_topdb(lig_smi,lig_Block,f"{key}_{pdb_id}.pdb")
+
+
 

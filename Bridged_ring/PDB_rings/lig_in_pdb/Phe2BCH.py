@@ -30,7 +30,7 @@ def pdb_2_lig_block(pdb_path,lig_id,smiles):
             pass
     # print(ligand_end)
     # print(ligand_start)
-    if ligand_end - ligand_start < 2*num:
+    if ligand_end - ligand_start <= 2*num:
         lig_Block="".join(ligand_lines[ligand_start:ligand_end])
     else:
         lig_Block="".join(ligand_lines[ligand_start:ligand_start+num])
@@ -142,11 +142,21 @@ def phe2bch_topdb(smi0,refpdb,name):
     smi = Chem.MolToSmiles(mol)
     mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
-    AllChem.EmbedMolecule(mol)
+    AllChem.EmbedMolecule(mol,maxAttempts=5000)
     mol = Chem.RemoveAllHs(mol)
 
     structure_from_pdb = Chem.MolFromPDBBlock(refpdb)
-    structure_from_pdb = Chem.RemoveAllHs(structure_from_pdb)
+    try:
+        structure_from_pdb.GetConformer()
+    except:
+        structure_from_pdb = Chem.MolFromPDBBlock(refpdb,sanitize=False,flavor=1)
+    
+    try:
+        structure_from_pdb = Chem.RemoveAllHs(structure_from_pdb)
+    except:
+        structure_from_pdb = Chem.RemoveHs(structure_from_pdb,implicitOnly=True)
+    # some ligand can not remove all H
+    
     mol_tem = Chem.MolFromSmiles(smi0)
     try:
         structure_refine = AllChem.AssignBondOrdersFromTemplate(mol_tem,structure_from_pdb)
@@ -181,11 +191,8 @@ if __name__ == "__main__":
                         phe.write(item)
                 try:
                     phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
-                except ValueError:
+                except Exception as ex:
                     with open("phe2bch.log","a") as log:
-                        log.write(f"ValueError of {key}_{pdbid}"+"\n")
-                except:
-                    with open("phe2bch.log","a") as log:
-                        log.write(f"Other Error of {key}_{pdbid}"+"\n")
+                        log.write(f"Error of {key}_{pdbid}: {ex}"+"\n")
         except:
             pass
