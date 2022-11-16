@@ -6,9 +6,10 @@ from tqdm import tqdm
 # take off warnings
 RDLogger.DisableLog('rdApp.*')
 
-def pdb_2_lig_block(pdb_path,lig_id,smiles):
+def pdb_2_lig_block(pdb_path,lig_id,smiles,outfile):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
-    num = Chem.MolFromSmiles(smiles).GetNumAtoms()
+    mol_from_smi = Chem.MolFromSmiles(smiles) 
+    num = mol_from_smi.GetNumAtoms()
     ligand_lines = []
     with open(pdb_path) as ent:
         for line in ent:
@@ -34,7 +35,14 @@ def pdb_2_lig_block(pdb_path,lig_id,smiles):
         lig_Block="".join(ligand_lines[ligand_start:ligand_end])
     else:
         lig_Block="".join(ligand_lines[ligand_start:ligand_start+num])
-
+    
+    lig_pdb = Chem.MolFromPDBBlock(lig_Block)
+    try:
+        lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi,lig_pdb)
+    except:
+        lig_pdb_refined = lig_pdb
+    lig_pdb = Chem.AddHs(lig_pdb_refined,addCoords=True)
+    Chem.MolToPDBFile(lig_pdb,outfile)
     return lig_Block
 
 def get_connect_atom_in_core(orimol,sidechain_atom_idxes):
@@ -134,6 +142,7 @@ def getpdb(refmol,inpmol,pdbfile):
             ff_mcs.Minimize()
         except:
             pass
+    inpmol = Chem.AddHs(inpmol,addCoords=True)
     Chem.MolToPDBFile(inpmol, pdbfile)
     return inpmol
 
@@ -166,12 +175,12 @@ def phe2bch_topdb(smi0,refpdb,name):
 
 if __name__ == "__main__":
     ligands_smi = {}
-    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_menu/AaaaA_only4.csv") as AaaaA:
+    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_menu/AaaaA_only4.csv") as AaaaA:
         for line in AaaaA:
             info = line.split()
             ligands_smi[info[1]] = [info[0]]
     # print(1)
-    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/cc-to-pdb.tdd") as ligs:
+    with open("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/cc-to-pdb.tdd") as ligs:
         for line in ligs:
             info = line.split()
             if info[0] in ligands_smi.keys():
@@ -184,11 +193,8 @@ if __name__ == "__main__":
         # print(key)
         try:
             for pdbid in ligands_smi[key][1]:
-                pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{pdbid}.ent"
-                lig_Block = pdb_2_lig_block(pdb_file_path,key,ligands_smi[key][0])
-                with open(f"{key}_{pdbid}_phe.pdb",'w') as phe:
-                    for item in lig_Block:
-                        phe.write(item)
+                pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdbid}.ent"
+                lig_Block = pdb_2_lig_block(pdb_file_path,key,ligands_smi[key][0],f"{key}_{pdbid}_phe.pdb")
                 try:
                     phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
                 except Exception as ex:
