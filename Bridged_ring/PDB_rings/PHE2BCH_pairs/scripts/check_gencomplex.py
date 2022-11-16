@@ -18,7 +18,7 @@ def split_target_chain(pdbfile, chain_id, target_path):
             output.write(item)
         output.write("TER\n") 
 
-all_ligs_dir = Path("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/bak/AaaaA4_ref/")
+all_ligs_dir = Path("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/")
 
 all_ligs_pdb = list(all_ligs_dir.glob('**/*bch.pdb'))
 lig_dict = {}
@@ -30,7 +30,7 @@ for item in all_ligs_pdb:
     else:
         lig_dict[ligid].append(pdbid)
 
-lig_complex_dir=str("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/lig_bch_complex")
+lig_complex_dir=str("/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_complex")
 try:
     Path(lig_complex_dir).mkdir()
 except:
@@ -46,7 +46,7 @@ for key in tqdm(lig_dict):
         ligand_stat = True
         lig_phe_bch = {}
         for group in ["bch","phe"]:
-            lig_complex = Path(f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/bak/AaaaA4_ref/{key}_{value}_{group}.pdb")
+            lig_complex = Path(f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/{key}_{value}_{group}.pdb")
             lig_phe_bch[group] = Ligand(lig_complex)
 
         for atom_bch_idx in lig_phe_bch["bch"].atoms:
@@ -76,9 +76,9 @@ for key in tqdm(lig_dict):
             lig_phe_bch = {}
             for group in ["bch","phe"]:
                 lig_complex = Path(f"{lig_complex_dir}/{key}/{value}/{key}_{value}_{group}.pdb")
-                lig_complex.symlink_to(f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/bak/AaaaA4_ref/{key}_{value}_{group}.pdb")
+                lig_complex.symlink_to(f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/{key}_{value}_{group}.pdb")
 
-            pdbent = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/lig_in_pdb/pdb_dataset/pdb/pdb{value}.ent"
+            pdbent = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{value}.ent"
             # pdbpath = Path(f"{lig_complex_dir}/{key}/{value}/{value}.pdb")
             # pdbpath.symlink_to(pdbent)
 
