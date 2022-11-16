@@ -18,3 +18,15 @@ __pycache__
 *.json
 *.pyc
 *checkpoints
+*.het
+*.mol
+*.mol2
+*.mae
+*.con
+*.out
+*log_files
+*out_files
+list
+*.in
+*/test/
+
