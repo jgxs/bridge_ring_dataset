@@ -129,7 +129,7 @@ def getpdb(refmol,inpmol,pdbfile):
         ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
         conf_res.SetAtomPosition(atom_connect_sidechain_core_gen,bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref))
      
-    for i in range(6):
+    for i in range(10):
         try:
             ff_mcs.Minimize()
         except:
