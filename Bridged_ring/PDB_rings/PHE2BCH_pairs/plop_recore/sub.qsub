@@ -1,0 +1,7 @@
+#!/bin/bash
+#$ -pe ampere 4
+#$ -cwd
+#$ -q ampere
+#$ -N RLI_plop
+
+bash /pubhome/yjcheng02/bridge_ring_dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/plop_recore/RLI_plop.sh
