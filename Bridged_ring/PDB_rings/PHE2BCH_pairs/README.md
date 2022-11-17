@@ -10,6 +10,6 @@ Inspirated by the [Synthesis of Meta-Substituted Arene Bioisosteres from [3.1.1]
 
 First, use `lig_AaaaA_sel.py` to select the ligands with meta-substituted arene group. In order to the group replacement in later step, we only choose the phenyl with two substitued groups. There are 942 ligands in PDB as required.
 
-Then, use `Phe2BCH.py` to generate the complex structure of the ligand with BCHep. We constuct 1177 complexes of 864 ligands. 
+Then, use `Phe2BCH.py` to generate the complex structure of the ligand with BCHep. We constuct 1177 complexes of 864 ligands. Here, we add the H atoms of the ligands through rdkit with the help of the smiles.
 
 Then, we plan to use plop to rescore the complex and calculate the interaction energy of the difference molecular pairs.
