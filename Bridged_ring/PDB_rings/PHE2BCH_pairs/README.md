@@ -12,4 +12,5 @@ First, use `lig_AaaaA_sel.py` to select the ligands with meta-substituted arene 
 
 Then, use `Phe2BCH.py` to generate the complex structure of the ligand with BCHep. We constuct 1177 complexes of 864 ligands. Here, we add the H atoms of the ligands through rdkit with the help of the smiles.
 
-Then, we plan to use plop to rescore the complex and calculate the interaction energy of the difference molecular pairs.
+Then, we plan to use plop to rescore the complex and calculate the interaction energy of the difference molecular pairs. The `RLI_plop.sh` is used to finish this work.
+
