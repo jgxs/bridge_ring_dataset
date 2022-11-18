@@ -11,7 +11,7 @@ pdb_id='3lj6'
 lig_smi=ligands_smi[key][0]
 # print(lig_smi)
 pdb_path = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdb_id}.ent"
-lig_Block = pdb_2_lig_block(pdb_path,key,lig_smi,"test_sin.pdb")
+lig_Block = exctract_ligand_from_pdb(pdb_path,key,lig_smi,"test_sin.pdb")
 # print(lig_Block)
 # print(lig_Block)
 with open(f"{key}_{pdb_id}_phe.pdb","w") as phe:
