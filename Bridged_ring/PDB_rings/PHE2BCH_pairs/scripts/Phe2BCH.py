@@ -6,8 +6,29 @@ from tqdm import tqdm
 # take off warnings
 RDLogger.DisableLog('rdApp.*')
 
-def pdb_2_lig_block(pdb_path,lig_id,smiles,outfile):
+def rename_atom(atom_to_rename,pdbinfo_ref):
+    name = str(atom_to_rename.GetSymbol())+str(atom_to_rename.GetIdx()+1)
+    if len(name) == 2:
+        name = " " + name + " "
+    elif len(name) == 3:
+        name = " "+name
+    elif len(name) == 4:
+        pass
+    pdbinfo = atom_to_rename.GetPDBResidueInfo()
+    if pdbinfo:
+        Chem.AtomMonomerInfo.SetName(pdbinfo,name)
+        Chem.AtomPDBResidueInfo.SetAltLoc(pdbinfo," ")
+        Chem.AtomPDBResidueInfo.SetResidueNumber(pdbinfo,1)
+    else:
+        Chem.Atom.SetMonomerInfo(atom_to_rename,pdbinfo_ref)
+        pdbinfo = atom_to_rename.GetPDBResidueInfo()
+        Chem.AtomMonomerInfo.SetName(pdbinfo,name)
+    return name
+
+
+def exctract_ligand_from_pdb(pdb_path,lig_id,smiles,outfile):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
+    # 并加氢重命名后以pdb格式储存在outfile中
     mol_from_smi = Chem.MolFromSmiles(smiles) 
     num = mol_from_smi.GetNumAtoms()
     ligand_lines = []
@@ -36,12 +57,16 @@ def pdb_2_lig_block(pdb_path,lig_id,smiles,outfile):
     else:
         lig_Block="".join(ligand_lines[ligand_start:ligand_start+num])
     
+    # 加氢和重命名原子
     lig_pdb = Chem.MolFromPDBBlock(lig_Block)
     try:
         lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi,lig_pdb)
     except:
         lig_pdb_refined = lig_pdb
     lig_pdb = Chem.AddHs(lig_pdb_refined,addCoords=True)
+    atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
+    for atom in lig_pdb.GetAtoms():
+        rename_atom(atom,atom_ref)
     Chem.MolToPDBFile(lig_pdb,outfile)
     return lig_Block
 
@@ -194,7 +219,7 @@ if __name__ == "__main__":
         try:
             for pdbid in ligands_smi[key][1]:
                 pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdbid}.ent"
-                lig_Block = pdb_2_lig_block(pdb_file_path,key,ligands_smi[key][0],f"{key}_{pdbid}_phe.pdb")
+                lig_Block = exctract_ligand_from_pdb(pdb_file_path,key,ligands_smi[key][0],f"{key}_{pdbid}_phe.pdb")
                 try:
                     phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
                 except Exception as ex:
