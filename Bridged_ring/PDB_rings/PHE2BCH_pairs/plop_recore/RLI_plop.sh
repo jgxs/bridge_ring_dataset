@@ -14,24 +14,20 @@ phe_file=`ls|grep phe`
 bch_file=`ls|grep bch`
 
 lig_id=${phe_file:0:3}
-sed -i "s/UNL/${lig_id}/g" $phe_file $bch_file
+sed -i "s/UNL/${lig_id}/g" $bch_file
 line=`head -n 1 $phe_file`
 sed -i "s/${line:20:3}/   /g" $phe_file
 
-grep "HETATM" $phe_file>001.het
-echo "TER" >> 001.het
-sed -i "s/${lig_id}/001/g" 001.het
+sed "s/${lig_id}/001/g" $phe_file > 001.het
 echo 001 > list
 
-grep "HETATM" $bch_file > 002.het
-echo "TER" >> 002.het
-sed -i "s/${lig_id}/002/g" 002.het
+sed "s/${lig_id}/002/g" $bch_file > 002.het
 echo 002 >> list
 
 for lig in 001 002
     do
         antechamber -i ${lig}.het -fi pdb -o ${lig}.mol2 -fo mol2 -c bcc -pf y -at sybyl 
-        cp ${lig}.het ${lig}.bak
+        cat ${lig}.het |grep HETATM > ${lig}.bak
         python /pubhome/yjcheng02/interact/renumber.py --mol ${lig}.mol2 --pdb ${lig}.bak 
         $schrodinger_path/utilities/mol2convert -imol2 ${lig}.mol2 -omae ${lig}.mae
         $schrodinger_path/utilities/hetgrp_ffgen 2005 ${lig}.mae
