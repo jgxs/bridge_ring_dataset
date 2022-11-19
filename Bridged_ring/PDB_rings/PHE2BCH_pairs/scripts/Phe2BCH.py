@@ -2,7 +2,7 @@ from rdkit import Chem, RDLogger
 from rdkit.Chem import AllChem, rdFMCS
 from rdkit.Chem import rdRGroupDecomposition as rdRGD
 from tqdm import tqdm
-
+from rdkit.Geometry.rdGeometry import Point3D
 # take off warnings
 RDLogger.DisableLog('rdApp.*')
 
@@ -25,17 +25,38 @@ def rename_atom(atom_to_rename,pdbinfo_ref):
         Chem.AtomMonomerInfo.SetName(pdbinfo,name)
     return name
 
+def check_triazole_pdb(mol_pdb,smi):
+    # sometimes the PDBparser will connect atoms uncorrectly
+    # this function will remove the extra bond of the atom of "CN1N=NC=C1"
+    mol_check = Chem.MolFromSmiles(smi)
+    triazole = Chem.MolFromSmiles("CN1N=NC=C1")
+    match_triazole = mol_check.GetSubstructMatch(triazole)
+    if not match_triazole:
+        return mol_pdb
+    else:
+        conf = mol_pdb.GetConformer()
+        mol_edited = Chem.EditableMol(mol_pdb)
+        for atom in mol_pdb.GetAtoms():
+            atom_symbol = atom.GetSymbol()
+            neighors = atom.GetNeighbors()
+            if atom_symbol == "N" and len(neighors) > 3:
+                N_idx = atom.GetIdx()
+                dist_Idx = [(Point3D.Distance(conf.GetAtomPosition(item.GetIdx()),conf.GetAtomPosition(N_idx)), item.GetIdx()) for item in neighors]
+        dist_Idx.sort()
+        mol_edited.RemoveBond(N_idx,dist_Idx[-1][1])
+        return mol_edited.GetMol()
 
 def exctract_ligand_from_pdb(pdb_path,lig_id,smiles,outfile):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
     # 并加氢重命名后以pdb格式储存在outfile中
     mol_from_smi = Chem.MolFromSmiles(smiles) 
     num = mol_from_smi.GetNumAtoms()
+    # print(num)
     ligand_lines = []
     with open(pdb_path) as ent:
         for line in ent:
             if line[0:6] == "HETATM" and line[17:20] == lig_id:
-                ligand_lines.append(line)
+                ligand_lines.append(line[0:78]+"  \n")
     # print("".join(ligand_lines))
     ligand_start = 0
     ligand_end = len(ligand_lines)
@@ -53,16 +74,36 @@ def exctract_ligand_from_pdb(pdb_path,lig_id,smiles,outfile):
     # print(ligand_end)
     # print(ligand_start)
     if ligand_end - ligand_start <= 2*num:
-        lig_Block="".join(ligand_lines[ligand_start:ligand_end])
+        # avoid the altLoc is not A
+        altLoc = ligand_lines[0][16]
+        # print(f"altLoc {altLoc}")
+        if altLoc == "A" or altLoc == " " or altLoc == "1":
+            lig_Block="".join(ligand_lines[ligand_start:ligand_end])
+        else:
+            lig_Block = ""
+            for line in ligand_lines[ligand_start:ligand_end]:
+                if line[16] == altLoc:
+                    lig_Block += line
     else:
         lig_Block="".join(ligand_lines[ligand_start:ligand_start+num])
     
+    # print(lig_Block)
+    
     # 加氢和重命名原子
     lig_pdb = Chem.MolFromPDBBlock(lig_Block)
+    # print(lig_pdb.GetNumAtoms())
+    if lig_pdb.GetNumAtoms() == 0:
+        lig_pdb = Chem.MolFromPDBBlock(lig_Block,flavor=1)
+        # print(lig_pdb.GetNumAtoms())
+    lig_pdb = check_triazole_pdb(lig_pdb,smiles)
     try:
         lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi,lig_pdb)
     except:
-        lig_pdb_refined = lig_pdb
+        # print("error")
+        remol = Chem.RemoveAllHs(mol_from_smi)
+        # print(lig_pdb.GetNumAtoms())
+        lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(remol,lig_pdb)
+
     lig_pdb = Chem.AddHs(lig_pdb_refined,addCoords=True)
     atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
     for atom in lig_pdb.GetAtoms():
@@ -162,7 +203,7 @@ def getpdb(refmol,inpmol,pdbfile):
         ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
         conf_res.SetAtomPosition(atom_connect_sidechain_core_gen,bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref))
      
-    for i in range(10):
+    for i in range(5):
         try:
             ff_mcs.Minimize()
         except:
@@ -176,14 +217,12 @@ def phe2bch_topdb(smi0,refpdb,name):
     smi = Chem.MolToSmiles(mol)
     mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
-    AllChem.EmbedMolecule(mol,maxAttempts=5000)
+    AllChem.EmbedMolecule(mol,maxAttempts=50000)
     mol = Chem.RemoveAllHs(mol)
 
     structure_from_pdb = Chem.MolFromPDBBlock(refpdb)
-    try:
-        structure_from_pdb.GetConformer()
-    except:
-        structure_from_pdb = Chem.MolFromPDBBlock(refpdb,sanitize=False,flavor=1)
+    if structure_from_pdb.GetNumAtoms() == 0:
+        structure_from_pdb = Chem.MolFromPDBBlock(refpdb,flavor=1)
     
     try:
         structure_from_pdb = Chem.RemoveAllHs(structure_from_pdb)
@@ -212,18 +251,27 @@ if __name__ == "__main__":
                 ligands_smi[info[0]].append(info[1:])
     # print(2)
 
-    with open("phe2bch.log","w") as log:
+    with open("phe2bch.err","w") as log:
         log.write("Work starting \n")
+    with open("phe2bch.log","w") as log:
+        log.write("Working starting \n")
     for key in tqdm(ligands_smi):
-        # print(key)
+        with open("phe2bch.log","a") as log:
+            log.write(f"\n{key}\n")
         try:
             for pdbid in ligands_smi[key][1]:
+                with open("phe2bch.log","a") as log:
+                    log.write(f"{pdbid}\n")
                 pdb_file_path=f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdbid}.ent"
                 lig_Block = exctract_ligand_from_pdb(pdb_file_path,key,ligands_smi[key][0],f"{key}_{pdbid}_phe.pdb")
                 try:
+                    with open("phe2bch.log","a") as log:
+                        log.write(f"{key}_{pdbid}\n")
                     phe2bch_topdb(ligands_smi[key][0],lig_Block,f"{key}_{pdbid}_bch.pdb")
                 except Exception as ex:
-                    with open("phe2bch.log","a") as log:
+                    with open("phe2bch.err","a") as log:
                         log.write(f"Error of {key}_{pdbid}: {ex}"+"\n")
-        except:
+        except Exception as ex:
+            with open("phe2bch.err","a") as log:
+                log.write(f"log out: {key}_{pdbid}: {ex}"+"\n")
             pass
