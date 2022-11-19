@@ -284,6 +284,8 @@ def phe2bch_topdb(smi0, refpdb, name):
         )
     except:
         structure_refine = structure_from_pdb
+    
+    # print("test")
     return getpdb(structure_refine, mol, f"{name}")
 
 
@@ -294,7 +296,7 @@ if __name__ == "__main__":
     ) as AaaaA:
         for line in AaaaA:
             info = line.split()
-            ligands_smi[info[1]] = [info[0]]
+            ligands_smi[info[1]] = [info[0],False]
     # print(1)
     with open(
         "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/cc-to-pdb.tdd"
@@ -303,17 +305,18 @@ if __name__ == "__main__":
             info = line.split()
             if info[0] in ligands_smi.keys():
                 ligands_smi[info[0]].append(info[1:])
+                ligands_smi[info[0]][1] = True
     # print(2)
 
     with open("phe2bch.err", "w") as log:
         log.write("Work starting \n")
     with open("phe2bch.log", "w") as log:
         log.write("Working starting \n")
+
+
     for key in tqdm(ligands_smi):
-        with open("phe2bch.log", "a") as log:
-            log.write(f"\n{key}\n")
-        try:
-            for pdbid in ligands_smi[key][1]:
+        if ligands_smi[key][1]:
+            for pdbid in ligands_smi[key][2]:
                 with open("phe2bch.log", "a") as log:
                     log.write(f"{pdbid}\n")
                 pdb_file_path = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdbid}.ent"
@@ -329,7 +332,3 @@ if __name__ == "__main__":
                 except Exception as ex:
                     with open("phe2bch.err", "a") as log:
                         log.write(f"Error of {key}_{pdbid}: {ex}" + "\n")
-        except Exception as ex:
-            with open("phe2bch.err", "a") as log:
-                log.write(f"log out: {key}_{pdbid}: {ex}" + "\n")
-            pass
