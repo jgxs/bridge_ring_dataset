@@ -9,7 +9,7 @@ with open(
         info = line.split()
         ligands_smi[info[1]] = [info[0]]
 # inp = "0FS_3vc4" segmentation fault
-inp = "RFQ_4d3u"
+inp = "TVM_5nfa"
 key = inp.split("_")[0]
 pdb_id = inp.split("_")[1]
 lig_smi = ligands_smi[key][0]

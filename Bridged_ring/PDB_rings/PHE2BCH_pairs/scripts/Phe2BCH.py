@@ -80,7 +80,7 @@ def check_triazole_pdb(mol_pdb, smi):
 
 def getconf_from_missingatom_pdb(refmol, inpmol):
 
-    AllChem.EmbedMolecule(inpmol, maxAttempts=50000)
+    AllChem.EmbedMolecule(inpmol, maxAttempts=50)
     inpmol = Chem.RemoveAllHs(inpmol)
 
     mcs = rdFMCS.FindMCS(
@@ -166,7 +166,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
 
     if "H" in smiles:
         mol_from_smi = Chem.RemoveAllHs(mol_from_smi)
-
+    print("test")
     if lig_pdb.GetNumAtoms() >= mol_from_smi.GetNumAtoms():
         lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi, lig_pdb)
     else:

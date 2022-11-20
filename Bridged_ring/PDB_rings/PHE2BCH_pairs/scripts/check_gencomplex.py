@@ -20,23 +20,25 @@ def split_target_chain(pdbfile, chain_id, target_path):
             output.write(item)
         output.write("TER\n")
 
-
-all_ligs_dir = Path(
-    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/"
-)
+all_ligs_str = "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/"
+all_ligs_dir = Path(all_ligs_str)
 
 all_ligs_pdb = list(all_ligs_dir.glob("**/*bch.pdb"))
 lig_dict = {}
 for item in all_ligs_pdb:
-    ligid, pdbid, type = item.parts[-1].replace(".pdb", "").split("_")
-    if ligid not in lig_dict:
-        lig_dict[ligid] = []
-        lig_dict[ligid].append(pdbid)
+    ligid, pdbid, type = item.name.replace(".pdb", "").split("_")
+    phe_path = all_ligs_dir/f"{ligid}_{pdbid}_phe.pdb"
+    if phe_path.exists():
+        if ligid not in lig_dict:
+            lig_dict[ligid] = []
+            lig_dict[ligid].append(pdbid)
+        else:
+            lig_dict[ligid].append(pdbid)
     else:
-        lig_dict[ligid].append(pdbid)
+        pass
 
 lig_complex_dir = str(
-    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_complex"
+    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_refine"
 )
 try:
     Path(lig_complex_dir).mkdir()
