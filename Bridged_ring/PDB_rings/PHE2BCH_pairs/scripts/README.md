@@ -108,3 +108,6 @@ remol = Chem.RemoveAllHs(mol_from_smi)
 lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(remol,lig_pdb)
 ```
 
+## Chem.SanitizeMol()
+check mol 
+when generate the mol in an inhouse way, do not forget it with it.

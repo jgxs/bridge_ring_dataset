@@ -8,7 +8,7 @@ with open(
     for line in AaaaA:
         info = line.split()
         ligands_smi[info[1]] = [info[0]]
-# inp = "0FS_3vc4" segmentation fault 
+# inp = "0FS_3vc4" segmentation fault
 inp = "RFQ_4d3u"
 key = inp.split("_")[0]
 pdb_id = inp.split("_")[1]

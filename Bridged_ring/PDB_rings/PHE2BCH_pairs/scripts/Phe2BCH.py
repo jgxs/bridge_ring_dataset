@@ -28,6 +28,7 @@ def rename_atom(atom_to_rename, pdbinfo_ref):
         Chem.AtomMonomerInfo.SetName(pdbinfo, name)
     return name
 
+
 def check_altLoc(altLoc_symbol, lines):
     # sometimes the altLoc in ligands line are not "A"," " or "1"
     # which leads to the pdbparser will ignore them
@@ -40,6 +41,7 @@ def check_altLoc(altLoc_symbol, lines):
             if line[16] == altLoc_symbol:
                 lig_Block += line
         return lig_Block
+
 
 def check_triazole_pdb(mol_pdb, smi):
     # sometimes the PDBparser will connect atoms uncorrectly
@@ -75,12 +77,18 @@ def check_triazole_pdb(mol_pdb, smi):
         else:
             return mol_pdb
 
-def getconf_from_missingatom_pdb(refmol,inpmol):
-    
+
+def getconf_from_missingatom_pdb(refmol, inpmol):
+
     AllChem.EmbedMolecule(inpmol, maxAttempts=50000)
     inpmol = Chem.RemoveAllHs(inpmol)
-    
-    mcs = rdFMCS.FindMCS([inpmol,refmol],timeout=3, completeRingsOnly=True,bondCompare=rdFMCS.BondCompare.CompareAny)
+
+    mcs = rdFMCS.FindMCS(
+        [inpmol, refmol],
+        timeout=3,
+        completeRingsOnly=True,
+        bondCompare=rdFMCS.BondCompare.CompareAny,
+    )
     if not mcs.queryMol:
         raise ValueError("there are too many missing atoms")
     bonded_conf = refmol.GetConformer()
@@ -90,11 +98,13 @@ def getconf_from_missingatom_pdb(refmol,inpmol):
         ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol, inpmol_prop)
     else:
         ff_mcs = Chem.rdForceFieldHelpers.UFFGetMoleculeForceField(inpmol)
-    
-    for i, j in zip(refmol.GetSubstructMatch(mcs.queryMol), inpmol.GetSubstructMatch(mcs.queryMol)):
+
+    for i, j in zip(
+        refmol.GetSubstructMatch(mcs.queryMol), inpmol.GetSubstructMatch(mcs.queryMol)
+    ):
         ff_mcs.AddFixedPoint(j)
         conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
-    
+
     for i in range(10):
         try:
             ff_mcs.Minimize()
@@ -103,6 +113,7 @@ def getconf_from_missingatom_pdb(refmol,inpmol):
             pass
     Chem.MolToPDBBlock(inpmol)
     return inpmol
+
 
 def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
@@ -132,10 +143,12 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     # print(ligand_end)
     # print(ligand_start)
     altLoc = ligand_lines[ligand_start][16]
-    if ligand_end - ligand_start <= 2*num:
+    if ligand_end - ligand_start <= 2 * num:
         lig_Block = check_altLoc(altLoc, ligand_lines[ligand_start:ligand_end])
     else:
-        lig_Block = check_altLoc(altLoc, ligand_lines[ligand_start:ligand_start+num])
+        lig_Block = check_altLoc(
+            altLoc, ligand_lines[ligand_start : ligand_start + num]
+        )
 
     # print(lig_Block)
 
@@ -150,7 +163,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
         # print(lig_pdb.GetNumAtoms())
 
     lig_pdb = check_triazole_pdb(lig_pdb, smiles)
-    
+
     if "H" in smiles:
         mol_from_smi = Chem.RemoveAllHs(mol_from_smi)
 
@@ -159,7 +172,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     else:
         lig_pdb_refined = getconf_from_missingatom_pdb(lig_pdb, mol_from_smi)
     lig_pdb_refined.GetConformer()
-    
+
     lig_pdb_H = Chem.AddHs(lig_pdb_refined, addCoords=True)
     lig_pdb_H.GetConformer()
     atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
@@ -168,6 +181,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     Chem.MolToPDBFile(lig_pdb_H, outfile)
     lig_pdb_H.GetConformer()
     return lig_pdb_H
+
 
 def get_connect_atom_in_core(orimol, sidechain_atom_idxes):
     # mol is the whole molecule, the sidechain_atom_idx is the a tuple of the atom idx of a sidechain;
@@ -178,6 +192,7 @@ def get_connect_atom_in_core(orimol, sidechain_atom_idxes):
             if atom.GetIdx() not in sidechain_atom_idxes:
                 connect_atoms_in_core.append(atom.GetIdx())
     return connect_atoms_in_core
+
 
 def get_connect_atom_in_sidechain(orimol, core):
     # the core is the a tuple of the atom idx of the core;
@@ -192,6 +207,7 @@ def get_connect_atom_in_sidechain(orimol, core):
             core_atom_idx = set(r)
             connect_atom_in_sidechain = set(core) - core_atom_idx
     return list(connect_atom_in_sidechain)
+
 
 def phe2bch_with_smiles(smi):
     # 用于将给定配体中的*间位苯环骨架*替换为*螺旋桨烷骨架*的脚本
@@ -228,7 +244,7 @@ def phe2bch_with_smiles(smi):
     for i in phenyl_atoms:
         mid_edited.RemoveAtom(i)
     BCHep_mol = mid_edited.GetMol()
-        # check mol 
+    # check mol
     try:
         Chem.SanitizeMol(BCHep_mol)
     except:
@@ -300,7 +316,7 @@ def getpdb(refmol, inpmol, pdbfile):
             ff_mcs.Minimize()
         except:
             pass
-    
+
     inpmol = Chem.AddHs(inpmol, addCoords=True)
     Chem.MolToPDBFile(inpmol, pdbfile)
     return inpmol
@@ -308,10 +324,10 @@ def getpdb(refmol, inpmol, pdbfile):
 
 def phe2bch_topdb(smi0, refpdb, name):
     mol = phe2bch_with_smiles(smi0)
-    ## Totally can not understand 
+    ## Totally can not understand
     # here must mol to smi to mol
-    # otherwise, the Allchem.EmbedMolecule may be 
-    # Segmentation fault 
+    # otherwise, the Allchem.EmbedMolecule may be
+    # Segmentation fault
     # the bug detail is the "0FS_3vc4"
     smi = Chem.MolToSmiles(mol)
     mol = Chem.MolFromSmiles(smi)
@@ -319,7 +335,7 @@ def phe2bch_topdb(smi0, refpdb, name):
     AllChem.EmbedMolecule(mol, maxAttempts=5000)
     # print("test")
     mol = Chem.RemoveAllHs(mol)
-    
+
     structure_from_pdb = refpdb
     structure_from_pdb.GetConformer()
     try:
@@ -339,7 +355,7 @@ if __name__ == "__main__":
     ) as AaaaA:
         for line in AaaaA:
             info = line.split()
-            ligands_smi[info[1]] = [info[0],False]
+            ligands_smi[info[1]] = [info[0], False]
     # print(1)
     with open(
         "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/cc-to-pdb.tdd"
@@ -366,8 +382,11 @@ if __name__ == "__main__":
 
                 try:
                     lig_Block = exctract_ligand_from_pdb(
-                        pdb_file_path, key, ligands_smi[key][0], f"{key}_{pdbid}_phe.pdb"
-                        )
+                        pdb_file_path,
+                        key,
+                        ligands_smi[key][0],
+                        f"{key}_{pdbid}_phe.pdb",
+                    )
                 except Exception as ex:
                     with open("phe2bch.err", "a") as log:
                         log.write(f"PDBload error of {key}_{pdbid}: {ex}" + "\n")
