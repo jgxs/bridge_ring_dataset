@@ -20,6 +20,9 @@ def split_target_chain(pdbfile, chain_id, target_path):
             output.write(item)
         output.write("TER\n")
 
+with open("check.log", "w") as log:
+    log.write("check staring\n")
+
 all_ligs_str = "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/bak/AaaaA4_ref/"
 all_ligs_dir = Path(all_ligs_str)
 
@@ -35,6 +38,8 @@ for item in all_ligs_pdb:
         else:
             lig_dict[ligid].append(pdbid)
     else:
+        with open("check.log", "w") as log:
+            log.write(f"{ligid}_{pdbid}_phe.pdb is missing\n")
         pass
 
 lig_complex_dir = str(
@@ -44,10 +49,6 @@ try:
     Path(lig_complex_dir).mkdir()
 except:
     pass
-
-
-with open("check.log", "w") as log:
-    log.write("check staring\n")
 
 for key in tqdm(lig_dict):
     for value in lig_dict[key]:
@@ -70,7 +71,7 @@ for key in tqdm(lig_dict):
             if min_dist > 20:
                 ligand_stat = False
                 with open("check.log", "a") as output:
-                    output.write(f"{key}_{value}\n")
+                    output.write(f"{key}_{value}_bch.pdb is wrong\n")
                 break
 
         if ligand_stat:
