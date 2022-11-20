@@ -44,7 +44,7 @@ However, that only can handle the mol with few atoms.
 Here, display another way the aovid that problem: remove the wrong bond by comparing the length of bonds
 
 ```python
-def check_triazole_pdb(mol_pdb,smi):
+def check_triazole_pdb(mol_pdb, smi):
     # sometimes the PDBparser will connect atoms uncorrectly
     # this function will remove the extra bond of the atom of "CN1N=NC=C1"
     mol_check = Chem.MolFromSmiles(smi)
@@ -55,15 +55,28 @@ def check_triazole_pdb(mol_pdb,smi):
     else:
         conf = mol_pdb.GetConformer()
         mol_edited = Chem.EditableMol(mol_pdb)
+        dist_Idx = []
         for atom in mol_pdb.GetAtoms():
             atom_symbol = atom.GetSymbol()
             neighors = atom.GetNeighbors()
             if atom_symbol == "N" and len(neighors) > 3:
                 N_idx = atom.GetIdx()
-                dist_Idx = [(Point3D.Distance(conf.GetAtomPosition(item.GetIdx()),conf.GetAtomPosition(N_idx)), item.GetIdx()) for item in neighors]
-        dist_Idx.sort()
-        mol_edited.RemoveBond(N_idx,dist_Idx[-1][1])
-        return mol_edited.GetMol()
+                dist_Idx = [
+                    (
+                        Point3D.Distance(
+                            conf.GetAtomPosition(item.GetIdx()),
+                            conf.GetAtomPosition(N_idx),
+                        ),
+                        item.GetIdx(),
+                    )
+                    for item in neighors
+                ]
+        if len(dist_Idx) > 0:
+            dist_Idx.sort()
+            mol_edited.RemoveBond(N_idx, dist_Idx[-1][1])
+            return mol_edited.GetMol()
+        else:
+            return mol_pdb
 
 ```
 

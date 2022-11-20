@@ -40,6 +40,7 @@ def check_triazole_pdb(mol_pdb, smi):
     else:
         conf = mol_pdb.GetConformer()
         mol_edited = Chem.EditableMol(mol_pdb)
+        dist_Idx = []
         for atom in mol_pdb.GetAtoms():
             atom_symbol = atom.GetSymbol()
             neighors = atom.GetNeighbors()
@@ -55,10 +56,40 @@ def check_triazole_pdb(mol_pdb, smi):
                     )
                     for item in neighors
                 ]
-        dist_Idx.sort()
-        mol_edited.RemoveBond(N_idx, dist_Idx[-1][1])
-        return mol_edited.GetMol()
+        if len(dist_Idx) > 0:
+            dist_Idx.sort()
+            mol_edited.RemoveBond(N_idx, dist_Idx[-1][1])
+            return mol_edited.GetMol()
+        else:
+            return mol_pdb
 
+
+def getconf_from_missingatom_pdb(refmol,inpmol):
+    
+    AllChem.EmbedMolecule(inpmol, maxAttempts=50000)
+    inpmol = Chem.RemoveAllHs(inpmol)
+    
+    mcs = rdFMCS.FindMCS([inpmol,refmol],timeout=3, completeRingsOnly=True,bondCompare=rdFMCS.BondCompare.CompareAny)
+    bonded_conf = refmol.GetConformer()
+    conf_res = inpmol.GetConformer()
+    inpmol_prop = Chem.rdForceFieldHelpers.MMFFGetMoleculeProperties(inpmol)
+    if inpmol_prop:
+        ff_mcs = Chem.rdForceFieldHelpers.MMFFGetMoleculeForceField(inpmol, inpmol_prop)
+    else:
+        ff_mcs = Chem.rdForceFieldHelpers.UFFGetMoleculeForceField(inpmol)
+    
+    for i, j in zip(refmol.GetSubstructMatch(mcs.queryMol), inpmol.GetSubstructMatch(mcs.queryMol)):
+        ff_mcs.AddFixedPoint(j)
+        conf_res.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
+    
+    for i in range(10):
+        try:
+            ff_mcs.Minimize()
+            pass
+        except:
+            pass
+    Chem.MolToPDBBlock(inpmol)
+    return inpmol
 
 def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     # 抽取pdbfile中的ligand部分,获得rdkit可读字符串形式的pdbBlock
@@ -89,7 +120,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     # print(ligand_start)
     if ligand_end - ligand_start <= 2 * num:
         # avoid the altLoc is not A
-        altLoc = ligand_lines[0][16]
+        altLoc = ligand_lines[ligand_start][16]
         # print(f"altLoc {altLoc}")
         if altLoc == "A" or altLoc == " " or altLoc == "1":
             lig_Block = "".join(ligand_lines[ligand_start:ligand_end])
@@ -109,20 +140,24 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     if lig_pdb.GetNumAtoms() == 0:
         lig_pdb = Chem.MolFromPDBBlock(lig_Block, flavor=1)
         # print(lig_pdb.GetNumAtoms())
+    
     lig_pdb = check_triazole_pdb(lig_pdb, smiles)
-    try:
-        lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi, lig_pdb)
-    except:
-        # print("error")
-        remol = Chem.RemoveAllHs(mol_from_smi)
-        # print(lig_pdb.GetNumAtoms())
-        lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(remol, lig_pdb)
+    
+    if "H" in smiles:
+        mol_from_smi = Chem.RemoveAllHs(mol_from_smi)
 
-    lig_pdb = Chem.AddHs(lig_pdb_refined, addCoords=True)
+    if lig_pdb.GetNumAtoms() >= mol_from_smi.GetNumAtoms():
+        lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi, lig_pdb)
+    else:
+        lig_pdb_refined = getconf_from_missingatom_pdb(lig_pdb, mol_from_smi)
+
+    
+    lig_pdb_H = Chem.AddHs(lig_pdb_refined, addCoords=True)
+    
     atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
-    for atom in lig_pdb.GetAtoms():
+    for atom in lig_pdb_H.GetAtoms():
         rename_atom(atom, atom_ref)
-    Chem.MolToPDBFile(lig_pdb, outfile)
+    Chem.MolToPDBFile(lig_pdb_H, outfile)
     return lig_Block
 
 
@@ -313,19 +348,23 @@ if __name__ == "__main__":
     with open("phe2bch.log", "w") as log:
         log.write("Working starting \n")
 
-
+    pdb_dir = "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/"
     for key in tqdm(ligands_smi):
         if ligands_smi[key][1]:
             for pdbid in ligands_smi[key][2]:
                 with open("phe2bch.log", "a") as log:
                     log.write(f"{pdbid}\n")
-                pdb_file_path = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdbid}.ent"
-                lig_Block = exctract_ligand_from_pdb(
-                    pdb_file_path, key, ligands_smi[key][0], f"{key}_{pdbid}_phe.pdb"
-                )
+                pdb_file_path = pdb_dir + f"pdb{pdbid}.ent"
+
                 try:
-                    with open("phe2bch.log", "a") as log:
-                        log.write(f"{key}_{pdbid}\n")
+                    lig_Block = exctract_ligand_from_pdb(
+                        pdb_file_path, key, ligands_smi[key][0], f"{key}_{pdbid}_phe.pdb"
+                        )
+                except Exception as ex:
+                    with open("phe2bch.err", "a") as log:
+                        log.write(f"PDBload error of {key}_{pdbid}: {ex}" + "\n")
+
+                try:
                     phe2bch_topdb(
                         ligands_smi[key][0], lig_Block, f"{key}_{pdbid}_bch.pdb"
                     )
