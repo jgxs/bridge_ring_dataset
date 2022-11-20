@@ -8,8 +8,8 @@ with open(
     for line in AaaaA:
         info = line.split()
         ligands_smi[info[1]] = [info[0]]
+# inp = "2RK_4o7c"
 inp = "YLJ_7m03"
-# inp = "ZYM_4f6v"
 key = inp.split("_")[0]
 pdb_id = inp.split("_")[1]
 lig_smi = ligands_smi[key][0]

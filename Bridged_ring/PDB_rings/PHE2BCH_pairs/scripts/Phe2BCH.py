@@ -70,6 +70,8 @@ def getconf_from_missingatom_pdb(refmol,inpmol):
     inpmol = Chem.RemoveAllHs(inpmol)
     
     mcs = rdFMCS.FindMCS([inpmol,refmol],timeout=3, completeRingsOnly=True,bondCompare=rdFMCS.BondCompare.CompareAny)
+    if not mcs.queryMol:
+        raise ValueError("there are too many missing atoms")
     bonded_conf = refmol.GetConformer()
     conf_res = inpmol.GetConformer()
     inpmol_prop = Chem.rdForceFieldHelpers.MMFFGetMoleculeProperties(inpmol)
@@ -118,19 +120,14 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
             pass
     # print(ligand_end)
     # print(ligand_start)
-    if ligand_end - ligand_start <= 2 * num:
-        # avoid the altLoc is not A
-        altLoc = ligand_lines[ligand_start][16]
-        # print(f"altLoc {altLoc}")
-        if altLoc == "A" or altLoc == " " or altLoc == "1":
-            lig_Block = "".join(ligand_lines[ligand_start:ligand_end])
-        else:
-            lig_Block = ""
-            for line in ligand_lines[ligand_start:ligand_end]:
-                if line[16] == altLoc:
-                    lig_Block += line
+    altLoc = ligand_lines[ligand_start][16]
+    if altLoc == "A" or altLoc == " " or altLoc == "1":
+        lig_Block = "".join(ligand_lines[ligand_start:ligand_end])
     else:
-        lig_Block = "".join(ligand_lines[ligand_start : ligand_start + num])
+        lig_Block = ""
+        for line in ligand_lines[ligand_start:ligand_end]:
+            if line[16] == altLoc:
+                lig_Block += line
 
     # print(lig_Block)
 
@@ -158,7 +155,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     for atom in lig_pdb_H.GetAtoms():
         rename_atom(atom, atom_ref)
     Chem.MolToPDBFile(lig_pdb_H, outfile)
-    return lig_Block
+    return lig_pdb_H
 
 
 def get_connect_atom_in_core(orimol, sidechain_atom_idxes):
@@ -222,6 +219,12 @@ def phe2bch_with_smiles(smi):
     for i in phenyl_atoms:
         mid_edited.RemoveAtom(i)
     BCHep_mol = mid_edited.GetMol()
+
+    # check mol 
+    try:
+        Chem.SanitizeMol(BCHep_mol)
+    except:
+        raise ValueError("no match 6-5 rings")
     return BCHep_mol
 
 
@@ -284,11 +287,12 @@ def getpdb(refmol, inpmol, pdbfile):
             bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref),
         )
 
-    for i in range(5):
+    for i in range(50):
         try:
             ff_mcs.Minimize()
         except:
             pass
+    
     inpmol = Chem.AddHs(inpmol, addCoords=True)
     Chem.MolToPDBFile(inpmol, pdbfile)
     return inpmol
@@ -296,29 +300,16 @@ def getpdb(refmol, inpmol, pdbfile):
 
 def phe2bch_topdb(smi0, refpdb, name):
     mol = phe2bch_with_smiles(smi0)
-    smi = Chem.MolToSmiles(mol)
-    mol = Chem.MolFromSmiles(smi)
     mol = Chem.AddHs(mol)
     AllChem.EmbedMolecule(mol, maxAttempts=50000)
     mol = Chem.RemoveAllHs(mol)
 
-    structure_from_pdb = Chem.MolFromPDBBlock(refpdb)
-    if structure_from_pdb.GetNumAtoms() == 0:
-        structure_from_pdb = Chem.MolFromPDBBlock(refpdb, flavor=1)
-
+    structure_from_pdb = refpdb
     try:
-        structure_from_pdb = Chem.RemoveAllHs(structure_from_pdb)
+        structure_refine = Chem.RemoveAllHs(structure_from_pdb)
     except:
-        structure_from_pdb = Chem.RemoveHs(structure_from_pdb, implicitOnly=True)
+        structure_refine = Chem.RemoveHs(structure_from_pdb, implicitOnly=True)
     # some ligand can not remove all H
-
-    mol_tem = Chem.MolFromSmiles(smi0)
-    try:
-        structure_refine = AllChem.AssignBondOrdersFromTemplate(
-            mol_tem, structure_from_pdb
-        )
-    except:
-        structure_refine = structure_from_pdb
     
     # print("test")
     return getpdb(structure_refine, mol, f"{name}")
