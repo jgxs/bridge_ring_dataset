@@ -25,6 +25,7 @@ def rename_atom(atom_to_rename, pdbinfo_ref):
     else:
         Chem.Atom.SetMonomerInfo(atom_to_rename, pdbinfo_ref)
         pdbinfo = atom_to_rename.GetPDBResidueInfo()
+        Chem.AtomPDBResidueInfo.SetAltLoc(pdbinfo, " ")
         Chem.AtomMonomerInfo.SetName(pdbinfo, name)
     return name
 
@@ -166,7 +167,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
 
     if "H" in smiles:
         mol_from_smi = Chem.RemoveAllHs(mol_from_smi)
-    print("test")
+    # print("test")
     if lig_pdb.GetNumAtoms() >= mol_from_smi.GetNumAtoms():
         lig_pdb_refined = AllChem.AssignBondOrdersFromTemplate(mol_from_smi, lig_pdb)
     else:
@@ -174,12 +175,14 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     lig_pdb_refined.GetConformer()
 
     lig_pdb_H = Chem.AddHs(lig_pdb_refined, addCoords=True)
-    lig_pdb_H.GetConformer()
+
     atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
+    Chem.AtomPDBResidueInfo.SetAltLoc(atom_ref, " ")
+    Chem.AtomPDBResidueInfo.SetResidueNumber(atom_ref, 1)
     for atom in lig_pdb_H.GetAtoms():
         rename_atom(atom, atom_ref)
     Chem.MolToPDBFile(lig_pdb_H, outfile)
-    lig_pdb_H.GetConformer()
+
     return lig_pdb_H
 
 
