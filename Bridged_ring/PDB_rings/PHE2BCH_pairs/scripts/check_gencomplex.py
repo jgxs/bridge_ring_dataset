@@ -43,7 +43,7 @@ for item in all_ligs_pdb:
         pass
 
 lig_complex_dir = str(
-    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_refine"
+    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_test"
 )
 try:
     Path(lig_complex_dir).mkdir()

@@ -211,25 +211,6 @@ def get_connect_atom_in_sidechain(orimol, core):
             connect_atom_in_sidechain = set(core) - core_atom_idx
     return list(connect_atom_in_sidechain)
 
-def get_connecter(mol,patt):
-    # in fact, this function is able to replace two function above.
-    # however, i realise it too later... 
-    core_connecter = []
-    side_connecter = []
-    match_patt = mol.GetSubstructMatches(patt)
-    match_set = set(match_patt[0])
-    for idx in match_patt[0]:
-        atom = mol.GetAtomWithIdx(idx)
-        neighbors = {neighbor.GetIdx() for neighbor in atom.GetNeighbors()}
-        if neighbors & match_set == neighbors:
-            pass
-        else:
-            side_connecter.append(idx)
-            for i in list(neighbors):
-                if i in match_set:
-                    core_connecter.append(i)
-    return [set(core_connecter),set(side_connecter)]
-
 def phe2bch_with_smiles(smi):
     # 用于将给定配体中的*间位苯环骨架*替换为*螺旋桨烷骨架*的脚本
     # 用smi指定ligand的结构
@@ -272,6 +253,30 @@ def phe2bch_with_smiles(smi):
         raise ValueError("no match 6-5 rings")
     return BCHep_mol
 
+def get_connecter(mol,patt):
+    # in fact, this function is able to replace two function above.
+    # however, i realise it too later... 
+    core_connecter = []
+    side_connecter = []
+    match_patt = mol.GetSubstructMatches(patt)
+    match_set = set(match_patt[0])
+    for idx in match_patt[0]:
+        atom = mol.GetAtomWithIdx(idx)
+        neighbors = {neighbor.GetIdx() for neighbor in atom.GetNeighbors()}
+        if neighbors & match_set == neighbors:
+            if len(list(neighbors)) == 1:
+                side_connecter.append(idx)
+                core_connecter.append(list(neighbors)[0])
+            else:
+                pass
+        else:
+            side_connecter.append(idx)
+            for i in list(neighbors):
+                if i in match_set:
+                    core_connecter.append(i)
+    return [set(core_connecter),set(side_connecter),set(match_patt[0])-set(core_connecter)-set(side_connecter)]
+
+
 def get_correct_match(mol_whole, mcs, arranged_atoms, core_mol, debug):
     match_to_use = False
     correct_matches = mol_whole.GetSubstructMatches(mcs.queryMol)
@@ -285,11 +290,11 @@ def get_correct_match(mol_whole, mcs, arranged_atoms, core_mol, debug):
         # however, the len(correct_matches) > 1 means the bigger group is not 
         # big enough to match only one part of the refmol
         # In that situation, we need to select the correct part of the molecule.
-        core_head, side_head = get_connecter(mol_whole,core_mol)
+        core_head, side_head, core_all= get_connecter(mol_whole,core_mol)
         for match_correct in correct_matches:
             #print(set(match_correct) & core_head)
             #print(set(match_correct) & side_head)
-            if set(match_correct) & arranged_atoms == set() and set(match_correct) & core_head == set() and set(match_correct) & side_head != side_head:
+            if set(match_correct) & arranged_atoms == set() and set(match_correct) & core_head == set() and set(match_correct) & side_head != side_head and set(match_correct) & core_all == set():
                 match_to_use = match_correct
     else:
         if debug:
