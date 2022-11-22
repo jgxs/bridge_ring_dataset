@@ -273,6 +273,7 @@ def phe2bch_with_smiles(smi):
     return BCHep_mol
 
 def get_correct_match(mol_whole, mcs, arranged_atoms, core_mol, debug):
+    match_to_use = False
     correct_matches = mol_whole.GetSubstructMatches(mcs.queryMol)
     if debug:
         print(f"begin {correct_matches}")
@@ -296,7 +297,10 @@ def get_correct_match(mol_whole, mcs, arranged_atoms, core_mol, debug):
         match_to_use = correct_matches[0]
     if debug:
         print(f"end {match_to_use}")
-    return match_to_use
+    if match_to_use:
+        return match_to_use
+    else:
+        return correct_matches[0]
 
 
 def getpdb(refmol, inpmol, pdbfile):
