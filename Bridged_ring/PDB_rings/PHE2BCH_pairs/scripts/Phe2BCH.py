@@ -211,6 +211,24 @@ def get_connect_atom_in_sidechain(orimol, core):
             connect_atom_in_sidechain = set(core) - core_atom_idx
     return list(connect_atom_in_sidechain)
 
+def get_connecter(mol,patt):
+    # in fact, this function is able to replace two function above.
+    # however, i realise it too later... 
+    core_connecter = []
+    side_connecter = []
+    match_patt = mol.GetSubstructMatches(patt)
+    match_set = set(match_patt[0])
+    for idx in match_patt[0]:
+        atom = mol.GetAtomWithIdx(idx)
+        neighbors = {neighbor.GetIdx() for neighbor in atom.GetNeighbors()}
+        if neighbors & match_set == neighbors:
+            pass
+        else:
+            side_connecter.append(idx)
+            for i in list(neighbors):
+                if i in match_set:
+                    core_connecter.append(i)
+    return [set(core_connecter),set(side_connecter)]
 
 def phe2bch_with_smiles(smi):
     # 用于将给定配体中的*间位苯环骨架*替换为*螺旋桨烷骨架*的脚本
@@ -254,6 +272,32 @@ def phe2bch_with_smiles(smi):
         raise ValueError("no match 6-5 rings")
     return BCHep_mol
 
+def get_correct_match(mol_whole, mcs, arranged_atoms, core_mol, debug):
+    correct_matches = mol_whole.GetSubstructMatches(mcs.queryMol)
+    if debug:
+        print(f"begin {correct_matches}")
+        print(arranged_atoms)
+    if len(correct_matches) > 1:
+        if debug:
+            print(f"begin2 {correct_matches}")
+        # arranged_atoms is not empty means it is the first bigger group to match
+        # however, the len(correct_matches) > 1 means the bigger group is not 
+        # big enough to match only one part of the refmol
+        # In that situation, we need to select the correct part of the molecule.
+        core_head, side_head = get_connecter(mol_whole,core_mol)
+        for match_correct in correct_matches:
+            #print(set(match_correct) & core_head)
+            #print(set(match_correct) & side_head)
+            if set(match_correct) & arranged_atoms == set() and set(match_correct) & core_head == set() and set(match_correct) & side_head != side_head:
+                match_to_use = match_correct
+    else:
+        if debug:
+            print(f"begin4 {correct_matches}")
+        match_to_use = correct_matches[0]
+    if debug:
+        print(f"end {match_to_use}")
+    return match_to_use
+
 
 def getpdb(refmol, inpmol, pdbfile):
 
@@ -265,54 +309,64 @@ def getpdb(refmol, inpmol, pdbfile):
     else:
         ff_mcs = Chem.rdForceFieldHelpers.UFFGetMoleculeForceField(inpmol)
 
+    ref_arranged_atoms = set()
+    inp_arranged_atoms = set()
     core = Chem.MolFromSmiles("C12CCCC(C2)C1")
+    bch_core = Chem.MolFromSmarts("*C12CCCC(*)(C2)C1")
+    phe_core = Chem.MolFromSmarts("*!:c1cc(!:*)ccc1")
+    # maybe a better way while i do not want test it
+    # bch_core_connect, bch_side_connect = get_connecter(inpmol,bch_core)
+    # phe_core_connect, phe_side_connect = get_connecter(refmol,phe_core)
+
     side_chains, unmatched = rdRGD.RGroupDecompose([core], [inpmol])
-    for R in ["R1", "R2"]:
-        sidechain = side_chains[0][R]
+    if side_chains[0]["R1"].GetNumAtoms()>side_chains[0]["R2"].GetNumAtoms():
+        side_chains_reorder = [side_chains[0]["R1"],side_chains[0]["R2"]]  
+    else:
+        side_chains_reorder = [side_chains[0]["R2"],side_chains[0]["R1"]]
+    
+    for sidechain in side_chains_reorder:
+        # Chem.SanitizeMol(sidechain)
+        # print(ref_arranged_atoms)
+        # print(inp_arranged_atoms)
+        #for item in sidechain.GetAtoms():
+        #    print(item.GetSymbol())
         sidechain_conf = sidechain.GetConformer()
+        mcs1 = rdFMCS.FindMCS([refmol, sidechain], timeout=3, bondCompare=rdFMCS.BondCompare.CompareAny)
+        mcs3 = rdFMCS.FindMCS([inpmol, sidechain], timeout=3, bondCompare=rdFMCS.BondCompare.CompareOrderExact)
 
-        mcs_ref2mid = rdFMCS.FindMCS(
-            [refmol, sidechain], timeout=3, bondCompare=rdFMCS.BondCompare.CompareAny
-        )
-        for i, j in zip(
-            refmol.GetSubstructMatch(mcs_ref2mid.queryMol),
-            sidechain.GetSubstructMatch(mcs_ref2mid.queryMol),
-        ):
-            sidechain_conf.SetAtomPosition(j, bonded_conf.GetAtomPosition(i))
+        sidechain_ref = get_correct_match(refmol,mcs1,ref_arranged_atoms,phe_core,False)
+        sidechain_gen = get_correct_match(inpmol,mcs3,inp_arranged_atoms,bch_core,False)
+        
+        atom_connect_sidechain_core_ref = get_connect_atom_in_core(refmol, sidechain_ref)[0]
+        atom_connect_sidechain_core_gen = get_connect_atom_in_core(inpmol, sidechain_gen)[0]
 
+        ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
+        conf_res.SetAtomPosition(atom_connect_sidechain_core_gen,bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref),)
+        
+        mcs_ref2mid = rdFMCS.FindMCS([refmol, sidechain], timeout=3, bondCompare=rdFMCS.BondCompare.CompareAny)
+        match_to_correct_ref = get_correct_match(refmol,mcs_ref2mid,ref_arranged_atoms,phe_core,False)
+        # print(f"the result: {sidechain.GetSubstructMatches(mcs_ref2mid.queryMol)}")
+        for i, j in zip(sidechain.GetSubstructMatch(mcs_ref2mid.queryMol),match_to_correct_ref,):
+            sidechain_conf.SetAtomPosition(i, bonded_conf.GetAtomPosition(j))
+            # print(f"set atom idx {i}")
+            ref_arranged_atoms.add(j)
+        # print(ref_arranged_atoms)
         mcs_mid2inp = rdFMCS.FindMCS(
             [inpmol, sidechain],
             timeout=3,
             bondCompare=rdFMCS.BondCompare.CompareOrderExact,
         )
+        match_to_correct_inp = get_correct_match(inpmol,mcs_mid2inp,inp_arranged_atoms,bch_core,False)
+        # print(match_to_correct_inp)
+        # print(f"sidechain {sidechain.GetSubstructMatches(mcs_mid2inp.queryMol)}")
         for i, j in zip(
             sidechain.GetSubstructMatch(mcs_mid2inp.queryMol),
-            inpmol.GetSubstructMatch(mcs_mid2inp.queryMol),
-        ):
+            match_to_correct_inp
+        ):  
+            # print(f"{i}      i")
             ff_mcs.AddFixedPoint(j)
-            conf_res.SetAtomPosition(j, sidechain_conf.GetAtomPosition(i))
-
-        mcs1 = rdFMCS.FindMCS(
-            [refmol, sidechain], timeout=3, bondCompare=rdFMCS.BondCompare.CompareAny
-        )
-        mcs3 = rdFMCS.FindMCS(
-            [inpmol, sidechain],
-            timeout=3,
-            bondCompare=rdFMCS.BondCompare.CompareOrderExact,
-        )
-        sidechain_ref = refmol.GetSubstructMatch(mcs1.queryMol)
-        sidechain_gen = inpmol.GetSubstructMatch(mcs3.queryMol)
-        atom_connect_sidechain_core_ref = get_connect_atom_in_core(
-            refmol, sidechain_ref
-        )[0]
-        atom_connect_sidechain_core_gen = get_connect_atom_in_core(
-            inpmol, sidechain_gen
-        )[0]
-        ff_mcs.AddFixedPoint(atom_connect_sidechain_core_gen)
-        conf_res.SetAtomPosition(
-            atom_connect_sidechain_core_gen,
-            bonded_conf.GetAtomPosition(atom_connect_sidechain_core_ref),
-        )
+            conf_res.SetAtomPosition(j,sidechain_conf.GetAtomPosition(i))
+            inp_arranged_atoms.add(j)
 
     for i in range(50):
         try:
