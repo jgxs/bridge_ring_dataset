@@ -22,9 +22,9 @@ for res in all_res:
             err.write(f"Error of {lig}_{pdb}\n")
     else:
         with open("rescore.log","a") as log:
-            log.write(f"{lig} {pdb} {phe_score:>.4f} {bch_score:>.4f} {bch_score-phe_score:>.4f}\n")
+            log.write(f"{lig} {pdb} {phe_score: >12.4f} {bch_score: >12.4f} {bch_score-phe_score: >12.4f}\n")
         if bch_score-phe_score < 0:
             with open("rescore.better","a") as log:
-                log.write(f"{lig} {pdb} {phe_score:>.4f} {bch_score:>.4f} {bch_score-phe_score:>.4f}\n")
+                log.write(f"{lig} {pdb} {phe_score: >12.4f} {bch_score: >12.4f} {bch_score-phe_score: >12.4f}\n")
      
 
