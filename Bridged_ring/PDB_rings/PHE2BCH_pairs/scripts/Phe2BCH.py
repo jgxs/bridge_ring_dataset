@@ -306,7 +306,7 @@ if __name__ == "__main__":
         for line in AaaaA:
             info = line.split()
             ligands_smi[info[1]] = [info[0], False]
-    # print(1)
+
     with open(
         "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/cc-to-pdb.tdd"
     ) as ligs:
@@ -315,12 +315,8 @@ if __name__ == "__main__":
             if info[0] in ligands_smi.keys():
                 ligands_smi[info[0]].append(info[1:])
                 ligands_smi[info[0]][1] = True
-    # print(2)
-
-    # print(sin_work("11B_2pj5", ligands_smi))
     
     for key in tqdm(ligands_smi):
         if ligands_smi[key][1]:
             for pdbid in ligands_smi[key][2]:
-                # print(f"{key}_{pdbid}")
                 sin_work(f"{key}_{pdbid}", ligands_smi)
