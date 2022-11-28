@@ -268,6 +268,11 @@ def phe2bch_with_ligfpbd(lig,output):
         except:
             pass
     BCHep_mol_H = Chem.AddHs(BCHep_mol, addCoords=True)
+    atom_ref = lig.GetAtomWithIdx(1).GetPDBResidueInfo()
+    Chem.AtomPDBResidueInfo.SetAltLoc(atom_ref, " ")
+    Chem.AtomPDBResidueInfo.SetResidueNumber(atom_ref, 1)
+    for atom in BCHep_mol_H.GetAtoms():
+        rename_atom(atom, atom_ref)
     Chem.MolToPDBFile(BCHep_mol_H, output)
     return BCHep_mol_H
 
