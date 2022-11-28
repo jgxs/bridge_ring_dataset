@@ -301,7 +301,7 @@ if __name__ == "__main__":
     RDLogger.DisableLog("rdApp.*")
     ligands_smi = {}
     with open(
-        "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/scripts/AaaaA_only5.csv"
+        "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_menu/AaaaA_small_rings.csv"
     ) as AaaaA:
         for line in AaaaA:
             info = line.split()
@@ -317,36 +317,10 @@ if __name__ == "__main__":
                 ligands_smi[info[0]][1] = True
     # print(2)
 
-    print(sin_work("11B_2pj5", ligands_smi))
+    # print(sin_work("11B_2pj5", ligands_smi))
     
     for key in tqdm(ligands_smi):
         if ligands_smi[key][1]:
             for pdbid in ligands_smi[key][2]:
                 # print(f"{key}_{pdbid}")
                 sin_work(f"{key}_{pdbid}", ligands_smi)
-                """
-                with open("phe2bch.log", "a") as log:
-                    log.write(f"{pdbid}\n")
-                pdb_file_path = pdb_dir + f"pdb{pdbid}.ent"
-                sin_work(f"{key}_{pdbid}", ligands_smi)
-                try:
-                    lig_Block = exctract_ligand_from_pdb(
-                        pdb_file_path,
-                        key,
-                        ligands_smi[key][0],
-                        f"{key}_{pdbid}_phe.pdb",
-                    )
-                except Exception as ex:
-                    with open("phe2bch.err", "a") as log:
-                        log.write(f"PDBload error of {key}_{pdbid}: {ex}" + "\n")
-
-                #try:
-                print(f"{key}_{pdbid}")
-                test = phe2bch_topdb(
-                        ligands_smi[key][0], lig_Block, f"{key}_{pdbid}_bch.pdb"
-                    )
-                print("finish")
-                #except Exception as ex:
-                #    with open("phe2bch.err", "a") as log:
-                #        log.write(f"Error of {key}_{pdbid}: {ex}" + "\n")
-                """ 
