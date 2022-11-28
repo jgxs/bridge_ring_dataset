@@ -6,7 +6,13 @@ from rdkit.Geometry.rdGeometry import Point3D
 from pathlib import Path
 # take off warnings
 # 
+import requests
 
+def wget_PDB(pdbid):
+    pdbblock = requests.get(f"https://files.rcsb.org/download/{pdbid}.pdb").text
+    output = f"/home/chengyj/pdb_dataset/pdb/pdb{pdbid}.ent"
+    with open(output,"w") as outpdb:
+        outpdb.write(pdbblock)
 
 def rename_atom(atom_to_rename, pdbinfo_ref):
     # sometime,
@@ -262,12 +268,18 @@ def phe2bch_with_ligfpbd(lig,output):
             conf_gen.SetAtomPosition(atom_idx, conf.GetAtomPosition(list(connect_atoms[0])[1]))
         else:
             pass
-    for i in range(100):
+    for i in range(10):
         try:
             ff_mcs.Minimize()
         except:
             pass
     BCHep_mol_H = Chem.AddHs(BCHep_mol, addCoords=True)
+    for i in range(10):
+        try:
+            print(i)
+            ff_mcs.Minimize()
+        except:
+            pass
     atom_ref = lig.GetAtomWithIdx(1).GetPDBResidueInfo()
     Chem.AtomPDBResidueInfo.SetAltLoc(atom_ref, " ")
     Chem.AtomPDBResidueInfo.SetResidueNumber(atom_ref, 1)
@@ -286,9 +298,14 @@ def sin_work(inp,ligands_smi):
     key = inp.split("_")[0]
     pdb_id = inp.split("_")[1]
     lig_smi = ligands_smi[key][0]
-    pdb_path = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{pdb_id}.ent"
+    pdb_path = f"/home/chengyj/pdb_dataset/pdb/pdb{pdb_id}.ent"
+    
     try:
-        lig_Block = exctract_ligand_from_pdb(pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb")
+        if Path(pdb_path).exists():
+            lig_Block = exctract_ligand_from_pdb(pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb")
+        else:
+            wget_PDB(pdb_id)
+            lig_Block = exctract_ligand_from_pdb(pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb")
     except Exception as ex:
         with open("sinwork.err", "a") as log:
             log.write(f"PDBload error of {key}_{pdb_id}: {ex}" + "\n")
@@ -313,7 +330,7 @@ if __name__ == "__main__":
             ligands_smi[info[1]] = [info[0], False]
 
     with open(
-        "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/cc-to-pdb.tdd"
+        "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_menu/cc-to-pdb.tdd"
     ) as ligs:
         for line in ligs:
             info = line.split()
@@ -324,4 +341,5 @@ if __name__ == "__main__":
     for key in tqdm(ligands_smi):
         if ligands_smi[key][1]:
             for pdbid in ligands_smi[key][2]:
+                #print(f"{key}_{pdbid}")
                 sin_work(f"{key}_{pdbid}", ligands_smi)

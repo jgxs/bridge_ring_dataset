@@ -37,7 +37,7 @@ def get_connecter(mol,patt):
 ligand_r6 = []
 
 with open(
-    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/Components-smiles-stereo-oe.smi"
+    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_menu/Components-smiles-stereo-oe.smi"
 ) as inputfile:
     for line in tqdm(inputfile):
         try:
