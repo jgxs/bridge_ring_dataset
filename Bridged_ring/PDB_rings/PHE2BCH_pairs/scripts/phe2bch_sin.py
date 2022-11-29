@@ -16,5 +16,6 @@ inp = "0OO_4eh7"
 inp = "07Q_3tv7"
 # inp = "B74_6xic"
 inp = "03R_2aei"
+
 sin_work(inp, ligands_smi)
 # sin_work("11B_2pj5", ligands_smi)
