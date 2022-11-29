@@ -1,12 +1,10 @@
 *test*
+.gitignore
 *.
 bak
-<<<<<<< HEAD
 lig_bch_refine/
 phe2bch.ipynb
 lig_bch*
 mmpbsa_analysis
-=======
 *.tdd
 mmpbsa*
->>>>>>> e2721fe6b994e515360cbd4241ac77186ee46229
