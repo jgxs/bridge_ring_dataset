@@ -2,3 +2,6 @@
 *.
 bak
 lig_bch_refine/
+phe2bch.ipynb
+lig_bch*
+mmpbsa_analysis
