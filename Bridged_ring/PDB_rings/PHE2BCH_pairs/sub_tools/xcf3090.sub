@@ -1,0 +1,10 @@
+#!/bin/bash
+##SBATCH -N 1 
+#SBATCH  -J test30
+#SBATCH  -p nitrogen
+#SBATCH   --gres=gpu:g3090:1
+#SBATCH  -o output/%j.txt
+./gpu_burn 120
+#module load mpi/openmpi-x86_64
+#mpirun   ./testmpi
+#sleep 60
