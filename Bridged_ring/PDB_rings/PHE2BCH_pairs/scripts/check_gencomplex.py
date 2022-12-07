@@ -23,7 +23,7 @@ def split_target_chain(pdbfile, chain_id, target_path):
 with open("check.log", "w") as log:
     log.write("check staring\n")
 
-all_ligs_str = "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs/"
+all_ligs_str = "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs_charged/"
 all_ligs_dir = Path(all_ligs_str)
 
 all_ligs_pdb = list(all_ligs_dir.glob("**/*bch.pdb"))
@@ -43,7 +43,7 @@ for item in all_ligs_pdb:
         pass
 
 lig_complex_dir = str(
-    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_est"
+    "/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_charged"
 )
 try:
     Path(lig_complex_dir).mkdir()
@@ -57,7 +57,7 @@ for key in tqdm(lig_dict):
         lig_phe_bch = {}
         for group in ["bch", "phe"]:
             lig_complex = Path(
-                f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs/{key}_{value}_{group}.pdb"
+                f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs_charged/{key}_{value}_{group}.pdb"
             )
             lig_phe_bch[group] = Ligand(lig_complex)
 
@@ -91,7 +91,7 @@ for key in tqdm(lig_dict):
                     f"{lig_complex_dir}/{key}/{value}/{key}_{value}_{group}.pdb"
                 )
                 lig_complex.symlink_to(
-                    f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs/{key}_{value}_{group}.pdb"
+                    f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/ligs_charged/{key}_{value}_{group}.pdb"
                 )
 
             pdbent = f"/home/chengyj/kinase_work/dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/pdb_dataset/pdb/pdb{value}.ent"

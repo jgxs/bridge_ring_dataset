@@ -4,15 +4,18 @@ from rdkit.Chem import rdRGroupDecomposition as rdRGD
 from tqdm import tqdm
 from rdkit.Geometry.rdGeometry import Point3D
 from pathlib import Path
+
 # take off warnings
-# 
+#
 import requests
+
 
 def wget_PDB(pdbid):
     pdbblock = requests.get(f"https://files.rcsb.org/download/{pdbid}.pdb").text
     output = f"/home/chengyj/pdb_dataset/pdb/pdb{pdbid}.ent"
-    with open(output,"w") as outpdb:
+    with open(output, "w") as outpdb:
         outpdb.write(pdbblock)
+
 
 def rename_atom(atom_to_rename, pdbinfo_ref):
     # sometime,
@@ -83,6 +86,29 @@ def check_triazole_pdb(mol_pdb, smi):
             return mol_edited.GetMol()
         else:
             return mol_pdb
+
+
+def charged_addHs(mol):
+    charge = 0
+    add_set = set(range(mol.GetNumAtoms()))
+    for atom in mol.GetAtoms():
+        if atom.GetSymbol() == "N" and atom.GetHybridization() == Chem.HybridizationType.SP3:
+            if atom.GetFormalCharge() == 0:
+                atom.SetFormalCharge(1)
+                atom.SetNumExplicitHs(1)
+            charge += 1
+    COOH_group = Chem.MolFromSmiles("C(=O)O")
+    COOH_parts = mol.GetSubstructMatches(COOH_group)
+    non_H = set()
+    for part in COOH_parts:
+        for i in part:
+            non_H.add(i)
+            if mol.GetAtomWithIdx(i).GetExplicitValence() == 1:
+                mol.GetAtomWithIdx(i).SetFormalCharge(-1)
+                charge -= 1
+    add_list = add_set - non_H
+    mol_H = Chem.AddHs(mol, addCoords=True, onlyOnAtoms=add_list)
+    return [mol_H, charge]
 
 
 def getconf_from_missingatom_pdb(refmol, inpmol):
@@ -180,7 +206,7 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
         lig_pdb_refined = getconf_from_missingatom_pdb(lig_pdb, mol_from_smi)
     lig_pdb_refined.GetConformer()
 
-    lig_pdb_H = Chem.AddHs(lig_pdb_refined, addCoords=True)
+    lig_pdb_H, charge = charged_addHs(lig_pdb_refined)
 
     atom_ref = lig_pdb.GetAtomWithIdx(1).GetPDBResidueInfo()
     Chem.AtomPDBResidueInfo.SetAltLoc(atom_ref, " ")
@@ -188,12 +214,15 @@ def exctract_ligand_from_pdb(pdb_path, lig_id, smiles, outfile):
     for atom in lig_pdb_H.GetAtoms():
         rename_atom(atom, atom_ref)
     Chem.MolToPDBFile(lig_pdb_H, outfile)
+    with open(outfile,"a") as remark:
+        remark.write(f"REMARK   {charge} \n")
 
     return lig_pdb_H
 
-def get_connecter(mol,patt):
+
+def get_connecter(mol, patt):
     # in fact, this function is able to replace two function above.
-    # however, i realise it too later... 
+    # however, i realise it too later...
     match_patt = mol.GetSubstructMatches(patt)
     for match_set in match_patt:
         core_connecter = []
@@ -213,14 +242,20 @@ def get_connecter(mol,patt):
                     if i in match_set:
                         core_connecter.append(i)
         if len(side_connecter) == 2:
-            return [core_connecter, side_connecter,list(set(match_set)-set(side_connecter))]
+            return [
+                core_connecter,
+                side_connecter,
+                list(set(match_set) - set(side_connecter)),
+            ]
         else:
             pass
     return False
 
 
-def phe2bch_with_ligfpbd(lig,output):
+def phe2bch_with_ligfpbd(lig, output):
     lig_noH = Chem.RemoveHs(lig)
+    # print(Chem.MolToSmiles(lig))
+    # print(Chem.MolToSmiles(lig_noH))
     conf = lig_noH.GetConformer()
     lig_noH_atoms = lig_noH.GetNumAtoms()
 
@@ -239,11 +274,11 @@ def phe2bch_with_ligfpbd(lig,output):
         connect_atoms[1][1], lig_noH_atoms + 4, order=Chem.rdchem.BondType.SINGLE
     )
     try:
-        mid_edited.RemoveBond(connect_atoms[1][0],connect_atoms[0][0])
-        mid_edited.RemoveBond(connect_atoms[1][1],connect_atoms[0][1])
+        mid_edited.RemoveBond(connect_atoms[1][0], connect_atoms[0][0])
+        mid_edited.RemoveBond(connect_atoms[1][1], connect_atoms[0][1])
     except:
-        mid_edited.RemoveBond(connect_atoms[1][0],connect_atoms[0][1])
-        mid_edited.RemoveBond(connect_atoms[1][1],connect_atoms[0][0])
+        mid_edited.RemoveBond(connect_atoms[1][0], connect_atoms[0][1])
+        mid_edited.RemoveBond(connect_atoms[1][1], connect_atoms[0][0])
     phenyl_atoms = connect_atoms[2]
     phenyl_atoms.sort(reverse=True)
     for i in phenyl_atoms:
@@ -260,12 +295,16 @@ def phe2bch_with_ligfpbd(lig,output):
         atom_idx = atom.GetIdx()
         if atom_idx < lig_noH_atoms - 6:
             ff_mcs.AddFixedPoint(atom_idx)
-        elif atom_idx == lig_noH_atoms-6:
+        elif atom_idx == lig_noH_atoms - 6:
             ff_mcs.AddFixedPoint(atom_idx)
-            conf_gen.SetAtomPosition(atom_idx, conf.GetAtomPosition(list(connect_atoms[0])[0]))
-        elif atom_idx == lig_noH_atoms-2:
+            conf_gen.SetAtomPosition(
+                atom_idx, conf.GetAtomPosition(list(connect_atoms[0])[0])
+            )
+        elif atom_idx == lig_noH_atoms - 2:
             ff_mcs.AddFixedPoint(atom_idx)
-            conf_gen.SetAtomPosition(atom_idx, conf.GetAtomPosition(list(connect_atoms[0])[1]))
+            conf_gen.SetAtomPosition(
+                atom_idx, conf.GetAtomPosition(list(connect_atoms[0])[1])
+            )
         else:
             pass
     for i in range(10):
@@ -273,10 +312,10 @@ def phe2bch_with_ligfpbd(lig,output):
             ff_mcs.Minimize()
         except:
             pass
-    BCHep_mol_H = Chem.AddHs(BCHep_mol, addCoords=True)
+    BCHep_mol_H,charge = charged_addHs(BCHep_mol)
     for i in range(10):
         try:
-            print(i)
+            # print(i)
             ff_mcs.Minimize()
         except:
             pass
@@ -286,26 +325,32 @@ def phe2bch_with_ligfpbd(lig,output):
     for atom in BCHep_mol_H.GetAtoms():
         rename_atom(atom, atom_ref)
     Chem.MolToPDBFile(BCHep_mol_H, output)
+    with open(output,"a") as remark:
+        remark.write(f"REMARK   {charge} \n")
     return BCHep_mol_H
 
 
-def sin_work(inp,ligands_smi):
+def sin_work(inp, ligands_smi):
     if Path("sinwork.err").exists():
         pass
     else:
-        with open("sinwork.err","w") as log:
+        with open("sinwork.err", "w") as log:
             log.write("test begin\n")
     key = inp.split("_")[0]
     pdb_id = inp.split("_")[1]
     lig_smi = ligands_smi[key][0]
     pdb_path = f"/home/chengyj/pdb_dataset/pdb/pdb{pdb_id}.ent"
-    
+
     try:
         if Path(pdb_path).exists():
-            lig_Block = exctract_ligand_from_pdb(pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb")
+            lig_Block = exctract_ligand_from_pdb(
+                pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb"
+            )
         else:
             wget_PDB(pdb_id)
-            lig_Block = exctract_ligand_from_pdb(pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb")
+            lig_Block = exctract_ligand_from_pdb(
+                pdb_path, key, lig_smi, f"{key}_{pdb_id}_phe.pdb"
+            )
     except Exception as ex:
         with open("sinwork.err", "a") as log:
             log.write(f"PDBload error of {key}_{pdb_id}: {ex}" + "\n")
@@ -316,6 +361,7 @@ def sin_work(inp,ligands_smi):
         with open("sinwork.err", "a") as log:
             log.write(f"construct error of {key}_{pdb_id}: {ex}" + "\n")
         return False
+    # print(Chem.MolToSmiles(BCH_lig_H))
     return BCH_lig_H
 
 
@@ -337,9 +383,9 @@ if __name__ == "__main__":
             if info[0] in ligands_smi.keys():
                 ligands_smi[info[0]].append(info[1:])
                 ligands_smi[info[0]][1] = True
-    
+
     for key in tqdm(ligands_smi):
         if ligands_smi[key][1]:
             for pdbid in ligands_smi[key][2]:
-                #print(f"{key}_{pdbid}")
+                # print(f"{key}_{pdbid}")
                 sin_work(f"{key}_{pdbid}", ligands_smi)

@@ -47,7 +47,7 @@ with open(
             if (
                 mol.GetSubstructMatches(patt_sel) 
                 and get_connecter(mol,patt_sel)
-                and largest_ring_size < 20
+                and largest_ring_size < 14
             ):
                 ligand_r6.append(line)
         except:

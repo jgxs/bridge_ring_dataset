@@ -1,1 +1,4 @@
 test begin
+PDBload error of 0BU_3upf: Explicit valence for atom # 13 O, 3, is greater than permitted
+construct error of MTY_1biq: Explicit valence for atom # 12 N, 4, is greater than permitted
+PDBload error of 0BU_3upf: Explicit valence for atom # 13 O, 3, is greater than permitted
