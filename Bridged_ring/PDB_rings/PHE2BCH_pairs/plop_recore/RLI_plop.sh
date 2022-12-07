@@ -26,9 +26,14 @@ sed "s/${lig_id}/002/g" $bch_file |grep ^HETATM > 002.het
 echo TER >> 002.het
 echo 002 >> list
 
+charge=`grep REMARK $phe_file|awk '{print $2}'`
 for lig in 001 002
     do
-        antechamber -i ${lig}.het -fi pdb -o ${lig}.mol2 -fo mol2 -c bcc -pf y -at sybyl 
+        {
+            antechamber -i ${lig}.het -fi pdb -o ${lig}.mol2 -fo mol2 -c bcc -pf y -at sybyl -nc $charge
+        } ||{
+            antechamber -i ${lig}.het -fi pdb -o ${lig}.mol2 -fo mol2 -c bcc -pf y -at sybyl -nc $charge -m 2
+        }
         cat ${lig}.het |grep HETATM > ${lig}.bak
         # python /pubhome/yjcheng02/interact/renumber.py --mol ${lig}.mol2 --pdb ${lig}.bak 
         $schrodinger_path/utilities/mol2convert -imol2 ${lig}.mol2 -omae ${lig}.mae

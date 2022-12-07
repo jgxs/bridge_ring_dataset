@@ -1,5 +1,5 @@
 #!/bin/bash
-#$ -pe ampere 4
+#$ -pe ampere 1
 #$ -cwd
 #$ -q ampere
 #$ -N RLI_plop

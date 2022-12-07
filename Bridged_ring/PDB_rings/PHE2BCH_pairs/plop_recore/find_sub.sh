@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /pubhome/yjcheng02/bridge_ring_dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_est
+cd /pubhome/yjcheng02/bridge_ring_dataset/Bridged_ring/PDB_rings/PHE2BCH_pairs/lig_bch_charged
 
 ls | while read lig
     do
